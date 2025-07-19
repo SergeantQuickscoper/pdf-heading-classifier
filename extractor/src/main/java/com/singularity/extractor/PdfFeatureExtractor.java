@@ -7,6 +7,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import org.apache.pdfbox.pdmodel.PDPage;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 
 public class PdfFeatureExtractor extends PDFTextStripper {
 
@@ -21,9 +26,17 @@ public class PdfFeatureExtractor extends PDFTextStripper {
 
     // Collect all TextPositions for the page
     private final List<TextPosition> allPositions = new ArrayList<>();
+    private String csvPath = null;
+    private boolean headerWritten = false;
 
-    public PdfFeatureExtractor() throws IOException {
+    public PdfFeatureExtractor(String pdfFilePath) throws IOException {
         super.setSortByPosition(true);
+        String baseName = new File(pdfFilePath).getName().replaceAll("(?i)\\.pdf$", "");
+        Path csvDir = Path.of("csvs");
+        if (!Files.exists(csvDir)) Files.createDirectories(csvDir);
+        csvPath = csvDir.resolve(baseName + ".csv").toString();
+        Files.deleteIfExists(Path.of(csvPath));
+        headerWritten = false;
     }
 
     @Override
@@ -96,8 +109,23 @@ public class PdfFeatureExtractor extends PDFTextStripper {
         // System.out.println("Vertical Tolerance: " + verticalTolerance + "\nHorizontoal Tolerance: " + horizontalTolerance + "\nFont Size Tolerance: " + fontSizeTolerance);
         TextBlockClassifier classifier = new TextBlockClassifier(verticalTolerance, horizontalTolerance, fontSizeTolerance);
         List<TextBlock> blocks = classifier.classify(textChunks);
-        for (TextBlock block : blocks) {
-            System.out.println(block);
+        try (BufferedWriter writer = Files.newBufferedWriter(Path.of(csvPath), StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+            if (!headerWritten) {
+                writer.write("page,block,content,avgFontSize,height,width,textLength,x0,y0,x1,y1,isBold,isItalic\n");
+                headerWritten = true;
+            }
+            int pageNum = getCurrentPageNo();
+            int blockNum = 0;
+            for (TextBlock block : blocks) {
+                String content = block.chunks.stream().map(c -> c.text.replace("\"", "'")).reduce((a, b) -> a + " " + b).orElse("").replaceAll("\n", " ").trim();
+                int textLength = content.length();
+                String csvContent = String.format("%d,%d,\"%s\",%.2f,%.2f,%.2f,%d,%.2f,%.2f,%.2f,%.2f,%b,%b\n",
+                    pageNum, blockNum++,
+                    content,
+                    block.avgFontSize, block.y1-block.y0, block.x1-block.x0, textLength,
+                    block.x0, block.y0, block.x1, block.y1, block.isBold, block.isItalic);
+                writer.write(csvContent);
+            }
         }
         allPositions.clear();
     }
@@ -110,7 +138,7 @@ public class PdfFeatureExtractor extends PDFTextStripper {
         }
         File pdfFile = new File(args[0]);
         try (PDDocument document = PDDocument.load(pdfFile)) {
-            PdfFeatureExtractor stripper = new PdfFeatureExtractor();
+            PdfFeatureExtractor stripper = new PdfFeatureExtractor(args[0]);
             stripper.setStartPage(1);
             stripper.setEndPage(document.getNumberOfPages());
             stripper.getText(document);

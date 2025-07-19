@@ -10,8 +10,10 @@ public class TextChunk {
     public final float avgFontSize;
     public final float height, width;
     public final int textLength;
+    private final List<TextPosition> positions;
 
     public TextChunk(List<TextPosition> positions) {
+        this.positions = positions;
         StringBuilder sb = new StringBuilder();
         float xMin = Float.MAX_VALUE, xMax = 0, yMin = Float.MAX_VALUE, yMax = 0, fontSum = 0, maxHeight = 0;
         for (TextPosition tp : positions) {
@@ -32,6 +34,26 @@ public class TextChunk {
         this.height = maxHeight;
         this.width = xMax - xMin;
         this.textLength = this.text.length();
+    }
+
+    // REMOVE THIS BEFORE PROD FOR PERFORMANCE
+    public boolean isBold() {
+        int boldCount = 0;
+        for (TextPosition tp : positions) {
+            String font = tp.getFont().getName().toLowerCase();
+            if (font.contains("bold")) boldCount++;
+        }
+        return positions.size() > 0 && boldCount > positions.size() / 2;
+    }
+
+    // REMOVE THIS BEFORE PROD FOR PERFORMANCE
+    public boolean isItalic() {
+        int italicCount = 0;
+        for (TextPosition tp : positions) {
+            String font = tp.getFont().getName().toLowerCase();
+            if (font.contains("italic") || font.contains("oblique")) italicCount++;
+        }
+        return positions.size() > 0 && italicCount > positions.size() / 2;
     }
 
     public boolean isNearby(TextChunk other, float xThresh, float yThresh) {
