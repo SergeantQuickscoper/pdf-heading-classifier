@@ -14,17 +14,19 @@ public class PdfFeatureExtractor extends PDFTextStripper {
     }
 
     @Override
-    public void writeString(String string, List<TextPosition> textPositions) throws IOException {
-        // TODO: Add column and X value detection (though i dont think it matters)
-        // Group text positions by line
-        Map<Float, List<TextPosition>> lines = new TreeMap<>(Collections.reverseOrder());
-        float lineThreshold = 2.0f; // experimental line threshold yolo
+    public void writeString(String string, List < TextPosition > textPositions) throws IOException {
+        // this is too bloated, i should implement something like a text block class, but that might impact performance
         
-        for (TextPosition tp : textPositions) {
+        Map<Float, List<TextPosition>> lines = new TreeMap<>(Collections.reverseOrder());
+        float lineThreshold = 2.0f; // y distance to group into same line
+        float xThreshold = 100.0f; // x distance to group into same chunk
+
+        // Group text into lines based on y coordinate
+        for(TextPosition tp: textPositions) {
             float y = tp.getYDirAdj();
             boolean added = false;
 
-            for (Float key : lines.keySet()) {
+            for(Float key: lines.keySet()) {
                 if (Math.abs(key - y) < lineThreshold) {
                     lines.get(key).add(tp);
                     added = true;
@@ -32,44 +34,71 @@ public class PdfFeatureExtractor extends PDFTextStripper {
                 }
             }
 
-            if (!added) {
-                lines.put(y, new ArrayList<>(List.of(tp)));
+            if(!added){
+                lines.put(y, new ArrayList < > (List.of(tp)));
             }
         }
 
-        for (List<TextPosition> line : lines.values()) {
-            line.sort(Comparator.comparing(TextPosition::getXDirAdj)); 
+        // Process each line
+        for(List<TextPosition> line: lines.values()) {
+            // Sort text left to right
+            line.sort(Comparator.comparing(TextPosition::getXDirAdj));
+            List <List<TextPosition>> chunks = new ArrayList <>();
+            List <TextPosition> currentChunk = new ArrayList <>();
 
-            StringBuilder textBuilder = new StringBuilder();
-            float avgFontSize = 0;
-            float xMin = Float.MAX_VALUE, xMax = 0, y = 0, height = 0;
+            for (int i = 0; i < line.size(); i++) {
+                TextPosition tp = line.get(i);
 
-            for (TextPosition tp : line) {
-                textBuilder.append(tp.getUnicode());
-                avgFontSize += tp.getFontSizeInPt();
-                xMin = Math.min(xMin, tp.getXDirAdj());
-                xMax = Math.max(xMax, tp.getXDirAdj() + tp.getWidthDirAdj());
-                y = tp.getYDirAdj();
-                height = Math.max(height, tp.getHeightDir());
+                if (currentChunk.isEmpty()) {
+                    currentChunk.add(tp);
+                } else {
+                    TextPosition last = currentChunk.get(currentChunk.size() - 1);
+                    float gap = tp.getXDirAdj() - (last.getXDirAdj() + last.getWidthDirAdj());
+
+                    if (gap > xThreshold) {
+                        chunks.add(currentChunk);
+                        currentChunk = new ArrayList < > ();
+                    }
+                    currentChunk.add(tp);
+                }
             }
 
-        avgFontSize /= line.size();
-        
-        // Write features for export
-        Map<String, Object> lineFeatures = new LinkedHashMap<>();
-        lineFeatures.put("text", textBuilder.toString().trim());
-        lineFeatures.put("avg_font_size", avgFontSize);
-        lineFeatures.put("x0", xMin);
-        lineFeatures.put("x1", xMax);
-        lineFeatures.put("y", y);
-        lineFeatures.put("height", height);
-        lineFeatures.put("width", xMax - xMin);
-        lineFeatures.put("text_length", textBuilder.toString().trim().length());
+            if (!currentChunk.isEmpty()) {
+                chunks.add(currentChunk);
+            }
+
+            // Feature extraction per chunk
+            for (List < TextPosition > chunk: chunks) {
+                StringBuilder textBuilder = new StringBuilder();
+                float avgFontSize = 0;
+                float xMin = Float.MAX_VALUE, xMax = 0, y = 0, height = 0;
+
+                for (TextPosition tp: chunk) {
+                    textBuilder.append(tp.getUnicode());
+                    avgFontSize += tp.getFontSizeInPt();
+                    xMin = Math.min(xMin, tp.getXDirAdj());
+                    xMax = Math.max(xMax, tp.getXDirAdj() + tp.getWidthDirAdj());
+                    y = tp.getYDirAdj();
+                    height = Math.max(height, tp.getHeightDir());
+                }
+
+                avgFontSize /= chunk.size();
+
+                Map < String, Object > lineFeatures = new LinkedHashMap < > ();
+                lineFeatures.put("text", textBuilder.toString().trim());
+                lineFeatures.put("avg_font_size", avgFontSize);
+                lineFeatures.put("x0", xMin);
+                lineFeatures.put("x1", xMax);
+                lineFeatures.put("y", y);
+                lineFeatures.put("height", height);
+                lineFeatures.put("width", xMax - xMin);
+                lineFeatures.put("text_length", textBuilder.toString().trim().length());
         // TODO: Add more features
         // TODO: Write to JSON/CSV
-        System.out.println(lineFeatures);
+                System.out.println(lineFeatures);
+            }
+        }
     }
-}
 
 
     public static void main(String[] args) throws IOException {
