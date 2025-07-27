@@ -21,9 +21,9 @@ import org.apache.pdfbox.text.TextPosition;
 public class PdfFeatureExtractor extends PDFTextStripper {
 
     // BLOCK CLASSIFICATION TOLERANCES (pixel count as a percentage of fontsize)
-    private final float verticalTolerance = 2.0f;
-    private final float horizontalTolerance = 1.5f;
-    private final float fontSizeTolerance = 2.0f;
+    private final float verticalTolerance;
+    private final float horizontalTolerance;
+    private final float fontSizeTolerance;
 
 
     // CHUNK CLASSFICIATION TOLERENCES
@@ -35,7 +35,7 @@ public class PdfFeatureExtractor extends PDFTextStripper {
     private String csvPath = null;
     private boolean headerWritten = false;
 
-    public PdfFeatureExtractor(String pdfFilePath) throws IOException {
+    public PdfFeatureExtractor(String pdfFilePath, float verticalTolerance, float horizontalTolerance, float fontSizeTolerance) throws IOException {
         super.setSortByPosition(true);
         String baseName = new File(pdfFilePath).getName().replaceAll("(?i)\\.pdf$", "");
         Path csvDir = Path.of("csvs");
@@ -43,6 +43,9 @@ public class PdfFeatureExtractor extends PDFTextStripper {
         csvPath = csvDir.resolve(baseName + ".csv").toString();
         Files.deleteIfExists(Path.of(csvPath));
         headerWritten = false;
+        this.verticalTolerance = verticalTolerance;
+        this.horizontalTolerance = horizontalTolerance;
+        this.fontSizeTolerance = fontSizeTolerance;
     }
 
     @Override
@@ -139,12 +142,16 @@ public class PdfFeatureExtractor extends PDFTextStripper {
 
     public static void main(String[] args) throws IOException {
         if (args.length < 1) {
-            System.err.println("do java PdfFeatureExtractor <path>");
+            System.err.println("do java PdfFeatureExtractor <pdfPath> [verticalTol] [horizontalTol] [fontSizeTol]");
             return;
         }
-        File pdfFile = new File(args[0]);
+        String pdfPath = args[0];
+        float verticalTol = args.length > 1 ? Float.parseFloat(args[1]) : 2.0f;
+        float horizontalTol = args.length > 2 ? Float.parseFloat(args[2]) : 1.5f;
+        float fontSizeTol = args.length > 3 ? Float.parseFloat(args[3]) : 2.0f;
+        File pdfFile = new File(pdfPath);
         try (PDDocument document = PDDocument.load(pdfFile)) {
-            PdfFeatureExtractor stripper = new PdfFeatureExtractor(args[0]);
+            PdfFeatureExtractor stripper = new PdfFeatureExtractor(pdfPath, verticalTol, horizontalTol, fontSizeTol);
             stripper.setStartPage(1);
             stripper.setEndPage(document.getNumberOfPages());
             stripper.getText(document);
