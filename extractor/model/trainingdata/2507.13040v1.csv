@@ -1,0 +1,589 @@
+page,block,heading,content,avgFontSize,height,width,textLength,x0,y0,x1,y1,isBold,isItalic
+1,0,BODY,arXiv:2507.13040v1  [gr-qc]  17 Jul 2025,20,11.16,334.96,40,253.47,32,588.43,43.16,FALSE,FALSE
+1,1,H1,AREA-CHARGEINEQUALITIESANDRIGIDITYOF,10,5.45,318.08,36,138.6,158.93,456.68,164.38,FALSE,FALSE
+1,2,H1,TIME-SYMMETRICINITIALDATASETS,10,5.45,250.24,29,172.52,172.88,422.76,178.33,FALSE,FALSE
+1,3,H2,TIARLOSCRUZANDABRAÃOMENDES,8,4.48,181.85,27,206.71,202.76,388.56,207.25,FALSE,FALSE
+1,4,BODY,"Abstract.Inthispaper,weestablishnewarea-chargeinequalitiesfor theboundaryoftime-symmetricEinstein-Maxwellinitialdatasets,in bothcompactandnoncompactcases,underthedominantenergycon- dition.Theseinequalitiesleadtonovelrigiditytheoremswithnoana- loguesintheunchargedsetting.Inthenoncompactcase,ourresultis obtainedbyapplyingGromov’sµ-bubbletechniqueinanewgeometric context.",8,70.24,286.93,370,154.18,230.83,441.1,301.07,FALSE,FALSE
+1,5,H2,1.Introduction,10,5.45,88.08,14,253.6,341.44,341.68,346.9,FALSE,FALSE
+1,6,BODY,"Inequalitiesrelatingthephysicalquantitiesofblackholes–suchasmass, charge,andangularmomentum–havebeenacentraltopicinmathemati- calrelativityandgeometricanalysis.Numerousworkshaveexploredthe geometricandphysicalconstraintsarisingfromtheinterplayamongthese quantitiesandthehorizonarea,particularlyinthecontextofstablemini- malsurfaces,whichareespeciallysignificantduetotheirvariationalcharac- terization(see,e.g.,[15,29]).Additionalcontributionsincludestudieson isoperimetricsurfaces[12],stablemarginallyoutertrappedsurfaces(MOTS) [32],andmin-maxconstructionsleadingtoarea-chargeinequalities[10].For acomprehensiveoverviewoftheseandothergeometricinequalities,werefer thereaderto[11]. Usingvariationalandminimalsurfacetechniques,weestablishsharparea- chargeestimatesfortime-symmetricchargedinitialdatasetswithboundary, validacrosscompactandnoncompactsettingswherethedominantenergy conditionholds. ConsideranorientedRiemannian3-manifold(M,g)andavectorfield representingtheelectricfieldE∈X(M).Thetriple(M,g,E)canbe viewedaspartofatime-symmetricinitialdatasetfortheEinstein-Maxwell equations.Inthiscontext,thechargeddominantenergyconditionforthe non-electromagneticmatterfieldsimplies(seeSection2):",10,251.53,358.66,1191,118.31,360.87,476.97,612.4,FALSE,FALSE
+1,7,BODY,3,7,3.99,4.23,1,367.86,551.18,372.1,555.17,FALSE,FALSE
+1,8,BODY,3,7,3.99,4.23,1,405.87,564.13,410.11,568.12,FALSE,FALSE
+1,9,BODY,2,7,3.99,4.23,1,330.86,620.34,335.09,624.32,FALSE,FALSE
+1,10,BODY,"Rg≥2Λ+2|E|,",9.73,7.45,81.97,11,256.66,624.84,338.62,632.3,FALSE,FALSE
+1,11,BODY,3,7,3.99,4.23,1,301.83,638.7,306.06,642.68,FALSE,FALSE
+1,12,BODY,"whereRgisthescalarcurvatureof(M,g)andΛisaconstantrepresenting thecosmologicalconstant.Inthisframework,itisnaturaltoassociate withanyclosedorientableembeddedsurfaceΣ⊂Mthenotionofenclosed 2020MathematicsSubjectClassification.53A10,53C24,49Q05. Keywordsandphrases.Rigidity,Area-minimizingsurfaces,µ-bubbles,Area-charge inequality.",8.99,72.36,358.66,327,118.31,642.65,476.97,715.01,FALSE,FALSE
+1,13,BODY,1,7,3.99,4.23,1,295.52,758.68,299.76,762.66,FALSE,FALSE
+2,0,BODY,2,7,3.99,4.23,1,118.31,103.14,122.54,107.12,FALSE,FALSE
+2,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.02,17,243.63,103.14,351.65,107.12,FALSE,FALSE
+2,2,BODY,"charge,definedbythefluxintegral 1 ∫ 4π",10,35.44,189.46,38,118.31,127.05,307.77,162.48,FALSE,FALSE
+2,3,BODY,"Q(Σ)=⟨E,N⟩,",10,7.45,103.48,11,245.9,149.55,349.38,157,FALSE,FALSE
+2,4,BODY,Σ,7,3.99,6.12,1,307.76,159.44,313.88,163.42,FALSE,FALSE
+2,5,BODY,"whereNisaunitnormalvectorfieldalongΣ.AssumingthatdivgE=0, itfollowsfromthedivergencetheoremthatthechargedependsonlyonthe homologyclassofΣ. OurfirstresultestablishesgeometricinequalitiesforchargedRiemannian 3-manifoldswithboundary.GivenaboundarycomponentΣ,thetheorem relatesthecosmologicalconstant,theelectricchargeQ(Σ),andthebound- arygeometry,providingconstraintsontheareaofΣaswellasontheglobal structureofM. Theorem1.Let(M,g,E)beacompactorientableRiemannian3-manifold withboundary,equippedwithadivergence-freevectorfieldErepresentingthe electricfield.Supposethescalarcurvaturesatisfies",10,141.44,358.66,587,118.31,172.54,476.97,313.99,FALSE,FALSE
+2,6,BODY,3,7,3.99,4.23,1,218.03,278.67,222.27,282.66,FALSE,FALSE
+2,7,BODY,2,7,3.99,4.23,1,330.86,321.51,335.09,325.5,FALSE,FALSE
+2,8,BODY,"Rg≥2Λ+2|E|,",9.73,7.45,81.97,11,256.66,326.02,338.62,333.47,FALSE,FALSE
+2,9,BODY,"andassumethattheboundary∂Misweaklymean-convex. LetΣbeaconnectedcomponentof∂MsuchthatH2(M,Σ)=0. (1)IfΛ>0,then",9.98,33.62,320.67,108,118.31,343.5,438.98,377.13,FALSE,FALSE
+2,10,BODY,2,7,3.99,4.23,1,302.77,380.53,307,384.52,FALSE,FALSE
+2,11,BODY,"4ΛQ(Σ)≤1, () 2π Λ |Σ|≥4πQ(Σ).",10,70.37,117.52,29,252.2,385.04,369.72,455.4,FALSE,FALSE
+2,12,BODY,and,10,5.45,17.28,3,154.64,400.25,171.93,405.71,FALSE,FALSE
+2,13,BODY,√,10,20.36,10.91,1,290.76,405.75,301.67,426.1,FALSE,FALSE
+2,14,BODY,2,7,3.99,4.23,1,358.48,412.51,362.71,416.49,FALSE,FALSE
+2,15,BODY,|Σ|≥1−1−4ΛQ(Σ).(1.1),10,7.45,254.45,20,222.52,415.66,476.97,423.11,FALSE,FALSE
+2,16,BODY,"(2)IfΛ=0,then",10,5.45,85.55,13,135.72,434.59,221.27,440.04,FALSE,FALSE
+2,17,BODY,2,7,3.99,4.23,1,326.52,443.45,330.76,447.43,FALSE,FALSE
+2,18,BODY,"(1.2) Moreover,ifequalityholdsin(1.1)and(1.2),then(M,g)isisometric totheRiemannianproduct([0,ℓ]×Σ,dt+g0)forsomeℓ>0,wherethe inducedmetricg0onΣhasconstantGaussiancurvatureκg=a+Λ,and E=aN.Ineithercase,thegenusg(Σ)ofΣequalszero,assumingthe equalityholds. TheproofofTheorem1,aswellasthesubsequentresults,reliesona combinationoftechniquesfromGeometricMeasureTheoryandtopological constraints.Thesetoolsenabletheconstructionofarea-minimizingsurfaces, thatis,surfacesthatminimizeareawithinagivenclassofcompetitors. Amongminimalsurfaces,area-minimizingonesplayacentralroleinvarious scalarcurvaturerigidityresults,includingthosein[2,3,4,7,25,30,31,35]. Ingeneral,whenthechargevanishes,mostexistingresultsrecoverclas- sicalRiemannianconclusions.However,theresultspresentedherehaveno counterpartinthepurelyRiemanniansetting,exceptforthecasewhen Λ<0andg(Σ)≥2inthenexttheorem,whichrecovers[31,Theorem5]. Wenowextendouranalysistothecaseofanegativecosmologicalconstant Λ<0.Beforestatingournextresult,letusrecallthata3-manifoldMis irreducibleifeveryembedded2-sphereinMboundsanembedded3-ball, andasurfaceΣ⊂M,otherthana2-sphere,isincompressibleifitisπ1- injective,thatis,theinducedmapπ1(Σ)→π1(M)isinjective.",9.98,275.22,358.66,1188,118.31,447.95,476.97,723.17,FALSE,FALSE
+2,19,BODY,3,7,3.99,4.23,1,397.1,459.21,401.34,463.2,FALSE,FALSE
+2,20,BODY,2,7,3.99,4.23,1,313.49,472.16,317.72,476.15,FALSE,FALSE
+2,21,BODY,2,7,3.99,4.23,1,426.29,485.11,430.53,489.1,FALSE,FALSE
+3,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS3,7,3.99,330.89,52,146.07,103.14,476.97,107.12,FALSE,FALSE
+3,1,BODY,3,7,3.99,4.23,1,218.03,123.09,222.27,127.07,FALSE,FALSE
+3,2,BODY,"Theorem2.Let(M,g,E)beacompactorientableRiemannian3-manifold withboundary,equippedwithadivergence-freevectorfieldErepresentingthe electricfield.Supposethescalarcurvaturesatisfies",10,31.36,358.66,177,118.31,127.05,476.97,158.4,FALSE,FALSE
+3,3,BODY,2,7,3.99,4.23,1,330.86,165.93,335.09,169.92,FALSE,FALSE
+3,4,BODY,"Rg≥2Λ+2|E|,",9.73,7.45,81.97,11,256.66,170.43,338.62,177.88,FALSE,FALSE
+3,5,BODY,"forsomeconstantΛ<0,andthattheboundary∂Misweaklymean-convex. LetΣbeaconnectedcomponentof∂M. (1)Ifinf|E|>|Λ|andH2(M,Σ)=0,then",9.97,35.62,358.65,123,118.31,187.92,476.96,223.54,FALSE,FALSE
+3,6,BODY,2,7,3.99,4.23,1,195.93,212.13,200.16,216.11,FALSE,FALSE
+3,7,BODY,() √ 2π |Λ|,10,27.04,125.16,11,248.38,226.65,373.54,253.69,FALSE,FALSE
+3,8,BODY,2,7,3.99,4.23,1,343.51,235.6,347.74,239.59,FALSE,FALSE
+3,9,BODY,"|Σ|≥1+4|Λ|Q(Σ)−1.(1.3) (2)IfΣisincompressible,andMisirreducibleanddoesnotcontain",10,29.38,341.25,80,135.72,238.76,476.97,268.13,FALSE,FALSE
+3,10,BODY,"anyclosednon-orientableembeddedsurfaces,then",10,5.45,238.36,44,154.64,275.63,393,281.08,FALSE,FALSE
+3,11,BODY,( 2π |Λ|,10,27.04,21.35,8,202.34,285.58,223.69,312.62,FALSE,FALSE
+3,12,BODY,),10,20.36,6.51,1,413.07,285.58,419.58,305.94,FALSE,FALSE
+3,13,BODY,√ whereg(Σ)isthegenusofΣ.,10,39.29,142.42,25,154.64,287.78,297.06,327.06,FALSE,FALSE
+3,14,BODY,22,7,3.99,66.38,2,346.19,294.54,412.57,298.52,FALSE,FALSE
+3,15,BODY,"|Σ|≥(g(Σ)−1)+(g(Σ)−1)+4|Λ|Q(Σ),(1.4)",10,7.45,304.3,36,172.66,297.69,476.97,305.14,FALSE,FALSE
+3,16,BODY,3,7,3.99,4.23,1,457.55,332.87,461.78,336.85,FALSE,FALSE
+3,17,BODY,"Moreover,ifequalityholdsinanyoftheaboveinequalities,then(M,g) isisometrictotheRiemannianproduct([0,ℓ]×Σ,dt+g0)forsomeℓ>0, wheretheinducedmetricg0onΣhasconstantGaussiancurvatureκg= a+Λ,andE=aN. ItisinterestingtonotethatTheorem2imposesnorestrictiononthe genusofΣ.ThiscontrastswiththeunchargedcasewhenΛ<0,which onlyadmitssurfacesofgenusatleasttwo,andthusrepresentsanewphe- nomenon.Moreover,inthecaseg(Σ)=1,ourresultcanbecompared to[4,Theorem2],whichassertsthatifMisacomplete3-manifoldwith nonnegativescalarcurvatureandweaklymean-convexboundary,thenthe existenceofanytwo-sidedtorusΣ⊂Mthatminimizesareainitsisotopy classimpliesthatMisflat.Incontrast,ourresultallowsthepresenceofa 2-torusΣwithanexplicitlowerboundforitsarea:",9.99,167.67,358.66,718,118.31,336.83,476.97,504.5,FALSE,FALSE
+3,18,BODY,2,7,3.99,4.23,1,368.72,345.82,372.95,349.81,FALSE,FALSE
+3,19,BODY,2,7,3.99,4.23,1,124.08,372.05,128.31,376.04,FALSE,FALSE
+3,20,BODY,4π|Q(Σ)| |Σ|≥√. |Λ|,10,27.41,77.02,19,259.13,514.88,336.15,542.29,FALSE,FALSE
+3,21,BODY,"Forhighergenussurfaces(g(Σ)≥2),ourresultmayalsobecomparedto [31,Theorem5]. Thenextresultextendstheprevioustheoremstothenoncompactsetting. ThekeytoolintheproofisGromov’sconceptofaµ-bubble[18,20],which arisesasaminimizerofaweightedareafunctional.Moreprecisely,givena Riemannianmanifold(M,g)andafunctionh,aµ-bubbleisdefinedasa minimizeror,moregenerally,acriticalpoint)ofthefunctional",10,83.16,358.66,380,118.31,548.3,476.97,631.46,FALSE,FALSE
+3,22,BODY,n,7,3.99,5.14,1,240.94,609.1,246.08,613.08,FALSE,FALSE
+3,23,BODY,∫,10,20.36,6.06,1,329.09,634.26,335.15,654.62,FALSE,FALSE
+3,24,BODY,n−1,7,5.44,15.96,3,276.54,644.61,292.5,650.05,FALSE,FALSE
+3,25,BODY,"Ω7→H(∂Ω)−h,",10,7.45,110.53,11,242.37,649.11,352.9,656.56,FALSE,FALSE
+3,26,BODY,Ω,7,3.99,6.12,1,335.15,659,341.27,662.99,FALSE,FALSE
+3,27,BODY,n−1,7,5.44,15.96,3,160.94,669.67,176.9,675.11,FALSE,FALSE
+3,28,BODY,"whereHistheinduced(n−1)-dimensionalHausdorffmeasure,and Ω⊂Mrangesoverasuitableclassofsubsets,suchasCaccioppolisets. Veryrecently,Gromov’sµ-bubbletechniquehasemergedasapowerful toolingeometricanalysis,withnumerousapplicationstoothergeometric problems;see,forinstance,[6,8,9,19,23,26,33,35,36,37,38].",10,57.26,358.66,298,118.31,673.63,476.97,730.89,FALSE,FALSE
+4,0,BODY,4,7,3.99,4.23,1,118.31,103.14,122.54,107.12,FALSE,FALSE
+4,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.02,17,243.63,103.14,351.65,107.12,FALSE,FALSE
+4,2,BODY,3,7,3.99,4.23,1,225.44,123.09,229.67,127.07,FALSE,FALSE
+4,3,BODY,"Theorem3.Let(M,g,E)beacomplete,noncompact,orientableRie- mannian3-manifoldwithconnectedcompactboundary∂M,equippedwitha divergence-freevectorfieldErepresentingtheelectricfield.Assumethatthe scalarcurvaturesatisfies",10,44.31,358.66,213,118.31,127.05,476.97,171.36,FALSE,FALSE
+4,4,BODY,2,7,3.99,4.23,1,330.86,178.88,335.09,182.87,FALSE,FALSE
+4,5,BODY,"Rg≥2Λ+2|E|,",9.73,7.45,81.97,11,256.65,183.39,338.62,190.84,FALSE,FALSE
+4,6,BODY,2,7,3.99,4.23,1,307.02,197.24,311.25,201.22,FALSE,FALSE
+4,7,BODY,"whereΛisaconstantsuchthatΛ+|E|isuniformlypositive,andthatthe boundary∂Misweaklymean-convex.AssumefurtherthatH2(M,∂M)=0. Thenthefollowinginequalitieshold:",9.98,31.36,358.66,153,118.31,201.2,476.97,232.55,FALSE,FALSE
+4,8,BODY,"(1)IfΛ∈R\{0},then",10,7.45,113.43,17,135.72,242.32,249.15,249.77,FALSE,FALSE
+4,9,BODY,2,7,3.99,4.23,1,309.43,255.71,313.66,259.7,FALSE,FALSE
+4,10,BODY,4ΛQ(∂M)≤1,10,7.45,73.04,9,261.12,260.21,334.16,267.66,FALSE,FALSE
+4,11,BODY,"(thisistrivialwhenΛ<0),and √",10,33.11,153.73,28,154.64,277.7,308.37,310.81,FALSE,FALSE
+4,12,BODY,( 2π Λ,10,25.05,19.77,6,252.2,288.26,271.97,313.3,FALSE,FALSE
+4,13,BODY,),10,20.36,6.51,1,373.5,288.26,380.02,308.61,FALSE,FALSE
+4,14,BODY,2,7,3.99,4.23,1,368.77,297.21,373,301.2,FALSE,FALSE
+4,15,BODY,|∂M|≥1−1−4ΛQ(∂M).(1.5),10,7.45,264.74,22,212.23,300.37,476.97,307.82,FALSE,FALSE
+4,16,BODY,"(2)IfΛ=0,then",10,5.45,85.55,13,135.72,321.56,221.27,327.01,FALSE,FALSE
+4,17,BODY,2,7,3.99,4.23,1,336.82,334.95,341.05,338.94,FALSE,FALSE
+4,18,BODY,|∂M|≥4πQ(∂M).,10,7.45,93.88,13,250.7,339.46,344.58,346.91,FALSE,FALSE
+4,19,BODY,"(1.6) Moreover,ifequalityholdsineither(1.5)or(1.6),thenthereexistsan isometry",10,36.5,358.66,77,118.31,339.46,476.97,375.96,FALSE,FALSE
+4,20,BODY,23,7,3.99,69.46,2,305.57,378.95,375.04,382.94,FALSE,FALSE
+4,21,BODY,"Φ:([0,+∞)×∂M,dt+g0)→(M,g),",9.88,7.45,191.22,26,202.03,383.45,393.25,390.9,FALSE,FALSE
+4,22,BODY,"suchthatΦ(0,∂M)=∂M,wheretheinducedmetricg0on∂Mhasconstant Gaussiancurvatureκg=a+Λ,andE=aN. ThefirstdifficultyinprovingTheorem3istoensurethatthesequenceof approximatingµ-bubblesconvergestoawell-definedlimitingsurface,rather thandivergingtoinfinity.Thisrequirescontrollingthebehavioroftheµ- bubblestoguaranteethattheydonotescapetoinfinityduringthelimiting process. Outlineofthepaper.InSection2,weintroduceafamilyofmodel solutionsthatdependsonthesignofthecosmologicalconstant.These modelsservebothasmotivatingexamplesandasconcreteillustrationsofthe generalresultsestablishedlaterinthepaper.InSection3,wederivesharp area-chargeestimatesundersuitablegeometricassumptionsandprovean auxiliarylocalrigidityresult,whichplaysanimportantroleinthearguments developedinthesubsequentsection.Finally,inSection4,wepresentthe proofsofTheorems1,2,and3. Acknowledgments:T.CruzwaspartiallysupportedbyCNPq,Brazil, undergrantnumbers307419/2022-3,408834/2023-4,444531/2024-6,and 403770/2024-6.A.MendeswaspartiallysupportedbyCNPq,Brazil,under grantnumber309867/2023-1.Theauthorsgratefullyacknowledgepartial supportfromCoordenaçãodeAperfeiçoamentodePessoaldeNı́velSuperior (CAPES/MATH-AMSUD88887.985521/2024-00),Brazil.",9.99,280.02,358.66,1197,118.31,398.67,476.97,678.7,FALSE,FALSE
+4,23,BODY,2,7,3.99,4.23,1,245.98,407.67,250.21,411.65,FALSE,FALSE
+5,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS5,7,3.99,330.89,52,146.07,103.14,476.97,107.12,FALSE,FALSE
+5,1,BODY,2.Themodels,10,5.45,77.98,11,258.65,127.05,336.63,132.5,FALSE,FALSE
+5,2,BODY,"Weconsideratime-symmetricinitialdataset(IDS)fortheEinstein- Maxwellequations,denotedby(M,g,E,B),whereE,B∈X(M)represent theelectricandmagneticfields,respectively.Theconstraintequationsin thissettingaregivenby:",10,44.31,358.66,208,118.31,146.47,476.97,190.78,FALSE,FALSE
+5,3,BODY,3,7,3.99,4.23,1,283.23,155.47,287.46,159.45,FALSE,FALSE
+5,4,BODY,22,7,3.99,37.18,2,268.1,198.31,305.28,202.29,FALSE,FALSE
+5,5,BODY,"Rg−2(|E|+|B|)−2Λ=16πµ, divgE=4πρ, divgB=0,",9.73,38.01,160.82,42,217.23,202.81,378.05,240.82,FALSE,FALSE
+5,6,BODY,"whereµdenotestheenergydensityofnon-electromagneticmatter,andρis theelectricchargedensity.Whenρ≡0,wesaythat(M,g,E,B)hasno chargedmatter. Thedominantenergyconditionforthenon-electromagneticmatterfields canbeexpressedintermsoftheinitialdatasetas: Rg≥2(|E|+|B|)+2Λ.",9.97,76.74,358.66,261,118.31,252.69,476.97,329.43,FALSE,FALSE
+5,7,BODY,3,7,3.99,4.23,1,394.88,261.68,399.12,265.67,FALSE,FALSE
+5,8,BODY,22,7,3.99,37.18,2,288.02,317.47,325.2,321.46,FALSE,FALSE
+5,9,BODY,"Thisterminologyisjustifiedbythewell-knownfactthattheCauchydevelop- mentofsuchanIDSyieldsaLorentzian4-manifoldsolvingtheEinstein- Maxwellequationswiththeprescribedenergyandchargedensities. Forthesakeofsimplicityandclarityofexposition,wewillsetB=0 throughoutthispaper.However,itisnotdifficulttoshowthattheresults remainvalid,withappropriateadaptations,inthepresentofmagneticfields. WenowpresentmodelsthatillustrateTheorems1,2,and3. CosmologicalconstantΛ>0.Thefirstexampleweconsidercomesfrom thedSBertotti-RobinsonsolutiontotheEinstein-Maxwellequations,given by",10,126.55,358.66,558,118.31,339.47,476.97,466.02,FALSE,FALSE
+5,10,BODY," 122212 2 ds=(−sinhχdT+dχ)+dΩ,  F=−QsinhχdT∧dχ,",9.46,56.36,198.51,52,192.33,463.68,390.84,520.04,FALSE,FALSE
+5,11,BODY,A B A,10,27.77,18.62,5,233.29,486.38,251.91,514.15,FALSE,FALSE
+5,12,BODY,B,10,5.45,8.27,1,359.5,486.38,367.78,491.83,FALSE,FALSE
+5,13,BODY,2,7,3.99,4.23,1,163.6,517.9,167.84,521.88,FALSE,FALSE
+5,14,BODY,2,7,3.99,4.23,1,319.34,517.9,323.57,521.88,FALSE,FALSE
+5,15,BODY,wheredΩdenotestheroundmetriconSofconstantGaussiancurvature one.TheparametersAandBarerelatedtothecosmologicalconstantΛ andelectricchargeQthroughtheidentities,10,31.36,358.66,156,118.31,521.86,476.97,553.21,FALSE,FALSE
+5,16,BODY,"B−AA+B Λ=>0,Q=. 22B",10,20.32,154.27,19,220.5,562.86,374.77,583.18,FALSE,FALSE
+5,17,BODY,2,7,3.99,4.23,1,319.74,565.74,323.97,569.73,FALSE,FALSE
+5,18,BODY,2,7,3.99,4.23,1,360.15,574.58,364.38,578.56,FALSE,FALSE
+5,19,BODY,"Above,FistheFaradaytensorassociatedwiththeBertotti-Robinson solution.ThecorrespondingelectricvectorfieldinducedonaT-sliceis givenby",10,31.36,358.66,131,118.31,590.83,476.97,622.19,FALSE,FALSE
+5,20,BODY,√,10,7.45,9.09,1,280.47,620.73,289.56,628.18,FALSE,FALSE
+5,21,BODY,"E=QBA∂χ=QBN,",9.75,5.62,115.69,12,239.8,630.49,355.48,636.12,FALSE,FALSE
+5,22,BODY,√,10,7.45,9.09,1,182.82,637.82,191.91,645.27,FALSE,FALSE
+5,23,BODY,"whereN=A∂χistheunitnormalintheχ-direction.Takinga= ⟨E,N⟩=QB,directcomputationsshowthatthetriple([χ0,χ1]×S,g,E), with",9.95,31.68,358.66,116,118.31,647.05,476.97,678.74,FALSE,FALSE
+5,24,BODY,2,7,3.99,4.23,1,440.99,656.37,445.22,660.36,FALSE,FALSE
+5,25,BODY,11 AB,10,20.32,49.42,5,272.07,681.31,321.48,701.63,FALSE,FALSE
+5,26,BODY,22,7,3.99,47.07,2,293.95,684.18,341.02,688.17,FALSE,FALSE
+5,27,BODY,"g=dχ+dΩ,",10,5.45,93.82,8,250.73,688.69,344.55,694.14,FALSE,FALSE
+5,28,BODY,2,7,3.99,4.23,1,373.14,704.57,377.37,708.56,FALSE,FALSE
+5,29,BODY,satisfiesalltheassumptionsofTheorem1with4ΛQ<1andequalityin (1.1).,10,18.41,358.66,65,118.31,708.53,476.97,726.94,FALSE,FALSE
+6,0,BODY,6,7,3.99,4.23,1,118.31,103.14,122.54,107.12,FALSE,FALSE
+6,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.02,17,243.63,103.14,351.65,107.12,FALSE,FALSE
+6,2,BODY,OursecondexamplearisesfromtheNariai-Bertotti-Robinsonsolution:,10,5.45,338.33,62,130.26,127.05,468.6,132.5,FALSE,FALSE
+6,3,BODY," 22212 ds=−dT+dχ+dΩ,  F=−ΛdT∧dχ.",9.6,49.81,147.2,35,217.99,134.7,365.18,184.51,FALSE,FALSE
+6,4,BODY,√2Λ,10,9.09,83.42,3,259.25,157.51,342.67,166.6,FALSE,FALSE
+6,5,BODY,"√√ Inthiscase,theelectricvectorfieldisgivenbyE=Λ∂χ.Takinga=Λ, straightforwardcomputationsshowthat([χ0,χ1]×S,g,E),with",9.95,29.96,358.65,117,118.31,180.37,476.96,210.34,FALSE,FALSE
+6,6,BODY,2,7,3.99,4.23,1,372.65,198.93,376.89,202.91,FALSE,FALSE
+6,7,BODY,1 2Λ,10,20.32,13.03,4,305.82,218.17,318.85,238.49,FALSE,FALSE
+6,8,BODY,22,7,3.99,51.28,2,286.56,221.05,337.83,225.03,FALSE,FALSE
+6,9,BODY,"g=dχ+dΩ,",10,5.45,87.45,8,253.91,225.55,341.36,231.01,FALSE,FALSE
+6,10,BODY,"satisfiesallthehypothesesofTheorem1withequalityin(1.1)and,inpar- ticular,in(1.1).Thechargeofeachslice{χ}×SisgivenbyQ=√. CosmologicalconstantΛ=0.TakingA=Binthepreviousexample, weobtaintheso-calledflatBertotti-Robinsonsolution,which,asbefore, givesrisetoaninitialdatasetsatisfyingallthehypothesesofTheorem1 withΛ=0andequalityin(1.2). CosmologicalconstantΛ<0.Ourfinalexampleisaclassofexactso- lutionsthatincludestheAdSBertotti-Robinsonandtheanti-Nariaispace- times.TheserepresentanaturalgeneralizationofthedSBertotti-Robinson solutiontothecasewherethecosmologicalconstantisnegative(Λ<0):",9.99,133.16,358.66,584,118.31,246.75,476.97,379.91,FALSE,FALSE
+6,11,BODY,21 2Λ,7,13.68,104.5,5,354.7,255.61,459.2,269.29,FALSE,FALSE
+6,12,BODY," 121 ds=(−sinhχdT+dχ)+dΩ,  F=−Q B A ADMsinhχdT∧dχ,",9.83,56.36,198.9,54,192.14,382.71,391.04,439.07,FALSE,FALSE
+6,13,BODY,2222 k,7.3,22.19,195.16,7,192.14,393.97,387.29,416.16,FALSE,FALSE
+6,14,BODY,B A,10,20.32,8.5,3,264.27,412.86,272.78,433.18,FALSE,FALSE
+6,15,BODY,2 k,7,11.27,4.41,3,163.24,439.2,167.65,450.46,FALSE,FALSE
+6,16,BODY,"wheredΩdenotesametricofconstantGaussiancurvaturek=1,0,or−1 onaclosedorientablesurfaceΣofgenusg(Σ)=0,1,or≥2dependingon whetherk=1,0,or−1,respectively. TheconstantsAandBarerelatedtothecosmologicalconstantΛand theADMchargeQADMthroughtheidentities",9.95,57.48,358.66,243,118.31,443.16,476.97,500.64,FALSE,FALSE
+6,17,BODY,1 2,10,20.32,5.45,3,226.91,510.19,232.36,530.51,FALSE,FALSE
+6,18,BODY,"A+Bk Λ=−(A−Bk)<0,Q=. 2B",10,20.32,205.07,23,195.11,510.19,400.17,530.51,FALSE,FALSE
+6,19,BODY,2 ADM2,7,12.82,63.99,6,322.78,513.06,386.77,525.89,FALSE,FALSE
+6,20,BODY,"Asinthepreviousexample,theassociatedelectricvectorfieldonaspace- likeT-sliceisgivenby",10,18.41,358.66,85,118.31,538.16,476.97,556.56,FALSE,FALSE
+6,21,BODY,"E=QADMBN,",9,5.67,74.12,9,260.58,564.06,334.7,569.73,FALSE,FALSE
+6,22,BODY,√,10,7.45,9.09,1,174.36,570.32,183.45,577.77,FALSE,FALSE
+6,23,BODY,"whereN=A∂χ. Oncemore,lettinga=QADMB,adirectcomputationshowsthatthe triple([χ0,χ1]×Σ,g,E),where",9.78,33.35,358.66,94,118.31,579.55,476.97,612.91,FALSE,FALSE
+6,24,BODY,11 AB,10,20.32,49.42,5,271.87,620.74,321.29,641.06,FALSE,FALSE
+6,25,BODY,22 k,7,11.27,47.25,4,293.75,623.62,341,634.88,FALSE,FALSE
+6,26,BODY,"g=dχ+dΩ,",10,5.45,94.2,8,250.54,628.12,344.74,633.58,FALSE,FALSE
+6,27,BODY,"satisfiestherespectivehypothesesofTheorem2,achievingequalityin(1.3) fork=1,orin(1.4)fork=0,−1.Notethattheelectricchargeofeach slice{χ}×Σisgivenby",10,33.35,358.66,145,118.31,649.32,476.97,682.67,FALSE,FALSE
+6,28,BODY,"ωk Q=QADM, 4π 2 k",8.24,34.53,71.03,17,261.78,683.64,332.81,718.17,FALSE,FALSE
+6,29,BODY,"whereωkistheareaof(Σ,dΩ).",9.88,5.76,155.86,25,118.31,710.86,274.17,716.62,FALSE,FALSE
+7,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS7,7,3.99,330.89,52,146.07,103.14,476.97,107.12,FALSE,FALSE
+7,1,BODY,"Finally,wepointoutthatalltheabovemetricscanbeextendedtocom- pletesmoothmetricson([χ0,+∞)×Σ,g,E),therebyprovidingmodelsfor Theorem3. TheseandotherspecialsolutionstotheEinstein-Maxwellequationscan befoundin[5].",9.99,57.26,358.66,208,118.31,127.05,476.97,184.31,FALSE,FALSE
+7,2,BODY,3.Area-chargeestimatesandanauxiliarylocalrigidity,10,5.45,322.2,49,136.53,200.87,458.74,206.32,FALSE,FALSE
+7,3,BODY,result,10,5.45,35.66,6,286.78,213.82,322.43,219.28,FALSE,FALSE
+7,4,BODY,"Thegoalofthissectionistoprovesomearea-chargeestimatesandto establishanauxiliarylocalrigidityresultthatwillbeinstrumentalinthe proofofthemaintheorems. 3.1.Area-chargeestimates.Webeginbyderivingarea-chargeestimates thatrelatethesignofthecosmologicalconstanttothetopologyandthe electricchargeofaweaklyoutermostorarea-minimizingsurface. Proposition4.Let(M,g)beaRiemannian3-manifoldwithboundary, equippedwithadivergence-freevectorfieldErepresentingtheelectricfield. Supposethescalarcurvatureof(M,g)satisfies Rg≥2Λ+2|E|,",9.97,141.91,358.66,514,118.31,233.25,476.97,375.16,FALSE,FALSE
+7,5,BODY,3,7,3.99,4.23,1,238.47,319.95,242.7,323.94,FALSE,FALSE
+7,6,BODY,3,7,3.99,4.23,1,286.68,345.85,290.92,349.84,FALSE,FALSE
+7,7,BODY,2,7,3.99,4.23,1,330.86,363.21,335.09,367.19,FALSE,FALSE
+7,8,BODY,"forsomeconstantΛ. AssumefurtherthataclosedconnectedcomponentΣof∂Misweakly mean-convexandeitherweaklyoutermostorarea-minimizing.ThenΣis minimal,andoneofthefollowingcasesholds:",10,44.31,358.66,174,118.31,385.2,476.97,429.51,FALSE,FALSE
+7,9,BODY,"a)CaseΛ>0.ThesurfaceΣistopologicallya2-sphere(g(Σ)=0), anditschargesatisfies4ΛQ(Σ)≤1.Inthiscase,theareaofΣ obeys ()() 2π 1−1−4ΛQ(Σ)≤|Σ|≤1+1−4ΛQ(Σ).(3.1) Λ b)CaseΛ=0.Wehaveg(Σ)=0org(Σ)=1.",10,74.63,337.61,186,139.36,439.27,476.97,513.9,FALSE,FALSE
+7,10,BODY,2,7,3.99,4.23,1,307.93,448.26,312.16,452.25,FALSE,FALSE
+7,11,BODY,√,10,20.36,10.91,1,184.43,477.32,195.34,497.68,FALSE,FALSE
+7,12,BODY,√,10,20.36,10.91,1,346.18,477.32,357.09,497.68,FALSE,FALSE
+7,13,BODY,2π Λ,10,20.32,11.67,4,307.62,479.85,319.29,500.17,FALSE,FALSE
+7,14,BODY,2,7,3.99,4.23,1,252.15,484.08,256.38,488.07,FALSE,FALSE
+7,15,BODY,2,7,3.99,4.23,1,413.9,484.08,418.13,488.07,FALSE,FALSE
+7,16,BODY,"–Ifg(Σ)=0,then",10,5.45,92.17,14,165.94,521.38,258.11,526.83,FALSE,FALSE
+7,17,BODY,2,7,3.99,4.23,1,326.52,534.77,330.76,538.76,FALSE,FALSE
+7,18,BODY,|Σ|≥4πQ(Σ).,10,7.45,73.3,11,260.99,539.28,334.29,546.73,FALSE,FALSE
+7,19,BODY,-3.2,10,5.45,22.42,5,454.54,539.28,476.97,544.73,FALSE,FALSE
+7,20,BODY,"–Ifg(Σ)=1,thennecessarilyQ(Σ)=0.",10,5.45,198.91,32,165.94,557.37,364.85,562.83,FALSE,FALSE
+7,21,BODY,"c)CaseΛ<0.ThereisnorestrictiononthegenusofΣ(g(Σ)≥0), anditsareasatisfies",10,18.41,336.4,72,140.57,570.32,476.97,588.73,FALSE,FALSE
+7,22,BODY,),10,20.36,6.51,1,413.07,593.22,419.58,613.58,FALSE,FALSE
+7,23,BODY,( 2π |Λ|,10,27.04,21.35,8,202.34,593.23,223.69,620.27,FALSE,FALSE
+7,24,BODY,√,10,20.36,10.91,1,286.15,595.42,297.06,615.78,FALSE,FALSE
+7,25,BODY,22,7,3.99,66.38,2,346.19,602.18,412.57,606.17,FALSE,FALSE
+7,26,BODY,"|Σ|≥(g(Σ)−1)+(g(Σ)−1)+4|Λ|Q(Σ).(3.3) Here,Q(Σ)denotestheelectricchargeenclosedbyΣ,andg(Σ)represents thegenusofΣ. Proof.LetNbetheinward-pointingunitnormalvectortoΣ,andletH= divΣNdenotethemeancurvatureofΣwithrespecttoN.Theboundary componentΣbeingweaklymean-convexmeansthatitsmeancurvature vectorH⃗=−HNpointsintothemanifoldM,whichisequivalenttoH≤0. WeclaimthatΣisminimal.Otherwise,byevolvingΣviameancurvature flow,weobtainasurfaceΣ,closetoΣ,whosemeancurvatureandarea",9.99,127.23,358.66,463,118.31,605.33,476.97,732.56,FALSE,FALSE
+7,27,BODY,′,7,5.44,2.3,1,253.27,723.15,255.57,728.59,FALSE,FALSE
+8,0,BODY,8,7,3.99,4.23,1,118.31,103.14,122.54,107.12,FALSE,FALSE
+8,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.02,17,243.63,103.14,351.65,107.12,FALSE,FALSE
+8,2,BODY,′,7,5.44,2.3,1,223.74,123.09,226.03,128.53,FALSE,FALSE
+8,3,BODY,"satisfyH<0and|Σ|<|Σ|.ThiscontradictstheassumptionthatΣis eitherweaklyoutermostorarea-minimizing. ThisshowsthatΣisminimalandeitherweaklyoutermostorarea- minimizing;inparticular,Σisastableminimalsurface.Therefore,for anyu∈C(Σ),wehave",10,59.26,358.66,231,118.31,127.05,476.97,186.3,FALSE,FALSE
+8,4,BODY,∞,7,5.44,8.47,1,167.07,174.89,175.54,180.34,FALSE,FALSE
+8,5,BODY,"∫∫∫ 1 (Rg+|A|)u≤|∇u|+κgu, 2",9.92,27.79,194.11,27,201.18,187.11,395.29,214.9,FALSE,FALSE
+8,6,BODY,2222,7,3.99,124.52,4,267.24,197.45,391.76,201.44,FALSE,FALSE
+8,7,BODY,ΣΣΣ,7,3.99,152.16,3,215.71,211.85,367.87,215.84,FALSE,FALSE
+8,8,BODY,"whereAdenotesthesecondfundamentalformofΣ,andκgistheGaussian curvatureofΣ. Takingu≡1,usingtheinequalityRg≥2Λ+2|E|andtheGauss-Bonnet theorem,weobtain",9.97,44.31,358.65,147,118.31,224.96,476.96,269.26,FALSE,FALSE
+8,9,BODY,2,7,3.99,4.23,1,364.38,246.9,368.61,250.88,FALSE,FALSE
+8,10,BODY,∫∫,10,20.36,54.57,2,251.6,271.46,306.17,291.82,FALSE,FALSE
+8,11,BODY,2,7,3.99,4.23,1,280.83,281.8,285.06,285.79,FALSE,FALSE
+8,12,BODY,"Λ|Σ|+|E|≤κg=2πχ(Σ),",9.84,7.45,161.78,19,216.75,286.31,378.53,293.76,FALSE,FALSE
+8,13,BODY,ΣΣ,7,3.99,54.63,2,257.65,296.2,312.28,300.19,FALSE,FALSE
+8,14,BODY,"whereχ(Σ)istheEulercharacteristicofΣ.Ontheotherhand,bythe Cauchy-Schwarzinequality,",10,18.41,358.66,83,118.31,309.91,476.97,328.32,FALSE,FALSE
+8,15,BODY,(∫)∫,10,20.89,103.62,4,263.62,332.93,367.24,353.82,FALSE,FALSE
+8,16,BODY,2,7,3.99,4.23,1,326.14,335.65,330.38,339.64,FALSE,FALSE
+8,17,BODY,22,7,3.99,33.95,2,214.62,343.81,248.57,347.79,FALSE,FALSE
+8,18,BODY,2,7,3.99,4.23,1,390.41,343.81,394.65,347.79,FALSE,FALSE
+8,19,BODY,"16πQ(Σ)=⟨E,N⟩≤|Σ||E|.",10,7.45,201.07,21,197.1,348.31,398.17,355.76,FALSE,FALSE
+8,20,BODY,ΣΣ,7,3.99,93.83,2,279.53,358.21,373.35,362.19,FALSE,FALSE
+8,21,BODY,"Therefore,",10,5.45,48.85,10,118.31,371.78,167.16,377.24,FALSE,FALSE
+8,22,BODY,22,7,3.99,33.96,2,280.18,384.57,314.14,388.55,FALSE,FALSE
+8,23,BODY,16πQ(Σ) |Σ|,10,22.31,47.24,11,262.66,388.53,309.9,410.84,FALSE,FALSE
+8,24,BODY,"Λ|Σ|+≤2πχ(Σ).(3.4) Itisstraightforwardtoverifythatinequality(3.4)leadstotheareabounds statedintheproposition,dependingonthesignofthecosmologicalconstant ΛandthetopologyofΣviatheEulercharacteristic(see,e.g.,theproofof [14,Proposition3.1]).Weremarkthat,inthecaseΛ>0,theproofofthe inequality4ΛQ(Σ)≤1canalsobefoundin[14]. □ 3.2.Auxiliarylocalrigidityresult.Inthissubsection,weestablishthe localrigidityresultthatfollowsfromProposition4. Webeginbynotinganinfinitesimalrigiditystatement:ifequalityholds in(3.1),(3.2),or(3.3),thenallinequalitiesintheproofofProposition4 must,infact,beequalities.Thisobservationleadstothefollowing: Proposition5.IfΣattainstheequalityin(3.1),(3.2),and(3.3),then theelectricfieldsatisfiesE=aNalongΣforsomeconstanta,Σistotally geodesic,Rg=2a+2ΛonΣ,andthefunctionu0≡1isaJacobifunction onΣ,thatis,",9.99,210.7,358.66,817,118.31,395.91,476.97,606.6,FALSE,FALSE
+8,25,BODY,2,7,3.99,4.23,1,206.94,467.68,211.17,471.66,FALSE,FALSE
+8,26,BODY,2,7,3.99,4.23,1,202.23,584.24,206.46,588.22,FALSE,FALSE
+8,27,BODY,1 2,10,20.32,5.45,3,252.72,615.83,258.17,636.15,FALSE,FALSE
+8,28,BODY,2,7,3.99,4.23,1,334.17,618.71,338.41,622.69,FALSE,FALSE
+8,29,BODY,∆u0+(Rg−2κg+|A|)u0=0.,9.43,7.45,159.03,21,218.12,623.21,377.15,630.66,FALSE,FALSE
+8,30,BODY,2,7,3.99,4.23,1,396.79,641.36,401.02,645.34,FALSE,FALSE
+8,31,BODY,"Inparticular,ΣhasconstantGaussiancurvatureequaltoa+Λwithrespect totheinducedmetric. Wenowestablishthefollowinglocalrigidityresult,whichwillbeessen- tialintheproofofourmaintheorems.Theargumentsfollowthesame geometricconstructionemployedin[14],[24],and[29]foranalogousrigidity statements.Weproveithereforthesakeofcompletenessandconvenience ofthereader.",10,89.64,358.66,350,118.31,645.32,476.97,734.96,FALSE,FALSE
+9,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS9,7,3.99,330.89,52,146.07,103.14,476.97,107.12,FALSE,FALSE
+9,1,BODY,"Proposition6.IfΣattainstheequalityin(3.1),(3.2),or(3.3),thenthere existsaneighborhoodU=[0,δ)×ΣofΣinMsuchthat:",10,20.4,358.65,109,118.31,127.05,476.96,147.45,FALSE,FALSE
+9,2,BODY,∼,10,7.45,8.49,1,234.15,136.99,242.63,144.44,FALSE,FALSE
+9,3,BODY,"(1)Theelectricfieldisnormaltothefoliation;moreprecisely,E=aNt forsomeconstanta,whereNtistheunitnormaltoΣt={t}×Σ alongthefoliation. (2)(U,g|U)isisometricto([0,δ)×Σ,dt+g0)forsomeδ>0,wherethe inducedmetricg0onΣhasconstantGaussiancurvatureκg=a+Λ. Proof.Ifequalityholdsin(3.1),(3.2),or(3.3),then(inviewofPropo- sition5)standardarguments(see,e.g.,[1,3,30,31])implythatacollar neighborhoodU=[0,δ)×ΣofΣinMcanbefoliatedbyconstantmean curvaturesurfacesΣt={t}×Σ,withΣ0=Σand g=ϕdt+gtonU,",9.92,133.61,358.66,475,118.31,155.22,476.97,288.82,FALSE,FALSE
+9,4,BODY,∼,10,7.45,8.49,1,427.76,165.16,436.25,172.61,FALSE,FALSE
+9,5,BODY,2,7,3.99,4.23,1,324.47,190.11,328.7,194.1,FALSE,FALSE
+9,6,BODY,2,7,3.99,4.23,1,451.99,203.06,456.22,207.05,FALSE,FALSE
+9,7,BODY,∼,10,7.45,8.49,1,199.97,249.35,208.45,256.8,FALSE,FALSE
+9,8,BODY,∼,10,7.45,8.49,1,222.69,262.3,231.17,269.75,FALSE,FALSE
+9,9,BODY,22,7,3.99,20.4,2,267.57,278.7,287.97,282.68,FALSE,FALSE
+9,10,BODY,"wheregtistheinducedmetriconΣt.LetH(t)=divΣNdenotethemean curvatureofΣtwithrespecttotheunitnormalvectorNt=ϕ∂t. Recallthefollowingwell-knownevolutionequationforH(t)undernormal deformationsofsurfaces(see,forinstance,[22]):",9.92,44.31,358.66,219,118.31,301.3,476.97,345.6,FALSE,FALSE
+9,11,BODY,tt,6,4.04,17.49,2,376.66,302.93,394.15,306.97,FALSE,FALSE
+9,12,BODY,-1,7,5.44,10.82,2,415.14,310.29,425.96,315.73,FALSE,FALSE
+9,13,BODY,1 2,10,20.32,5.45,3,264.02,355.44,269.48,375.75,FALSE,FALSE
+9,14,BODY,22,7,3.99,44.68,2,360.59,358.31,405.27,362.3,FALSE,FALSE
+9,15,BODY,′,7,5.44,2.3,1,185.69,358.31,187.99,363.76,FALSE,FALSE
+9,16,BODY,H(t)=−∆Σϕ−(R−2κ+|A|+H(t))ϕ.,9.89,7.45,243.8,27,175.74,362.82,419.54,370.27,FALSE,FALSE
+9,17,BODY,tgΣtΣt,6,4.04,117.41,6,239.15,364.45,356.56,368.49,FALSE,FALSE
+9,18,BODY,"DividingbothsidesbyϕandintegratingoverΣt,weobtain",9.94,5.62,286.15,49,118.31,383.41,404.46,389.03,FALSE,FALSE
+9,19,BODY,"∫∫∫ 1|∇ϕ|1 ϕϕ2 ≤−(|E|+Λ)+4π(1−g(Σ)),",10,52.27,194.03,36,161.68,392.68,355.72,444.95,FALSE,FALSE
+9,20,BODY,∫,10,20.36,6.06,1,426.49,392.68,432.56,413.04,FALSE,FALSE
+9,21,BODY,2,7,3.99,4.23,1,263.92,396.19,268.15,400.18,FALSE,FALSE
+9,22,BODY,′Σt 2,6.67,14.01,110.95,5,144.65,401.84,255.59,415.85,FALSE,FALSE
+9,23,BODY,22 tt,6,10.18,102.72,5,356.86,403.03,459.59,413.2,FALSE,FALSE
+9,24,BODY,H(t)≤−−(Rg+|AΣ|+H(t))+κΣ,9.63,7.45,322.05,24,134.69,407.53,456.74,414.98,FALSE,FALSE
+9,25,BODY,ΣtΣtΣt,6,3.99,140.12,6,167.74,417.42,307.87,421.41,FALSE,FALSE
+9,26,BODY,Σt,6,3.99,8.97,2,432.56,417.42,441.52,421.41,FALSE,FALSE
+9,27,BODY,∫,10,20.36,6.06,1,213.27,422.65,219.33,443.01,FALSE,FALSE
+9,28,BODY,2,7,3.99,4.23,1,248.27,433,252.51,436.98,FALSE,FALSE
+9,29,BODY,Σt,6,3.99,8.97,2,219.33,447.39,228.29,451.38,FALSE,FALSE
+9,30,BODY,"whereweusedthedivergencetheoremandtheGauss-Bonnettheorem,along withtheinequalityRg≥2|E|+2Λ. Ontheotherhand,theCauchy-Schwarzinequalityimplies H(t)≤−−Λ|Σt|+4π(1−g(Σ)),",9.94,57.48,358.66,166,118.31,461.49,476.97,518.97,FALSE,FALSE
+9,31,BODY,2,7,3.99,4.23,1,260.39,470.49,264.63,474.47,FALSE,FALSE
+9,32,BODY,∫,10,20.36,6.06,1,203.06,496.67,209.12,517.03,FALSE,FALSE
+9,33,BODY,22,7,3.99,30.02,2,271.54,500.18,301.55,504.17,FALSE,FALSE
+9,34,BODY,116πQ(t) ϕ|Σ|,10,22.31,75.22,13,222.1,504.14,297.32,526.46,FALSE,FALSE
+9,35,BODY,′,7,5.44,2.3,1,186.02,507.02,188.32,512.46,FALSE,FALSE
+9,36,BODY,Σtt,6.33,4.76,74.13,3,209.12,520.64,283.25,525.4,FALSE,FALSE
+9,37,BODY,"whereQ(t)denotesthechargeofΣt.Observethat,sincedivgE=0,the divergencetheoremyields",9.95,18.41,358.66,82,118.31,536.12,476.97,554.53,FALSE,FALSE
+9,38,BODY,"Q(t)=Q(0)=Q(Σ),∀t∈[0,δ). ∫() ϕ|Σ||Σ| 111",10,56.49,164.16,40,214.8,566.56,378.96,623.05,FALSE,FALSE
+9,39,BODY,"Therefore,undertheassumptionthatequalityholdsin(3.4),weobtain",10,5.45,341.79,61,118.31,584.04,460.1,589.5,FALSE,FALSE
+9,40,BODY,′,7,5.44,2.3,1,197.77,603.61,200.06,609.06,FALSE,FALSE
+9,41,BODY,"H(t)≤C−+Λ(|Σ|−|Σt|),",9.85,7.45,219.65,20,187.81,608.12,407.46,615.57,FALSE,FALSE
+9,42,BODY,Σtt,6.33,4.76,96.65,3,220.86,617.24,317.52,622,FALSE,FALSE
+9,43,BODY,22,7,3.99,33.96,2,190.5,629.67,224.45,633.66,FALSE,FALSE
+9,44,BODY,"whereC=16πQ(Σ). Accordingtoourassumptions,wehave|Σ|≤|Σt|foreveryt∈[0,δ). ThisisimmediatewhenΣisarea-minimizing.Ontheotherhand,ifΣis weaklyoutermost,wecompute",9.99,44.31,358.66,157,118.31,633.63,476.97,677.94,FALSE,FALSE
+9,45,BODY,∫(∫),10,20.89,82.7,4,274.19,681.35,356.89,702.24,FALSE,FALSE
+9,46,BODY,t,7,3.99,3.06,1,285.09,685.04,288.15,689.02,FALSE,FALSE
+9,47,BODY,"|Σ|−|Σt|=−H(s)ϕds≤0,",9.85,7.45,186.14,20,204.57,696.73,390.71,704.18,FALSE,FALSE
+9,48,BODY,0Σs,6.33,3.99,59.29,3,280.25,706.62,339.54,710.61,FALSE,FALSE
+10,0,BODY,10,7,3.99,8.47,2,118.31,103.14,126.78,107.12,FALSE,FALSE
+10,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.01,17,243.63,103.14,351.64,107.12,FALSE,FALSE
+10,2,BODY,"sinceH(t)≥0.Here,weappliedthefundamentaltheoremofcalculus togetherwiththefirstvariationofareaformula.Therefore,ifΛ≥0,we obtain",10,31.36,358.66,126,118.31,127.05,476.97,158.4,FALSE,FALSE
+10,3,BODY,∫()∫(∫) H(t)≤C−=Cϕds.,10,22.83,266.31,21,164.48,159.69,430.79,182.53,FALSE,FALSE
+10,4,BODY,t,7,3.99,3.06,1,342.79,163.38,345.85,167.37,FALSE,FALSE
+10,5,BODY,111H(s) ϕ|Σ||Σ||Σ| ∫() ϕ|Σ||Σ| 111 =−ΛH(s)ϕds. ∫()(∫) H(t)≤C−+Λ(|Σ|−|Σt|),9.98,94.01,227.24,73,184.02,167.7,411.26,261.71,FALSE,FALSE
+10,6,BODY,′,7,5.44,2.3,1,174.44,170.57,176.73,176.01,FALSE,FALSE
+10,7,BODY,2,7,3.99,4.23,1,367.95,179.41,372.18,183.39,FALSE,FALSE
+10,8,BODY,Σtt0sΣs,6.43,4.76,202.09,7,197.53,184.2,399.63,188.95,FALSE,FALSE
+10,9,BODY,"WhenΛ<0,weinsteadwrite",10,5.45,144.03,22,130.27,199.07,274.29,204.52,FALSE,FALSE
+10,10,BODY,′,7,5.44,2.3,1,193.97,218.03,196.27,223.48,FALSE,FALSE
+10,11,BODY,Σtt,6.33,4.76,96.65,3,217.07,231.66,313.72,236.42,FALSE,FALSE
+10,12,BODY,t,7,3.99,3.06,1,263.2,242.56,266.26,246.55,FALSE,FALSE
+10,13,BODY,"C |Σ| Ineithercase,weconcludethat ∫∫",10,61.13,165.89,36,130.26,246.88,296.15,308,FALSE,FALSE
+10,14,BODY,2,7,3.99,4.23,1,296.15,258.59,300.39,262.57,FALSE,FALSE
+10,15,BODY,0sΣs,6.5,4.76,121.74,4,258.35,263.38,380.09,268.13,FALSE,FALSE
+10,16,BODY,t,7,3.99,3.06,1,275.45,290.8,278.51,294.79,FALSE,FALSE
+10,17,BODY,1 ϕ,10,20.32,6.5,3,242.3,295.12,248.8,315.43,FALSE,FALSE
+10,18,BODY,′,7,5.44,2.3,1,206.23,297.99,208.52,303.44,FALSE,FALSE
+10,19,BODY,"H(t)≤H(s)ξ(s)ds,∀t∈[0,δ),",10,7.45,202.73,25,196.27,302.5,399,309.95,FALSE,FALSE
+10,20,BODY,Σt0,6.33,3.99,45.51,3,229.33,312.39,274.84,316.37,FALSE,FALSE
+10,21,BODY,"forsomefunctionξ(t)≥0.Thus,byLemma3.2in[28],itfollowsthat H(t)≤0forallt∈[0,δ).IfΣisweaklyoutermost,thisguaranteesthat H(t)=0forallt,andalloftheinequalitiesabovemustbeequalities. IfΣisarea-minimizing,wesimilarlyfind",10,44.31,358.66,214,118.31,327.1,476.97,371.4,FALSE,FALSE
+10,22,BODY,∫(∫),10,20.89,82.7,4,284.19,374.81,366.89,395.7,FALSE,FALSE
+10,23,BODY,t,7,3.99,3.06,1,295.09,378.5,298.15,382.49,FALSE,FALSE
+10,24,BODY,"0≥|Σ|−|Σt|=−H(s)ϕds≥0,",9.86,7.45,206.14,22,194.57,390.2,400.71,397.65,FALSE,FALSE
+10,25,BODY,0Σs,6.33,3.99,59.29,3,290.25,400.09,349.54,404.07,FALSE,FALSE
+10,26,BODY,"soagainH(t)=0forallt,andallinequalitiesbecomeequalities. Standardcomputationsasin[29]thenyieldthedesiredresult.□",10,18.95,358.66,112,118.31,414.8,476.97,433.75,FALSE,FALSE
+10,27,BODY,4.Proofofthemainresults,10,5.45,162.03,23,216.62,449.76,378.65,455.22,FALSE,FALSE
+10,28,BODY,"ThissectionisentirelydevotedtotheproofofTheorems1,2,and3. 4.1.Compactcases:Theorems1and2. ProofofTheorem1.Wedividetheproofintotwocases: CaseΛ>0.Wefirstshowthat4ΛQ(Σ)≤1. Assume,bycontradiction,that4ΛQ(Σ)>1.Since[Σ]̸=0inH2(M;Z) (as,otherwise,wewouldhaveΣ=∂Mand,inparticular,Q(Σ)=0),we mayapplyexistenceresultsfromGeometricMeasureTheory[13]forarea- minimizingsurfacesinintegralhomologyclasses.Thisyieldsasmooth, embedded,closed,oriented,area-minimizingsurfaceΣthatishomologous toΣ.Furthermore,sinceH2(M,Σ)=0andΣisconnected,Σmustitself beconnected. IfΣ∩∂M̸=∅,thenbytheweakmean-convexityof∂M,thesurface Σmustcoincidewithaconnectedcomponentof∂M.Proposition4then impliesthatΣisminimalandsatisfies",9.99,190.81,358.66,689,118.31,469.19,476.97,660,FALSE,FALSE
+10,29,BODY,2 2,7,16.94,9.65,3,314.25,521.07,323.89,538.01,FALSE,FALSE
+10,30,BODY,′,7,5.44,2.3,1,379.36,585.83,381.65,591.27,FALSE,FALSE
+10,31,BODY,′,7,5.44,2.3,1,420.13,598.78,422.42,604.23,FALSE,FALSE
+10,32,BODY,′,7,5.44,2.3,1,149.87,624.68,152.16,630.13,FALSE,FALSE
+10,33,BODY,′,7,5.44,2.3,1,126.19,637.64,128.49,643.08,FALSE,FALSE
+10,34,BODY,′,7,5.44,2.3,1,186.86,650.59,189.15,656.03,FALSE,FALSE
+10,35,BODY,2′2,7,5.44,84.33,3,272.72,667.53,357.05,672.97,FALSE,FALSE
+10,36,BODY,4ΛQ(Σ)>1≥4ΛQ(Σ).,10,7.45,125.87,16,234.7,672.03,360.57,679.48,FALSE,FALSE
+10,37,BODY,′,7,5.44,2.3,1,229.29,686.37,231.59,691.82,FALSE,FALSE
+10,38,BODY,"However,sinceΣandΣarehomologous,theyenclosethesametotalcharge; thatis,Q(Σ)=Q(Σ).Thisyieldsacontradiction.",10,18.41,358.66,105,118.31,690.33,476.97,708.74,FALSE,FALSE
+10,39,BODY,′,7,5.44,2.3,1,216.23,699.32,218.52,704.77,FALSE,FALSE
+11,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS11,7,3.99,330.89,53,146.07,103.14,476.97,107.12,FALSE,FALSE
+11,1,BODY,′′,7,5.44,101.11,2,187.64,123.09,288.75,128.53,FALSE,FALSE
+11,2,BODY,"IfinsteadΣ∩∂M=∅,thenΣisanarea-minimizingminimalsurface entirelycontainedintheinteriorofM.Inthiscase,thesameinequality holds:",10,31.36,358.66,124,118.31,127.05,476.97,158.4,FALSE,FALSE
+11,3,BODY,2′2,7,5.44,84.33,3,272.72,165.93,357.05,171.37,FALSE,FALSE
+11,4,BODY,"4ΛQ(Σ)>1≥4ΛQ(Σ),",10,7.45,125.87,16,234.7,170.43,360.57,177.88,FALSE,FALSE
+11,5,BODY,"againleadingtoacontradiction. Thus,ineithercase,weconcludethat4ΛQ(Σ)≤1. Next,assume () 2π |Σ|≤1−1−4ΛQ(Σ). Λ",10,60.9,262.74,107,118.31,187.92,381.05,248.82,FALSE,FALSE
+11,6,BODY,2,7,3.99,4.23,1,353.28,196.92,357.52,200.9,FALSE,FALSE
+11,7,BODY,√,10,20.36,10.91,1,290.76,225.97,301.67,246.33,FALSE,FALSE
+11,8,BODY,2,7,3.99,4.23,1,358.48,232.74,362.71,236.72,FALSE,FALSE
+11,9,BODY,"Asabove,thisinequalityimpliesthat[Σ]̸=0inH2(M;Z).Again,let Σbeaconnectedarea-minimizingsurfaceinthehomologyclassofΣ.As before,whetherornotΣintersects∂M,itisanarea-minimizingminimal surfaceand,byProposition4,",9.99,44.31,358.66,207,118.31,257.08,476.97,301.39,FALSE,FALSE
+11,10,BODY,′,7,5.44,2.3,1,126.19,266.07,128.49,271.52,FALSE,FALSE
+11,11,BODY,′,7,5.44,2.3,1,238.41,279.03,240.7,284.47,FALSE,FALSE
+11,12,BODY,"()() 2π 1−1−4ΛQ(Σ)≥|Σ|≥|Σ|≥1−1−4ΛQ(Σ), Λ",10,25.05,313.59,40,141.44,305.89,455.03,330.93,FALSE,FALSE
+11,13,BODY,√,10,20.36,10.91,1,180.01,308.08,190.91,328.44,FALSE,FALSE
+11,14,BODY,√ () 2π |Σ|=|Σ|=1−1−4ΛQ(Σ). Λ,10,63.38,181.52,29,206.88,308.08,388.4,371.46,FALSE,FALSE
+11,15,BODY,2π Λ,10,20.32,11.67,4,334.47,310.62,346.15,330.93,FALSE,FALSE
+11,16,BODY,2′,7,5.44,67.48,2,247.72,313.49,315.2,318.94,FALSE,FALSE
+11,17,BODY,2,7,3.99,4.23,1,440.75,314.85,444.99,318.83,FALSE,FALSE
+11,18,BODY,fromwhichitfollowsthat,10,5.45,123.73,22,118.31,338.58,242.04,344.04,FALSE,FALSE
+11,19,BODY,√,10,20.36,10.91,1,306.4,348.61,317.31,368.97,FALSE,FALSE
+11,20,BODY,′,7,5.44,2.3,1,246.27,354.02,248.57,359.46,FALSE,FALSE
+11,21,BODY,2,7,3.99,4.23,1,374.12,355.37,378.35,359.36,FALSE,FALSE
+11,22,BODY,′,7,5.44,2.3,1,465.26,375.96,467.55,381.41,FALSE,FALSE
+11,23,BODY,"Inparticular,Σisalsoarea-minimizing.WeusedherethatQ(Σ)=Q(Σ). SinceΣisarea-minimizinganditsareaattainsthefirstequalityin(3.1), wemayapplyProposition4toseethatg(Σ)=0andProposition6toobtain acollarneighborhoodU=[0,δ)×ΣofΣinMsatisfyingtheconclusionof thetheorem. LetΣt={t}×Σ.Ast↗δ,bystandardcompactnessresultsforstable ∼ minimalsurfaceswithuniformlyboundedarea,thesurfacesΣtconverge (subsequentially)toaclosed,embedded,area-minimizingsurfaceΣδ.Since (M,g)haspositivescalarcurvature,itfollowsthatΣδisdiffeomorphicto eitherSorRP.Inthelattercase,MisdiffeomorphictoRP\ball, whichcontradictsthefactthatMhasmorethanoneboundarycomponent (as,otherwise,wewouldhaveQ(Σ)=0). LetS:=∂M\Σ̸=∅.IfΣδ∩S̸=∅,thenthemaximumprinciple impliesΣδ=S,establishingtheresult.Otherwise,ifΣδ∩S=∅,we mayreplaceΣbyΣδandreapplyProposition6.Thisreplacementisvalid because|Σδ|=|Σ|andQ(Σδ)=Q(Σ).LetT>0themaximaltimein whichthisflowexistsandissmooth.Theconclusionthenfollowsbya continuityargument,extendingthelocalsplittingtotheentiremanifoldM. CaseΛ=0.Assumethat",9.97,243.38,358.66,1021,118.31,379.92,476.97,623.3,FALSE,FALSE
+11,24,BODY,∼,10,7.45,8.49,1,237.19,415.77,245.68,423.22,FALSE,FALSE
+11,25,BODY,3,7,3.99,4.23,1,134.32,479.57,138.56,483.56,FALSE,FALSE
+11,26,BODY,22,7,4.39,43.29,2,156.7,492.39,199.99,496.78,FALSE,FALSE
+11,27,BODY,3,7,3.99,4.23,1,439.47,492.39,443.71,496.38,FALSE,FALSE
+11,28,BODY,3,7,3.99,4.23,1,318.48,492.79,322.72,496.78,FALSE,FALSE
+11,29,BODY,3,7,3.99,4.23,1,278.55,505.75,282.78,509.73,FALSE,FALSE
+11,30,BODY,2,7,3.99,4.23,1,326.52,630.83,330.76,634.81,FALSE,FALSE
+11,31,BODY,|Σ|≤4πQ(Σ).,10,7.45,73.3,11,260.99,635.33,334.29,642.79,FALSE,FALSE
+11,32,BODY,′,7,5.44,2.3,1,145.73,649.67,148.03,655.12,FALSE,FALSE
+11,33,BODY,"LetΣbeasbefore.ItfollowsfromProposition4that 4πQ(Σ)≥|Σ|≥|Σ|≥4πQ(Σ),",10,24.93,260.34,67,118.31,653.63,378.65,678.57,FALSE,FALSE
+11,34,BODY,2′2,7,5.44,120.33,3,254.23,666.61,374.56,672.06,FALSE,FALSE
+11,35,BODY,′2,7,5.44,63.74,2,212.56,686.17,276.3,691.61,FALSE,FALSE
+11,36,BODY,"andhence|Σ|=|Σ|=4πQ(Σ).Inparticular,Σisarea-minimizingand attainsthelowerboundin(3.2).Thus,asinthecaseΛ>0,wemayapply Proposition4toclassifythetopologyofΣandProposition6toobtainthe desiredlocalsplitting.Theglobalextensionthenfollowsfromthesame continuityargument. □",10,57.81,358.66,264,118.31,690.13,476.97,747.93,FALSE,FALSE
+12,0,BODY,12,7,3.99,8.47,2,118.31,103.14,126.78,107.12,FALSE,FALSE
+12,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.01,17,243.63,103.14,351.64,107.12,FALSE,FALSE
+12,2,BODY,"Afundamentaltoolintheproofofournexttheoremistheclassicalresult ofMeeks-Simon-Yau[27],whichassertstheexistenceofanarea-minimizing surfaceintheisotopyclassofaconnected,incompressiblesurfaceΣ⊂M, assumingthatMisanirreducible,closedRiemannian3-manifold.This resultremainsvalidwhen∂M̸=∅,providedthatthemeancurvatureof∂M withrespecttotheoutward-pointingnormalvectorisnonnegative,thatis, ∂Misweaklymean-convex(seeSection6of[27]).Wealsopointoutthat HassandScott[21]gaveanalternativeproofofthisresultwithoutresorting toGeometricMeasureTheory(cf.Theorem5.1in[21]). Wearenowreadytoprovethesecondmaintheorem. ProofofTheorem2.Wedividetheproofintotwocases: Case1:inf|E|>|Λ|andH2(M,Σ)=0. Assumethat",9.99,171.38,358.66,682,118.31,127.05,476.97,298.43,FALSE,FALSE
+12,3,BODY,2,7,3.99,4.23,1,193.52,276.07,197.75,280.05,FALSE,FALSE
+12,4,BODY,() √ 2π |Σ|≤1+4|Λ|Q(Σ)−1. |Λ|,10,27.04,157.87,29,218.7,300.8,376.57,327.85,FALSE,FALSE
+12,5,BODY,2,7,3.99,4.23,1,343.51,309.76,347.74,313.75,FALSE,FALSE
+12,6,BODY,′,7,5.44,2.3,1,305.49,333.08,307.79,338.53,FALSE,FALSE
+12,7,BODY,"AsintheproofofTheorem1,letΣ⊂Mbeaclosed,connectedarea- minimizingminimalsurfaceinthehomologyclassofΣ.NotethatΣis topologicallya2-sphere,sinceRg≥2Λ+2|E|>0. ItfollowsfromProposition4that √ 2π ()() |Λ| √ 1+4|Λ|Q(Σ)−1≥|Σ|≥|Σ|≥1+4|Λ|Q(Σ)−1, thatis,",9.99,89.68,358.66,242,118.31,337.04,476.97,426.73,FALSE,FALSE
+12,8,BODY,′,7,5.44,2.3,1,462,346.03,464.3,351.48,FALSE,FALSE
+12,9,BODY,2,7,3.99,4.23,1,338.73,358.99,342.96,362.97,FALSE,FALSE
+12,10,BODY,2π |Λ|,10,22.31,13.64,6,334.47,390.58,348.11,412.89,FALSE,FALSE
+12,11,BODY,2′,7,5.44,86.27,2,228.93,393.45,315.2,398.9,FALSE,FALSE
+12,12,BODY,2,7,3.99,4.23,1,429.6,394.8,433.83,398.79,FALSE,FALSE
+12,13,BODY,() √ 2π |Σ|=|Σ|=1+4|Λ|Q(Σ)−1. |Λ|,10,27.04,189.15,33,203.06,431.22,392.21,458.27,FALSE,FALSE
+12,14,BODY,′,7,5.44,2.3,1,242.46,438.83,244.75,444.27,FALSE,FALSE
+12,15,BODY,2,7,3.99,4.23,1,359.15,440.18,363.38,444.17,FALSE,FALSE
+12,16,BODY,"TheargumentthenproceedssimilarlytotheproofofTheorem1. Case2:Σisincompressible,andMisirreducibleanddoesnot containanyclosednon-orientableembeddedsurfaces. DenotebyJ(Σ)theisotopyclassofΣinM.Underourassumptions,we canapplytheversionofTheorem5.1in[21](seealso[27])for3-manifolds withnonemptyboundarytoobtainaclosedembeddedsurfaceΣ∈J(Σ) suchthat",10,87.7,358.66,340,118.31,466.65,476.97,554.34,FALSE,FALSE
+12,17,BODY,′,7,5.44,2.3,1,433.12,531.98,435.42,537.42,FALSE,FALSE
+12,18,BODY,′,7,5.44,2.3,1,267.67,557.34,269.97,562.78,FALSE,FALSE
+12,19,BODY,|Σ|=inf|Σ̂|.,10,7.45,81.75,12,256.76,561.84,338.51,569.29,FALSE,FALSE
+12,20,BODY,Σ̂∈J(Σ),7,5.44,31.68,7,288.04,571.21,319.73,576.65,FALSE,FALSE
+12,21,BODY,′ ′,7,22.38,9.05,3,229.86,581.98,238.91,604.36,FALSE,FALSE
+12,22,BODY,"Moreover,sinceΣandΣarediffeomorphicandhomologous,wehave",10,5.45,332.43,55,118.31,585.94,450.74,591.4,FALSE,FALSE
+12,23,BODY,′,7,5.44,2.3,1,333.44,598.92,335.73,604.36,FALSE,FALSE
+12,24,BODY,"g(Σ)=g(Σ)andQ(Σ)=Q(Σ).(4.1) Ontheotherhand,sincetheboundary∂Misweaklymean-convex,the maximumprincipleimpliesthateitherΣiscontainedintheinteriorofM oritcoincideswithoneoftheconnectedcomponentsof∂M.Inanycase, itfollowsfromProposition4that",10,61.8,358.66,236,118.31,603.42,476.97,665.22,FALSE,FALSE
+12,25,BODY,′,7,5.44,2.3,1,314.55,629.91,316.85,635.35,FALSE,FALSE
+12,26,BODY,) |Σ|≥(g(Σ)−1)+(g(Σ)−1)+4|Λ|Q(Σ).,10,20.36,261.14,33,167.07,669.72,428.21,690.08,FALSE,FALSE
+12,27,BODY,( 2π |Λ|,10,27.04,21.35,8,199.55,669.72,220.89,696.76,FALSE,FALSE
+12,28,BODY,√,10,20.36,10.91,1,286.15,671.92,297.06,692.27,FALSE,FALSE
+12,29,BODY,′′′2′2,7,6.8,240.18,6,177.98,677.32,418.16,684.12,FALSE,FALSE
+13,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS13,7,3.99,330.89,53,146.07,103.14,476.97,107.12,FALSE,FALSE
+13,1,BODY,′,7,5.44,2.3,1,321.92,123.09,324.22,128.53,FALSE,FALSE
+13,2,BODY,"Using(4.1)togetherwiththefactthatΣisarea-minimizing,weconclude that",10,18.41,358.66,67,118.31,127.05,476.97,145.45,FALSE,FALSE
+13,3,BODY,) |Σ|≥(g(Σ)−1)+(g(Σ)−1)+4|Λ|Q(Σ).,10,20.36,249.95,33,172.66,147.83,422.62,168.19,FALSE,FALSE
+13,4,BODY,( 2π |Λ|,10,27.04,21.35,8,202.34,147.83,223.69,174.87,FALSE,FALSE
+13,5,BODY,"√ Furthermore,ifequalityholds,then",10,38.68,178.75,34,118.31,150.03,297.06,188.71,FALSE,FALSE
+13,6,BODY,22,7,3.99,66.38,2,346.19,156.79,412.57,160.77,FALSE,FALSE
+13,7,BODY,( 2π |Λ|,10,27.04,21.35,8,217.98,193.21,239.33,220.25,FALSE,FALSE
+13,8,BODY,) |Σ|=|Σ|=(g(Σ)−1)+(g(Σ)−1)+4|Λ|Q(Σ).,10,20.36,281.23,37,157.02,193.21,438.26,213.56,FALSE,FALSE
+13,9,BODY,√,10,20.36,10.91,1,301.79,195.4,312.7,215.76,FALSE,FALSE
+13,10,BODY,′,7,5.44,2.3,1,196.42,200.81,198.71,206.25,FALSE,FALSE
+13,11,BODY,22,7,3.99,66.38,2,361.83,202.16,428.21,206.15,FALSE,FALSE
+13,12,BODY,"Thedesiredconclusionthenfollowssimilarlytotherigiditystatementin Theorem1(seealsotheproofofTheorem5in[31]).□ 4.2.Noncompactcase:Theorem3.Beforeprovingthenextresult,we recallsomefactsaboutµ-bubblesinoursetting. Let(M,g)beacomplete,noncompact,orientableRiemannian3-manifold withconnectedcompactboundary∂M.Byanargumentsimilartotheproof ofLemma2.1in[36](seealsotheproofofProposition1.3in[37]),there existsaproper,surjective,smoothfunctionϕ:M→[0,+∞)satisfying",10,104.59,360.63,454,118.31,228.63,478.94,333.22,FALSE,FALSE
+13,13,BODY,3,7,3.99,4.23,1,164.61,282.95,168.85,286.94,FALSE,FALSE
+13,14,BODY,-1,7,5.44,10.82,2,260.38,339.16,271.2,344.6,FALSE,FALSE
+13,15,BODY,∂M=ϕ(0)andLipϕ<1.,10,5.45,152.94,17,221.17,343.66,374.11,349.12,FALSE,FALSE
+13,16,BODY,"Givenasmoothfunctionh:[0,T)→R,wedefinethefunctional",10,7.45,308.25,51,130.27,361.76,438.51,369.21,FALSE,FALSE
+13,17,BODY,∫,10,20.36,6.06,1,310.14,370.01,316.2,390.37,FALSE,FALSE
+13,18,BODY,h2∗3,7,5.44,163.39,4,218.98,380.36,382.37,385.8,FALSE,FALSE
+13,19,BODY,µ(Ω)=H(∂Ω)−h◦ϕdH,10,7.45,165.63,16,212.41,384.86,378.03,392.31,FALSE,FALSE
+13,20,BODY,M\Ω,7,5.44,19.33,3,316.2,394.75,335.54,400.2,FALSE,FALSE
+13,21,BODY,∗,7,5.44,4.23,1,423.84,405.99,428.07,411.43,FALSE,FALSE
+13,22,BODY,"ontheclassofCaccioppolisetsΩ⊂Mwithreducedboundary∂Ω,subject tothecondition",10,18.41,358.65,74,118.31,409.94,476.96,428.35,FALSE,FALSE
+13,23,BODY,-1,7,5.44,10.82,2,298.99,435.88,309.81,441.32,FALSE,FALSE
+13,24,BODY,"M\Ω⋐ϕ([0,T)).",10,7.45,99.3,13,247.99,440.38,347.29,447.83,FALSE,FALSE
+13,25,BODY,"ForareferenceonCaccioppolisets,see[16]. LetΩ(t)beasmoothone-parameterfamilyofregionswithΩ(0)=Ωand normalspeedφatt=0.Thefirstvariationofµisgivenby",10,31.62,358.65,145,118.31,458.47,476.96,490.1,FALSE,FALSE
+13,26,BODY,h,7,3.99,4.88,1,352.71,480.68,357.59,484.67,FALSE,FALSE
+13,27,BODY,∣∫ d∣ ∣h ∣ dt t=0∂Ω,9.25,39.99,101.22,19,214.86,492.29,316.08,532.29,FALSE,FALSE
+13,28,BODY,"µ(Ω(t))=(H−h◦ϕ)φ,",10,7.45,137.92,17,243.69,508.11,381.61,515.56,FALSE,FALSE
+13,29,BODY,"whereHisthemeancurvatureof∂Ωwithrespecttotheoutward-pointing unitnormalvectorfieldNalong∂Ω. Sinceφisarbitrary,ifΩiscriticalforµ,weconcludethatH=h◦ϕ along∂Ω.Inthiscase,wesaythatΩisaµ-bubble,and∂Ωisasurfacewith prescribedmeancurvatureh◦ϕ|∂Ω. Givenaµ-bubbleΩ(0)=Ω,thesecondvariationformulaforµisgiven by ∣∫ d∣ 2∣ dt whereRicgistheRiccitensorof(M,g),andAisthesecondfundamental 2 ∣h222 t=0∂Ω µ(Ω(t))=|∇φ|−(Ricg(N,N)+|A|+⟨∇(h◦ϕ),N⟩)φ,(4.2) formof∂Ω⊂(M,g). Wesaythataµ-bubbleΩisstableifthesecondvariationofµisnon- negativeforallnormalvariationsΩ(t)ofΩ,i.e.,iftheright-handsideof (4.2)isnonnegativeforallsmoothfunctionsφ.",9.49,185.44,358.66,613,118.31,532.08,476.97,717.52,FALSE,FALSE
+13,30,BODY,h,7,3.99,4.88,1,327.66,554.02,332.54,558.01,FALSE,FALSE
+13,31,BODY,h,7,3.99,4.88,1,432.16,593.14,437.04,597.13,FALSE,FALSE
+13,32,BODY,3,7,3.99,4.23,1,293.09,655.71,297.33,659.69,FALSE,FALSE
+13,33,BODY,3,7,3.99,4.23,1,201.36,668.98,205.59,672.97,FALSE,FALSE
+13,34,BODY,h,7,3.99,4.88,1,434.84,682.2,439.72,686.19,FALSE,FALSE
+14,0,BODY,14,7,3.99,8.47,2,118.31,103.14,126.78,107.12,FALSE,FALSE
+14,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.01,17,243.63,103.14,351.64,107.12,FALSE,FALSE
+14,2,BODY,RecallthatabandisaconnectedcompactmanifoldM̂togetherwitha decompositionofitsboundary:,10,18.41,358.65,85,118.31,127.42,476.96,145.82,FALSE,FALSE
+14,3,BODY,"∂M̂=∂−∪̇∂+,",9.33,7.45,72.41,11,261.43,158.35,333.84,165.8,FALSE,FALSE
+14,4,BODY,"where∂−and∂+arenonemptyunionsofconnectedcomponentsof∂M̂. Definition7.Let(M̂,ĝ,∂−,∂+)beaRiemannianband.Asmoothfunction b:int(M̂)→Rissaidtosatisfythebarrierconditionif,foreachconnected componentS⊂∂+(resp.,S⊂∂−),either:",9.9,54.73,358.66,217,118.31,176.68,476.97,231.41,FALSE,FALSE
+14,5,BODY,"•bsmoothlyextendstoSandsatisfiesHS≥b|S(resp.,HS≥−b|S), whereHSisthemeancurvatureofSwithrespecttotheoutward normal;or •b→−∞(resp.,b→+∞)towardsS. TheexistenceandregularityofaminimizerforµamongCaccioppolisets, assumingthebarriercondition(andinfactforamoregeneralfunctional), wereinitiallyclaimedbyGromov(seeSection5.1of[20]).Arigorousproof anddetailedexpositionwerelaterprovidedbyZhu[35,Proposition2.1]and byChodoshandLi[9,Proposition12]. ProofofTheorem3.Letϕ:M→[0,+∞)beasabove. Accordingto[36,Lemma2.3](seealsotheproofofProposition1.3in[37]), foranyε∈(0,1),wecanconstructasmoothfunctionhε:[0,)→(−∞,0] suchthat:",9.97,173.79,358.66,608,118.31,239.18,476.97,412.97,FALSE,FALSE
+14,6,BODY,h,7,3.99,4.88,1,356.48,293.77,361.36,297.75,FALSE,FALSE
+14,7,BODY,1 3ε,7,12.04,8.15,4,409.44,390.27,417.59,402.32,FALSE,FALSE
+14,8,BODY,•hεsatisfies,9.73,7.45,61.31,12,144.2,422.74,205.52,430.19,FALSE,FALSE
+14,9,BODY,[),10,20.36,31.55,2,337.61,435.48,369.16,455.83,FALSE,FALSE
+14,10,BODY,"3 h+2h=6εon, 2",10,20.32,124.5,14,227.31,436.93,351.81,457.25,FALSE,FALSE
+14,11,BODY,2′211 εε63ε,7,12.25,122.73,11,240.24,439.81,362.97,452.06,FALSE,FALSE
+14,12,BODY,and,10,5.45,17.58,3,154.64,464.9,172.22,470.36,FALSE,FALSE
+14,13,BODY,"∣∣ ∣3∣ ∣2′∣ h+2h≤Cε, ∣εε∣ 2 whereC>0isauniversalconstant; •hε(0)=0,h<0,and",9.6,59.69,196.87,74,144.21,470.43,341.07,530.12,FALSE,FALSE
+14,14,BODY,′ ε,7,10.64,3.91,3,212.23,518.71,216.14,529.35,FALSE,FALSE
+14,15,BODY,limhε(t)=−∞;,9.75,7.45,80.02,12,259.11,540.15,339.13,547.6,FALSE,FALSE
+14,16,BODY,1 t→ 3ε,5.67,9.37,19.88,7,256.15,545.82,276.03,555.2,FALSE,FALSE
+14,17,BODY,"•asε→0,hεconvergessmoothlytothezerofunctiononanyclosed intervalcontainedin[0,).",9.97,18.41,332.77,79,144.21,566.41,476.97,584.81,FALSE,FALSE
+14,18,BODY,1 3ε 1 3ε,7,28.5,9.6,9,270.71,575.06,280.32,603.56,FALSE,FALSE
+14,19,BODY,"Letε∈(0,1)besuchthatisaregularvalueofϕ,anddefinethe followingprescribed-mean-curvaturefunctional:",10,18.41,358.66,97,118.31,595.81,476.97,614.22,FALSE,FALSE
+14,20,BODY,∫,10,20.36,6.06,1,307.45,616.41,313.52,636.77,FALSE,FALSE
+14,21,BODY,ε2∗3,7,5.44,166.83,4,217.26,626.76,384.09,632.2,FALSE,FALSE
+14,22,BODY,µ(Ω)=H(∂Ω)−hε◦ϕdH,9.82,7.45,169.07,17,210.69,631.26,379.75,638.71,FALSE,FALSE
+14,23,BODY,M\Ω,7,5.44,19.33,3,313.52,641.16,332.85,646.6,FALSE,FALSE
+14,24,BODY,∗,7,5.44,4.23,1,436.71,652.39,440.94,657.83,FALSE,FALSE
+14,25,BODY,"ontheclassCεofCaccioppolisetsinM,withreducedboundary∂Ω,such that",9.97,18.41,358.65,64,118.31,656.34,476.96,674.75,FALSE,FALSE
+14,26,BODY,"([]) M\Ω⋐ϕ0,. ([]) Mε=ϕ0,,",9.89,53.06,105.28,26,245,673.41,350.28,726.47,FALSE,FALSE
+14,27,BODY,−11 3ε,7,12.25,40.51,6,296,677.74,336.51,689.99,FALSE,FALSE
+14,28,BODY,"Foreachε,definetheRiemannianband",10,5.45,190.57,32,130.26,697.47,320.84,702.92,FALSE,FALSE
+14,29,BODY,−11 3ε,7,12.25,40.51,6,288.52,710.45,329.02,722.7,FALSE,FALSE
+15,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS15,7,3.99,330.89,53,146.07,103.14,476.97,107.12,FALSE,FALSE
+15,1,BODY,withboundarydecomposition,10,5.45,142.21,25,118.31,127.05,260.52,132.5,FALSE,FALSE
+15,2,BODY,"() ∂−=ϕ(0)=∂M,∂+=ϕ.",9.81,20.36,175.85,19,209.71,135.7,385.56,156.05,FALSE,FALSE
+15,3,BODY,−1−11 3ε,7,12.25,132.71,8,243.63,140.03,376.34,152.28,FALSE,FALSE
+15,4,BODY,"Notethateachhε◦ϕ,restrictedtoint(Mε),satisfiesthebarriercondition (since∂Misweaklymean-convex).CombinedwithSard’stheorem,this impliesthatforeachε∈(0,1),thereexistsasmoothminimizerΩε∈Cεfor thefunctionalµ;see[35,Proposition2.1]and[9,Proposition12]. Bytakingasequenceofpositivenumbersεk→0ask→∞,wethus obtainacorrespondingsequenceofsmoothminimizersΩkinCεforthe functionalsµ:=µ. Sinceeachboundary∂Ωkishomologoustothesurface∂M,wemayselect thehomologicallynontrivialcomponentsof∂Ωk,whoseunionwedenoteby Σk.Ontheotherhand,because∂Misconnected,Σkishomologousto∂M, andH2(M,∂M)=0,weobtainthatΣkisalsoconnected.Then,itfollows fromthesecondvariationformulaandtheGaussequationthat, ∫∫ |∇φ|≥(Ricg(Nk,Nk)+|Ak|+⟨∇(hε◦ϕ),N⟩)φ ∫ 1 2 ∫ 1∣Hk∣ 22 ∫ 13 +Rg+h+2h◦ϕφ, (∣∣) 22 ≥∣Ak−gk∣−RΣφ (())",9.9,269.63,358.66,768,118.31,162.63,476.97,432.25,FALSE,FALSE
+15,5,BODY,ε,7,3.99,3.91,1,194.88,197.52,198.79,201.51,FALSE,FALSE
+15,6,BODY,k,5,2.99,3.95,1,433.77,230.43,437.72,233.41,FALSE,FALSE
+15,7,BODY,kεk,6.33,4.39,37.13,3,180.4,236.96,217.53,241.35,FALSE,FALSE
+15,8,BODY,2,7,3.99,4.23,1,174.61,323.67,178.85,327.65,FALSE,FALSE
+15,9,BODY,2,7,3.99,4.23,1,323.77,323.67,328,327.65,FALSE,FALSE
+15,10,BODY,2,7,3.99,4.23,1,430.07,323.67,434.31,327.65,FALSE,FALSE
+15,11,BODY,kk,6,4.25,44.14,2,369.6,329.95,413.74,334.2,FALSE,FALSE
+15,12,BODY,ΣkΣk,6,4.39,84.56,4,139.32,338.06,223.88,342.46,FALSE,FALSE
+15,13,BODY,22,7,3.99,32.26,2,317.5,354.05,349.76,358.03,FALSE,FALSE
+15,14,BODY,2,7,3.99,4.23,1,457.29,354.05,461.52,358.03,FALSE,FALSE
+15,15,BODY,"=(Rg−RΣ+|A|+H+2⟨∇(h◦ϕ),N⟩)φ",9.78,7.45,267.98,27,189.31,358.55,457.29,366,FALSE,FALSE
+15,16,BODY,kkkεkk,6.33,5.12,161.22,6,279.74,360.19,440.95,365.31,FALSE,FALSE
+15,17,BODY,Σk,6,4.39,10.07,2,223.48,368.45,233.54,372.84,FALSE,FALSE
+15,18,BODY,2,7,3.99,4.23,1,303.81,379.54,308.04,383.53,FALSE,FALSE
+15,19,BODY,2,7,3.99,4.23,1,354.99,384.43,359.23,388.41,FALSE,FALSE
+15,20,BODY,k,5,2.99,3.95,1,336.27,392.03,340.22,395.02,FALSE,FALSE
+15,21,BODY,Σk,6,4.39,10.07,2,223.48,398.83,233.54,403.22,FALSE,FALSE
+15,22,BODY,2′2 εkεk,6.5,11.6,84.24,8,298.56,414.81,382.8,426.41,FALSE,FALSE
+15,23,BODY,Σk,6,4.39,10.07,2,231.96,429.21,242.03,433.6,FALSE,FALSE
+15,24,BODY,∞,7,5.44,8.47,1,192.61,440.36,201.08,445.81,FALSE,FALSE
+15,25,BODY,"foreachφ∈C(Σk),whereNkistheoutwardunitnormaltoΣk,Akis thesecondfundamentalformofΣk,HkisthemeancurvatureofΣkwith respecttoNk,andRΣisthescalarcurvatureofΣwithrespecttothe inducedmetricgk.Aboveweusedthat",9.85,44.62,358.66,200,118.31,444.32,476.97,488.94,FALSE,FALSE
+15,26,BODY,k,7,3.99,4.41,1,373.66,472,378.07,475.99,FALSE,FALSE
+15,27,BODY,k,5,2.99,3.95,1,229.26,473.32,233.21,476.31,FALSE,FALSE
+15,28,BODY,′′ kεkεk,6.4,11.6,138.94,8,231.57,496.16,370.52,507.75,FALSE,FALSE
+15,29,BODY,"⟨∇(hε◦ϕ),Nk⟩≥−|h◦ϕ|=h◦ϕ,",9.75,7.45,187.67,24,203.8,500.66,391.47,508.11,FALSE,FALSE
+15,30,BODY,′ εk,6.5,11.05,7.86,4,151.32,515,159.18,526.05,FALSE,FALSE
+15,31,BODY,"sinceh<0andLipϕ<1. Bytakingthetestfunctionφ≡1,thefactthatRg≥2Λ+2|E|,andthe Gauss-Bonnettheoremimplythat ∫ 1 2 ∫",9.99,85.53,358.65,111,118.31,518.96,476.96,604.49,FALSE,FALSE
+15,32,BODY,2,7,3.99,4.23,1,430.01,529.2,434.24,533.18,FALSE,FALSE
+15,33,BODY,2πχ(Σk)≥(Rg−Cεk) 1 2,9.81,43.32,154.88,20,199.16,568.61,354.05,611.92,FALSE,FALSE
+15,34,BODY,Σk,6,4.39,10.07,2,283.67,578.5,293.74,582.89,FALSE,FALSE
+15,35,BODY,2,7,3.99,4.23,1,325.09,594.48,329.32,598.47,FALSE,FALSE
+15,36,BODY,≥(Λ+|E|)−Cεk|Σk|.,9.65,7.45,146.62,17,249.5,598.99,396.11,606.44,FALSE,FALSE
+15,37,BODY,Σk,6,4.39,10.07,2,274.01,608.88,284.07,613.27,FALSE,FALSE
+15,38,BODY,2,7,3.99,4.23,1,345,620.95,349.23,624.94,FALSE,FALSE
+15,39,BODY,"SinceweareassumingthefunctionΛ+|E|isuniformlypositive,say Λ+|E|≥δ>0,wehave",10,20.4,358.65,74,118.31,624.91,476.96,645.31,FALSE,FALSE
+15,40,BODY,2,7,3.99,4.23,1,153.96,633.9,158.2,637.89,FALSE,FALSE
+15,41,BODY,(),10,20.36,58.25,2,284.93,648.42,343.18,668.77,FALSE,FALSE
+15,42,BODY,1 2,10,20.32,5.45,3,311.23,653.15,316.69,673.47,FALSE,FALSE
+15,43,BODY,2πχ(Σk)≥δ−Cεk|Σk|.,9.5,7.45,135.26,18,230.01,660.53,365.27,667.98,FALSE,FALSE
+16,0,BODY,16,7,3.99,8.47,2,118.31,103.14,126.78,107.12,FALSE,FALSE
+16,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.01,17,243.63,103.14,351.64,107.12,FALSE,FALSE
+16,2,BODY,"Therefore,χ(Σk)>0,thatis,Σkistopologicallya2-sphereforksufficiently large.Inthiscase,",9.95,18.41,358.65,85,118.31,127.05,476.96,145.45,FALSE,FALSE
+16,3,BODY,∫,10,20.36,6.06,1,237.12,147.65,243.19,168.01,FALSE,FALSE
+16,4,BODY,1 2,10,20.32,5.45,3,317.77,155.12,323.22,175.44,FALSE,FALSE
+16,5,BODY,2,7,3.99,4.23,1,294.26,157.99,298.5,161.98,FALSE,FALSE
+16,6,BODY,4π≥(Λ+|E|)−Cεk|Σk| 16πQ(Σk)1 |Σk|2,9.58,46.94,165.61,34,196.65,162.5,362.26,209.44,FALSE,FALSE
+16,7,BODY,Σk,6,4.39,10.07,2,243.18,172.39,253.25,176.78,FALSE,FALSE
+16,8,BODY,22,7,3.99,39.07,2,295.81,183.17,334.88,187.15,FALSE,FALSE
+16,9,BODY,≥Λ|Σk|+−Cεk|Σk|.,9.44,7.45,179.95,16,218.68,194.51,398.63,201.96,FALSE,FALSE
+16,10,BODY,Thenweobtain,10,5.45,74.85,12,118.31,217.82,193.16,223.27,FALSE,FALSE
+16,11,BODY,(),10,20.36,60.57,2,241.56,225.65,302.13,246.01,FALSE,FALSE
+16,12,BODY,1 2,10,20.32,5.45,3,270.18,230.38,275.64,250.7,FALSE,FALSE
+16,13,BODY,222,7,3.99,74.66,3,321.19,233.26,395.85,237.24,FALSE,FALSE
+16,14,BODY,4π|Σk|≥Λ−Cεk|Σk|+16πQ(Σk).,9.54,7.45,203.48,26,195.9,237.76,399.38,245.21,FALSE,FALSE
+16,15,BODY,"WenowanalyzetwocasesbasedonthecosmologicalconstantΛ: CaseΛ∈R\{0}.TakingksufficientlylargesothatΛ−Cε>0ifΛ>0, wehave",10,35.89,358.66,114,118.31,258.35,476.97,294.24,FALSE,FALSE
+16,16,BODY,1 2k,7,12.04,23.5,4,389.66,271.54,413.17,283.58,FALSE,FALSE
+16,17,BODY,() 4Λ−CεkQ(Σk)≤1,9.77,20.36,120.86,16,237.21,309.57,358.07,329.92,FALSE,FALSE
+16,18,BODY,1 2 (,10,54.29,15.03,5,261.7,314.29,276.73,368.59,FALSE,FALSE
+16,19,BODY,2,7,3.99,4.23,1,333.34,317.17,337.57,321.16,FALSE,FALSE
+16,20,BODY,and,10,5.45,17.58,3,118.31,342.26,135.89,347.72,FALSE,FALSE
+16,21,BODY,) |Σk|≥()1−1−4Λ−CεkQ(Σk).,9.8,35.13,256.5,25,169.39,348.23,425.89,383.36,FALSE,FALSE
+16,22,BODY,√,10,20.36,10.91,1,288.52,350.4,299.43,370.76,FALSE,FALSE
+16,23,BODY,2π(),10,20.36,153.67,4,226.31,354.77,379.99,375.13,FALSE,FALSE
+16,24,BODY,12 2,7,12.04,63.56,4,350.77,359.32,414.33,371.36,FALSE,FALSE
+16,25,BODY,1 2k,7,12.04,23.5,4,231.29,367.55,254.79,379.59,FALSE,FALSE
+16,26,BODY,"Λ−Cε CaseΛ=0.Inthiscase,",10,26.91,132.08,24,118.31,371.84,250.39,398.75,FALSE,FALSE
+16,27,BODY,1 8π,10,20.32,11.67,4,315.72,407.98,327.4,428.3,FALSE,FALSE
+16,28,BODY,22,7,3.99,74.6,2,296.46,410.86,371.06,414.84,FALSE,FALSE
+16,29,BODY,|Σk|≥4πQ(Σk)−Cεk|Σk|.,9.43,7.45,153.9,21,220.69,415.36,374.59,422.81,FALSE,FALSE
+16,30,BODY,"Ineithercase,observethat",10,5.45,129.58,24,130.26,435.95,259.85,441.4,FALSE,FALSE
+16,31,BODY,kk,7,3.99,52.13,2,280.27,449.13,332.41,453.12,FALSE,FALSE
+16,32,BODY,|Σk|≤|∂Ωk|≤µ(Ωk)≤µ(M)=|∂M|.,9.67,7.45,195.09,27,200.09,453.64,395.18,461.09,FALSE,FALSE
+16,33,BODY,k,7,3.99,4.41,1,366.39,469.08,370.8,473.07,FALSE,FALSE
+16,34,BODY,"Hereweusedthathε≤0andthatΩkminimizesµ.Therefore,bytaking thelimitask→+∞,andusingthefactthatQ(Σk)=Q(∂M)foreachk, weobtaininequalities(1.5)and(1.6). Assumetheequalityholdsin(1.5)(resp.,(1.6)).WeclaimthatΣkmust havenonemptyintersectionwiththecompactsubsetK=ϕ([0,]).In fact,ifK∩Σk=∅,thenΣk⊂ϕ((,)),andrepeatingtheearlier argumentwouldyield",9.95,85.39,358.66,334,118.31,473.04,476.97,558.44,FALSE,FALSE
+16,35,BODY,k,5,2.99,3.95,1,218.79,476.09,222.74,479.07,FALSE,FALSE
+16,36,BODY,−11 6,7,12.04,34.32,5,413.35,520.76,447.67,532.8,FALSE,FALSE
+16,37,BODY,−111 63εk,6.75,12.45,44.57,9,291.77,534.95,336.34,547.4,FALSE,FALSE
+16,38,BODY,222,7,3.99,74.66,3,294.7,565.96,369.36,569.95,FALSE,FALSE
+16,39,BODY,"4π|Σk|>Λ|Σk|+16πQ(Σk),",9.59,7.45,150.49,22,222.39,570.47,372.88,577.92,FALSE,FALSE
+16,40,BODY,since,10,5.45,23.09,5,118.31,587.95,141.4,593.41,FALSE,FALSE
+16,41,BODY,"[) h+2h=6εon,, 3 2",10,21.77,158.67,18,218.9,599.05,377.57,620.83,FALSE,FALSE
+16,42,BODY,2′211 εkεkk63ε k,6.17,12.66,135.89,16,231.84,603.39,367.72,616.05,FALSE,FALSE
+16,43,BODY,"whichleadstoacontradictionprovided(1.5)(resp.,(1.6))wouldbestrict. Now,sincethesurfacesΣkarehε-minimizingboundarieswithuniformly boundedarea,wecaninvokethecurvatureestimatesin[34,Theorem3.6]. Thus,afterpassingtoasubsequenceifnecessary,Σkconvergessmoothly, inalocallygraphicalsensewithmultiplicityone,toanarea-minimizing minimalboundaryΣ. NotethatΣmaybeeithercompactornoncompact.Toruleoutthe noncompactcase,weproceedasfollows.LetRΣandAΣdenotethescalar curvatureandsecondfundamentalformofΣ,respectively.SinceΛ+|E|",9.97,111.06,358.66,511,118.31,629.09,476.97,740.15,FALSE,FALSE
+16,44,BODY,k,5,2.99,3.95,1,286.89,645.08,290.84,648.07,FALSE,FALSE
+16,45,BODY,2,7,3.99,4.23,1,472.23,728.74,476.47,732.72,FALSE,FALSE
+17,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS17,7,3.99,330.89,53,146.07,103.14,476.97,107.12,FALSE,FALSE
+17,1,BODY,"isuniformlypositive,andthestabilityofΣimpliesthenonnegativityofthe operator",10,18.41,358.65,75,118.31,127.05,476.96,145.45,FALSE,FALSE
+17,2,BODY,11 22,10,20.32,41.53,5,250.22,150.15,291.75,170.46,FALSE,FALSE
+17,3,BODY,22,7,3.99,57.95,2,318.05,153.02,376,157.01,FALSE,FALSE
+17,4,BODY,"−∆Σ+RΣ−(|AΣ|+Λ+|E|),",9.55,7.45,172.27,20,211.51,157.53,383.77,164.98,FALSE,FALSE
+17,5,BODY,"itfollowsthatΣmustconsistofsphericalcomponents(see[36,Lemma4.1] or[17,Theorem8.8]).Moreover,sinceeachΣkisconnected,thelimitΣ mustbea2-sphere,andforsufficientlylargek,eachΣkbecomesagraph overΣ.Inparticular,ΣishomologoustoΣk. Usingtheinequality|∂M|≥|Σ|togetherwiththestabilityinequalityfor minimalsurfaces,wededucethat,inthecaseΛ∈R\{0},thefollowing chainofinequalitiesholds: ) 2π 1−1−4ΛQ(∂M)=|∂M|≥|Σ|≥1−1−4ΛQ(∂M), ( Λ fromwhichitfollowsthat",9.99,125.81,358.66,438,118.31,176.45,476.97,302.27,FALSE,FALSE
+17,6,BODY,)( 2π Λ,10,25.05,109.29,7,248.7,264.11,358,289.16,FALSE,FALSE
+17,7,BODY,√,10,20.36,10.91,1,165.96,266.31,176.87,286.67,FALSE,FALSE
+17,8,BODY,√ ) |∂M|=|Σ|=1−1−4ΛQ(∂M).,10,58.69,199.3,25,197.99,266.31,397.29,325,FALSE,FALSE
+17,9,BODY,2,7,3.99,4.23,1,243.97,273.07,248.21,277.06,FALSE,FALSE
+17,10,BODY,2,7,3.99,4.23,1,454.79,273.07,459.03,277.06,FALSE,FALSE
+17,11,BODY,( 2π Λ,10,25.05,19.77,6,266.44,304.64,286.22,329.69,FALSE,FALSE
+17,12,BODY,√,10,20.36,10.91,1,305.01,306.84,315.91,327.19,FALSE,FALSE
+17,13,BODY,2,7,3.99,4.23,1,383.01,313.6,387.25,317.59,FALSE,FALSE
+17,14,BODY,"AboveweusedthatQ(Σ)=Q(Σk)=Q(∂M). Thisshowsthat∂Misanarea-minimizingsurfacethatsaturateseither thefirstinequalityin(3.1)ortheinequality(3.3),dependingonthesignofΛ (theanalysisinthecaseΛ=0isanalogous).Therefore,byProposition6, thereexistsacollarneighborhoodU=[0,ρ)×∂Mof∂MinMsatisfying theconclusionsofthetheorem.Theresultthenfollowsbyacontinuity argument. □",9.99,83.71,358.66,355,118.31,337.95,476.97,421.65,FALSE,FALSE
+17,15,BODY,∼,10,7.45,8.49,1,297.35,386.74,305.83,394.2,FALSE,FALSE
+17,16,BODY,References,10,5.45,63.61,10,265.83,437.67,329.45,443.13,FALSE,FALSE
+17,17,BODY,"1.LarsAndersson,MingliangCai,andGregoryJ.Galloway,Rigidityandpositivityof massforasymptoticallyhyperbolicmanifolds,Ann.HenriPoincaré9(2008),no.1, 1–33(English). 2.H.Bray,S.Brendle,M.Eichmair,andA.Neves,Area-minimizingprojectiveplanes in3-manifolds,Commun.PureAppl.Math.63(2010),no.9,1237–1247(English). 3.HubertBray,SimonBrendle,andAndreNeves,Rigidityofarea-minimizingtwo- spheresinthree-manifolds,Commun.Anal.Geom.18(2010),no.4,821–830(English). 4.MingliangCaiandGregoryJ.Galloway,Rigidityofareaminimizingtoriin3- manifoldsofnonnegativescalarcurvature,Commun.Anal.Geom.8(2000),no.3, 565–573(English). 5.VitorCardoso,ÓscarJ.C.Dias,andJoséP.S.Lemos,Nariai,Bertotti-Robinson, andanti-Nariaisolutionsinhigherdimensions,Phys.Rev.D70(2004),024002. 6.SimoneCecchini,DanielRäde,andRudolfZeidler,Nonnegativescalarcurvatureon manifoldswithatleasttwoends,J.Topol.16(2023),no.3,855–876(English). 7.OtisChodosh,MichaelEichmair,andVladMoraru,Asplittingtheoremforscalar curvature,Commun.PureAppl.Math.72(2019),no.6,1231–1242(English). 8.OtisChodoshandChaoLi,StableanisotropicminimalhypersurfacesinR,Forum Math.Pi11(2023),22(English),Id/Noe3. 9.,Generalizedsoapbubblesandthetopologyofmanifoldswithpositivescalar curvature,Ann.Math.(2)199(2024),no.2,707–740(English).",8,213.47,354.05,1255,122.92,455.11,476.97,668.58,FALSE,FALSE
+17,18,BODY,4,5,2.99,3.65,1,440.31,627.41,443.96,630.4,FALSE,FALSE
+17,19,BODY,"10.TiarlosCruz,VandersonLima,andAlexandredeSousa,Min-maxminimalsurfaces, horizonsandelectrostaticsystems,J.Differ.Geom.128(2024),no.2,583–637(Eng- lish).",8,26.4,358.66,153,118.31,675.06,476.97,701.46,FALSE,FALSE
+17,20,BODY,"11.SergioDainandMaŕıaEugeniaGabach-Clement,Geometricalinequalitiesbounding angularmomentumandchargesinGeneralRelativity,LivingReviewsinRelativity 21(2018),no.5,1–74.",8,26.4,358.65,166,118.31,707.93,476.96,734.33,FALSE,FALSE
+18,0,BODY,18,7,3.99,8.47,2,118.31,103.14,126.78,107.12,FALSE,FALSE
+18,1,BODY,T.CRUZANDA.MENDES,7,3.99,108.01,17,243.63,103.14,351.64,107.12,FALSE,FALSE
+18,2,BODY,"12.SergioDain,JoséLuisJaramillo,andMart́ınReiris,Area-chargeinequalityforblack",8,4.48,358.66,79,118.31,127.05,476.97,131.53,FALSE,FALSE
+18,3,BODY,"holes,ClassicalQuantumGravity29(2012),no.3,15(English),Id/No035013.",8,4.48,321.91,67,134.69,138.01,456.6,142.49,FALSE,FALSE
+18,4,BODY,"13.HerbertFederer,Geometricmeasuretheory,GrundlehrenMath.Wiss.,vol.153,",8,4.48,358.65,71,118.31,148.96,476.96,153.45,FALSE,FALSE
+18,5,BODY,"Springer,Cham,1969(English).",8,4.48,130.26,28,134.69,159.92,264.95,164.41,FALSE,FALSE
+18,6,BODY,"14.GregoryJ.GallowayandAbraãoMendes,Somerigidityresultsforchargedinitialdata sets,NonlinearAnal.,TheoryMethodsAppl.,Ser.A,TheoryMethods256(2025),9 (English),Id/No113780.",8,26.4,358.66,170,118.31,170.88,476.97,197.28,FALSE,FALSE
+18,7,BODY,"15.GaryW.Gibbons,Somecommentsongravitationalentropyandtheinversemean curvatureflow,ClassicalQuantumGravity16(1999),no.6,1677–1687(English). 16.EnricoGiusti,Minimalsurfacesandfunctionsofboundedvariation,Monogr.Math.,",8,26.4,358.66,215,118.31,203.76,476.97,230.16,FALSE,FALSE
+18,8,BODY,"Basel,vol.80,Birkhäuser,Cham,1984(English).",8,4.48,199.49,44,134.69,236.64,334.18,241.12,FALSE,FALSE
+18,9,BODY,"17.MikhaelGromovandH.BlaineLawson,Jr.,PositivescalarcurvatureandtheDirac operatoroncompleteRiemannianmanifolds,Publ.Math.,Inst.HautesÉtud.Sci.58 (1983),83–196(English).",8,26.68,358.66,169,118.31,247.59,476.97,274.27,FALSE,FALSE
+18,10,BODY,"18.MishaGromov,Positivecurvature,macroscopicdimension,spectralgapsandhigher signatures,Functionalanalysisontheeveofthe21stcentury.VolumeII.Inhonorof theeightiethbirthdayofI.M.Gelfand.Proceedingsofaconference,heldatRutgers University,NewBrunswick,NJ,USA,October24-27,1993,Boston,MA:Birkhäuser, 1996,pp.1–213(English).",8,48.32,358.66,317,118.31,280.75,476.97,329.06,FALSE,FALSE
+18,11,BODY,"19.,NometricswithPositiveScalarCurvaturesonAspherical5-Manifolds,",8,4.48,358.66,65,118.31,335.54,476.97,340.02,FALSE,FALSE
+18,12,BODY,"Preprint,arXiv:2009.05332[math.DG],2020.",8,4.48,181.11,40,134.69,346.5,315.8,350.98,FALSE,FALSE
+18,13,BODY,"20.,Fourlecturesonscalarcurvature,Perspectivesinscalarcurvature.In2vol-",8,4.48,358.65,71,118.31,357.46,476.96,361.94,FALSE,FALSE
+18,14,BODY,"umes,Singapore:WorldScientific,2023,pp.1–514(English).",8,4.48,247.56,54,134.69,368.42,382.25,372.9,FALSE,FALSE
+18,15,BODY,"21.JoelHassandPeterScott,Theexistenceofleastareasurfacesin3-manifolds,Trans.",8,4.48,358.65,76,118.31,379.38,476.96,383.86,FALSE,FALSE
+18,16,BODY,"Am.Math.Soc.310(1988),no.1,87–114(English).",8,4.48,213.45,43,134.69,390.33,348.15,394.82,FALSE,FALSE
+18,17,BODY,"22.GerhardHuiskenandAlexanderPolden,Geometricevolutionequationsforhypersur- faces,Calculusofvariationsandgeometricevolutionproblems.Lecturesgivenatthe 2ndsessionoftheCentroInternazionaleMatematicoEstivo(CIME),Cetraro,Italy, June15–22,1996,Berlin:Springer,1999,pp.45–84(English).",8,37.36,358.66,278,118.31,401.29,476.97,438.65,FALSE,FALSE
+18,18,BODY,"23.MartinLesourd,RyanUnger,andShing-TungYau,Thepositivemasstheoremwith",8,4.48,358.65,70,118.31,445.13,476.96,449.61,FALSE,FALSE
+18,19,BODY,"arbitraryends,J.Differ.Geom.128(2024),no.1,257–293(English).",8,4.48,280.64,60,134.69,456.09,415.33,460.57,FALSE,FALSE
+18,20,BODY,"24.AlexandreB.Lima,PauloA.Sousa,andRondinelleM.Batista,Rigidityofmarginally outertrappedsurfacesinchargedinitialdatasets,Lett.Math.Phys.115(2025),no.2, 15(English),Id/No41.",8,26.4,358.66,172,118.31,467.05,476.97,493.45,FALSE,FALSE
+18,21,BODY,"25.FernandoC.MarquesandAndréNeves,Rigidityofmin-maxminimalspheresinthree-",8,4.48,358.66,74,118.31,499.92,476.97,504.41,FALSE,FALSE
+18,22,BODY,"manifolds,DukeMath.J.161(2012),no.14,2725–2752(English).",8,4.48,270.47,56,134.69,510.88,405.16,515.37,FALSE,FALSE
+18,23,BODY,6,5,2.99,3.65,1,352.45,518.03,356.1,521.02,FALSE,FALSE
+18,24,BODY,"26.LaurentMazet,StableminimalhypersurfacesinR,Preprint,arXiv:2405.14676 27.WilliamH.MeeksIII,LeonSimon,andShing-TungYau,Embeddedminimalsurfaces, exoticspheres,andmanifoldswithpositiveRiccicurvature,Ann.Math.(2)116(1982), 621–659(English).",8,48.32,358.66,238,118.31,521.84,476.97,570.16,FALSE,FALSE
+18,25,BODY,"[math.DG],2024.",8,4.48,69.56,15,134.69,532.8,204.25,537.28,FALSE,FALSE
+18,26,BODY,"28.AbraãoMendes,Rigidityofmarginallyoutertrapped(hyper)surfaceswithnegative",8,4.48,358.65,76,118.31,576.64,476.96,581.12,FALSE,FALSE
+18,27,BODY,"σ-constant,Trans.Am.Math.Soc.372(2019),no.8,5851–5868(English).",8,4.48,303.68,63,134.69,587.59,438.38,592.08,FALSE,FALSE
+18,28,BODY,"29.,Area-chargeinequalityandlocalrigidityinchargedinitialdatasets,Preprint,",8,4.48,358.65,75,118.31,598.55,476.96,603.04,FALSE,FALSE
+18,29,BODY,"arXiv:2505.20060[math.DG],2025.",8,4.48,141.77,31,134.69,609.51,276.46,614,FALSE,FALSE
+18,30,BODY,"30.MarioMicallefandVladMoraru,Splittingof3-manifoldsandrigidityofarea- minimisingsurfaces,Proc.Am.Math.Soc.143(2015),no.7,2865–2872(English). 31.IvaldoNunes,Rigidityofarea-minimizinghyperbolicsurfacesinthree-manifolds,J.",8,26.4,358.66,220,118.31,620.47,476.97,646.87,FALSE,FALSE
+18,31,BODY,"Geom.Anal.23(2013),no.3,1290–1302(English).",8,4.48,208.73,43,134.69,653.35,343.42,657.83,FALSE,FALSE
+18,32,BODY,"32.WalterSimon,Boundsonareaandchargeformarginallytrappedsurfaceswitha cosmologicalconstant,ClassicalQuantumGravity29(2012),no.6,5(English),Id/No 062001.",8,26.4,358.66,152,118.31,664.31,476.97,690.71,FALSE,FALSE
+18,33,BODY,"33.JianWang,Topologyof3-manifoldswithuniformlypositivescalarcurvature,Preprint,",8,4.48,358.65,79,118.31,697.18,476.96,701.67,FALSE,FALSE
+18,34,BODY,"arXiv:2212.14383[math.DG],2022.",8,4.48,141.77,31,134.69,708.14,276.46,712.63,FALSE,FALSE
+18,35,BODY,"34.XinZhouandJonathanZhu,Existenceofhypersurfaceswithprescribedmeancurva-",8,4.48,358.66,73,118.31,719.1,476.97,723.59,FALSE,FALSE
+18,36,BODY,"tureI–genericmin-max,Camb.J.Math.8(2020),no.2,311–362(English).",8,4.48,314.14,63,134.69,730.06,448.83,734.54,FALSE,FALSE
+19,0,BODY,AREA-CHARGEINEQUALITIESANDRIGIDITYOFINITIALDATASETS19,7,3.99,330.89,53,146.07,103.14,476.97,107.12,FALSE,FALSE
+19,1,BODY,"35.JintianZhu,Widthestimateanddoublywarpedproduct,Trans.Am.Math.Soc.374",8,4.48,358.66,71,118.31,127.05,476.97,131.53,FALSE,FALSE
+19,2,BODY,"(2021),no.2,1497–1511(English).",8,4.48,140.97,31,134.69,138.01,275.66,142.49,FALSE,FALSE
+19,3,BODY,"36.,Rigidityresultsforcompletemanifoldswithnonnegativescalarcurvature,J.",8,4.48,358.65,72,118.31,148.96,476.96,153.45,FALSE,FALSE
+19,4,BODY,"Differ.Geom.125(2023),no.3,623–644(English).",8,4.48,208.3,44,134.69,159.92,342.99,164.41,FALSE,FALSE
+19,5,BODY,"37.,Calabi-Yautypetheoremforcompletemanifoldswithnonnegativescalarcur-",8,4.48,358.66,70,118.31,170.88,476.97,175.37,FALSE,FALSE
+19,6,BODY,"vature,Preprint,arXiv:2402.15118[math.DG],2024,pp.1–14.",8,4.48,251.25,55,134.69,181.84,385.94,186.33,FALSE,FALSE
+19,7,BODY,"38.,Riemannian-Penroseinequalitywithouthorizonindimensionthree,Trans.",8,4.48,358.66,69,118.31,192.8,476.97,197.28,FALSE,FALSE
+19,8,BODY,"Am.Math.Soc.377(2024),no.6,4101–4116(English).",8,4.48,227.28,46,134.69,203.76,361.97,208.24,FALSE,FALSE
+19,9,BODY,"InstituteofMathematics,FederalUniversityofAlagoas,57072-970, Maceió-AL,Brazil Emailaddress:cicero.cruz@im.ufal.br Emailaddress:abraao.mendes@im.ufal.br",8,37.36,346.7,152,130.26,224.31,476.96,261.67,FALSE,FALSE

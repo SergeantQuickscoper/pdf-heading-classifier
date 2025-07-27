@@ -1,0 +1,92 @@
+page,block,heading,content,avgFontSize,height,width,textLength,x0,y0,x1,y1,isBold,isItalic
+1,0,H1,timerfiledescriptorHOWTO,24,14.87,330.31,24,192.99,119.26,523.3,134.13,true,false
+1,1,BODY,Release3.13.3,11,7.17,81.51,13,441.76,140.35,523.28,147.53,true,true
+1,2,H2,GuidovanRossumandthePythondevelopmentteam,14,8.61,364.58,41,158.71,185.06,523.29,193.67,true,false
+1,3,BODY,"April27,2025 PythonSoftwareFoundation Email:docs@python.org",9,35.87,134.39,59,388.9,229.58,523.28,265.45,true,false
+1,4,H2,Contents,14,8.61,61.57,8,72,293.09,133.57,301.7,true,false
+1,5,BODY,1Examples,9,5.98,55.97,9,72,326.6,127.97,332.58,true,false
+1,6,BODY,1,9,5.98,4.98,1,518.29,326.6,523.28,332.58,true,false
+1,7,BODY,Release 1.13,9,17.94,39.35,12,96.91,374.42,136.26,392.36,false,false
+1,8,BODY,ThisHOWTOdiscussesPython’ssupportforthelinuxtimerfiledescriptor.,9,5.99,294.61,64,72,404.31,366.61,410.3,false,false
+1,9,H2,1Examples,14,8.61,81.13,9,72,437.93,153.13,446.54,true,false
+1,10,BODY,"Thefollowingexampleshowshowtouseatimerfiledescriptortoexecuteafunctiontwiceasecond: #Practicalscriptsshouldusereallyuseanon-blockingtimer, #weuseablockingtimerhereforsimplicity. importos,time",8.25,49.12,393.08,191,72,461.42,465.08,510.54,false,false
+1,11,BODY,#Createthetimerfiledescriptor fd=os.timerfd_create(time.CLOCK_REALTIME),8,16.44,231.33,71,72,529.97,303.33,546.41,false,false
+1,12,BODY,"#Startthetimerin1second,withanintervalofhalfasecond os.timerfd_settime(fd,initial=1,interval=0.5)",8,16.44,344.31,97,72,565.83,416.31,582.27,false,false
+1,13,BODY,try:,8,4.48,21.52,4,72,601.7,93.52,606.18,true,false
+1,14,BODY,#Processtimereventsfourtimes. for_inrange(4):,8,16.44,182.91,45,93.52,613.65,276.43,630.09,false,false
+1,15,BODY,"#read()willblockuntilthetimerexpires _=os.read(fd,8) print('Timerexpired')",8,28.39,231.33,74,115.04,637.56,346.37,665.96,false,false
+1,16,BODY,finally:,8,4.48,43.04,8,72,673.43,115.04,677.91,true,false
+1,17,BODY,#Remembertoclosethetimerfiledescriptor! os.close(fd),8,16.44,247.47,52,93.52,685.38,340.99,701.82,false,false
+1,18,BODY,"Toavoidtheprecisionlosscausedbythefloattype,timerfiledescriptorsallowspecifyinginitialexpirationand intervalinintegernanosecondswith_nsvariantsofthefunctions. Thisexampleshowshowepoll()canbeusedwithtimerfiledescriptorstowaituntilthefiledescriptorisreadyfor reading:",8.96,47.83,451.28,265,72,722.25,523.28,770.08,false,false
+1,19,BODY,1,9,5.98,5.54,1,294.87,799.78,300.41,805.76,true,false
+2,0,BODY,"importos,time,select,socket,sys",8,4.48,193.67,31,72,87.74,265.67,92.22,true,false
+2,1,BODY,#Createanepollobject ep=select.epoll(),8,16.44,129.11,38,72,111.65,201.11,128.09,false,false
+2,2,BODY,"#Inthisexample,useloopbackaddresstosend'stop'commandtotheserver. # #$telnet127.0.0.11234 #Trying127.0.0.1... #Connectedto127.0.0.1. #Escapecharacteris'^]'. #stop #Connectionclosedbyforeignhost. # sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM) sock.bind(('127.0.0.1',1234)) sock.setblocking(False) sock.listen(1) ep.register(sock,select.EPOLLIN)",8,159.9,414.24,351,72,147.52,486.24,307.42,false,true
+2,3,BODY,#Createtimerfiledescriptorsinnon-blockingmode. num=3 fds=[] for_inrange(num):,8,40.35,285.13,77,72,326.84,357.13,367.19,false,false
+2,4,BODY,"fd=os.timerfd_create(time.CLOCK_REALTIME,flags=os.TFD_NONBLOCK) fds.append(fd) #Registerthetimerfiledescriptorforreadevents ep.register(fd,select.EPOLLIN)",8,40.35,355.07,154,93.52,374.66,448.59,415.01,false,false
+2,5,BODY,"#Startthetimerwithos.timerfd_settime_ns()innanoseconds. #Timer1firesevery0.25seconds;timer2every0.5seconds;etc fori,fdinenumerate(fds,start=1):",8,28.39,355.07,143,72,434.44,427.07,462.83,false,true
+2,6,BODY,"one_sec_in_nsec=10**9 i=i*one_sec_in_nsec os.timerfd_settime_ns(fd,initial=i//4,interval=i//4)",8,28.39,290.51,94,93.52,470.31,384.03,498.7,false,false
+2,7,BODY,timeout=3 try:,8,16.44,59.18,14,72,518.13,131.18,534.57,false,false
+2,8,BODY,conn=None is_active=True whileis_active:,8,28.39,86.08,40,93.52,542.04,179.6,570.43,false,false
+2,9,BODY,"#Waitforthetimertoexpirefor3seconds. #epoll.poll()returnsalistof(fd,event)pairs. #fdisafiledescriptor. #sockandconn[=returnedvalueofsocket.accept()]aresocketobjects,␣",8,40.35,387.34,166,115.04,577.9,502.38,618.25,false,true
+2,10,BODY,↪→notfiledescriptors.,7.62,4.48,120.81,21,74.92,625.72,195.73,630.21,false,true
+2,11,BODY,#Sousesock.fileno()andconn.fileno()togetthefiledescriptors. events=ep.poll(timeout),8,16.44,371.21,83,115.04,637.68,486.24,654.12,false,false
+2,12,BODY,"#Ifmorethanonetimerfiledescriptorsarereadyforreadingatonce, #epoll.poll()returnsalistof(fd,event)pairs. # #Inthisexamplesettings, #1sttimerfiresevery0.25secondsin0.25seconds.(0.25,0.5,0.75,␣",8,52.3,403.48,190,115.04,673.54,518.52,725.85,false,true
+2,13,BODY,"↪→1.0,...)",7.2,4.48,56.25,10,74.92,733.32,131.17,737.8,false,true
+2,14,BODY,"#2ndtimerevery0.5secondsin0.5seconds.(0.5,1.0,1.5,2.0,...) #3rdtimerevery0.75secondsin0.75seconds.(0.75,1.5,2.25,3.0,. (continuesonnextpage)",7.67,27.67,408.25,140,115.04,745.28,523.28,772.94,false,true
+2,15,BODY,2,9,5.98,5.54,1,294.87,799.78,300.41,805.76,true,false
+3,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,false,false
+3,1,BODY,↪→..),6.4,4.48,23.98,5,74.92,95.52,98.9,100,false,true
+3,2,BODY,"# #In0.25seconds,only1sttimerfires. #In0.5seconds,1sttimerand2ndtimerfiresatonce. #In0.75seconds,1sttimerand3rdtimerfiresatonce. #In1.5seconds,1sttimer,2ndtimerand3rdtimerfiresatonce. # #Ifatimerfiledescriptorissignaledmorethanoncesince #thelastos.read()call,os.read()returnsthenumberofsignaled #ashostorderofclassbytes. print(f'Signaledevents={events}') forfd,eventinevents:",8,124.04,376.58,375,115.04,107.47,491.62,231.51,false,true
+3,3,BODY,ifevent&select.EPOLLIN: iffd==sock.fileno():,8,16.44,145.25,44,136.56,238.98,281.81,255.42,false,false
+3,4,BODY,"#Checkifthereisaconnectionrequest. print(f'Acceptingconnection{fd}') conn,addr=sock.accept() conn.setblocking(False) print(f'Acceptedconnection{conn}from{addr}') ep.register(conn,select.EPOLLIN)",8,64.26,258.23,194,179.6,262.89,437.83,327.15,false,false
+3,5,BODY,elifconnandfd==conn.fileno():,8,4.48,182.91,29,158.08,334.62,340.99,339.11,false,false
+3,6,BODY,#Checkifthereisdatatoread. print(f'Readingdata{fd}') data=conn.recv(1024) ifdata:,8,40.35,177.52,81,179.6,346.58,357.12,386.93,false,false
+3,7,BODY,#YoushouldcatchUnicodeDecodeErrorexceptionforsafety. cmd=data.decode() ifcmd.startswith('stop'):,8,28.39,317.4,96,201.12,394.4,518.51,422.79,false,false
+3,8,BODY,print(f'Stoppingserver') is_active=False,8,16.44,134.49,40,222.63,430.26,357.13,446.7,false,false
+3,9,BODY,else:,8,4.48,26.9,5,201.12,454.17,228.01,458.66,true,false
+3,10,BODY,print(f'Unknowncommand:{cmd}'),8,4.48,172.15,30,222.63,466.13,394.79,470.61,false,false
+3,11,BODY,else:,8,4.48,26.9,5,179.6,478.08,206.49,482.57,true,false
+3,12,BODY,"#Nomoredata,closeconnection print(f'Closingconnection{fd}') ep.unregister(conn) conn.close() conn=None",8,52.3,177.53,102,201.11,490.04,378.65,542.34,false,false
+3,13,BODY,eliffdinfds:,8,4.48,80.7,12,158.08,549.82,238.77,554.3,false,false
+3,14,BODY,"print(f'Readingtimer{fd}') count=int.from_bytes(os.read(fd,8),byteorder=sys.byteorder) print(f'Timer{fds.index(fd)+1}expired{count}times')",8,28.39,338.93,138,179.6,561.77,518.52,590.17,false,false
+3,15,BODY,else:,8,4.48,26.9,5,158.08,597.64,184.98,602.12,true,false
+3,16,BODY,print(f'Unknownfiledescriptor{fd}'),8,4.48,204.43,35,179.6,609.59,384.03,614.08,false,false
+3,17,BODY,finally:,8,4.48,43.04,8,72,621.55,115.04,626.03,true,false
+3,18,BODY,forfdinfds:,8,4.48,75.32,11,93.52,633.5,168.84,637.99,false,false
+3,19,BODY,ep.unregister(fd) os.close(fd),8,16.44,91.46,30,115.04,645.46,206.49,661.9,false,false
+3,20,BODY,ep.close(),8,4.48,53.8,10,93.52,669.37,147.32,673.85,false,false
+3,21,BODY,"Thisexampleshowshowselect()canbeusedwithtimerfiledescriptorstowaituntilthefiledescriptorisready forreading: importos,time,select,socket,sys",8.64,37.16,451.28,139,72,694.27,523.28,731.44,false,false
+3,22,BODY,"#Inthisexample,useloopbackaddresstosend'stop'commandtotheserver.",8,4.48,414.24,64,72,750.86,486.24,755.35,false,true
+3,23,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,762.88,523.28,767.67,false,false
+3,24,BODY,3,9,5.98,5.54,1,294.87,799.78,300.41,805.76,true,false
+4,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,false,false
+4,1,BODY,"# #$telnet127.0.0.11234 #Trying127.0.0.1... #Connectedto127.0.0.1. #Escapecharacteris'^]'. #stop #Connectionclosedbyforeignhost. # sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM) sock.bind(('127.0.0.1',1234)) sock.setblocking(False) sock.listen(1)",8,135.99,301.27,253,72,95.52,373.27,231.51,false,true
+4,2,BODY,"#Createtimerfiledescriptorsinnon-blockingmode. num=3 fds=[os.timerfd_create(time.CLOCK_REALTIME,flags=os.TFD_NONBLOCK)",8,28.39,365.83,118,72,250.94,437.83,279.33,false,false
+4,3,BODY,for_inrange(num)] select_fds=fds+[sock],8,16.44,145.25,39,72,286.8,217.25,303.24,false,false
+4,4,BODY,"#Startthetimerswithos.timerfd_settime()inseconds. #Timer1firesevery0.25seconds;timer2every0.5seconds;etc fori,fdinenumerate(fds,start=1):",8,28.39,355.07,137,72,322.67,427.07,351.06,false,true
+4,5,BODY,"os.timerfd_settime(fd,initial=i/4,interval=i/4)",8,4.48,263.61,47,88.14,358.53,351.75,363.02,false,false
+4,6,BODY,timeout=3 try:,8,16.44,59.18,14,72,382.44,131.18,398.88,false,false
+4,7,BODY,conn=None is_active=True whileis_active:,8,28.39,86.08,40,93.52,406.35,179.6,434.75,false,false
+4,8,BODY,"#Waitforthetimertoexpirefor3seconds. #select.select()returnsalistoffiledescriptorsorobjects. rfd,wfd,xfd=select.select(select_fds,select_fds,select_fds,timeout) forfdinrfd:",8,40.35,398.1,172,109.66,442.22,507.75,482.57,false,false
+4,9,BODY,iffd==sock:,8,4.48,75.32,11,131.18,490.04,206.49,494.52,false,false
+4,10,BODY,"#Checkifthereisaconnectionrequest. print(f'Acceptingconnection{fd}') conn,addr=sock.accept() conn.setblocking(False) print(f'Acceptedconnection{conn}from{addr}') select_fds.append(conn) elifconnandfd==conn:",8,76.21,279.75,206,131.18,501.99,410.93,578.21,false,false
+4,11,BODY,#Checkifthereisdatatoread. print(f'Readingdata{fd}') data=conn.recv(1024) ifdata:,8,40.35,177.52,81,152.7,585.68,330.22,626.03,false,false
+4,12,BODY,#YoushouldcatchUnicodeDecodeErrorexceptionforsafety. cmd=data.decode() ifcmd.startswith('stop'):,8,28.39,317.41,96,174.22,633.5,491.62,661.9,false,false
+4,13,BODY,print(f'Stoppingserver') is_active=False,8,16.44,134.49,40,195.74,669.37,330.23,685.81,false,false
+4,14,BODY,else:,8,4.48,26.9,5,174.22,693.28,201.11,697.76,true,false
+4,15,BODY,print(f'Unknowncommand:{cmd}'),8,4.48,172.15,30,195.74,705.23,367.89,709.72,false,false
+4,16,BODY,else:,8,4.48,26.9,5,152.7,717.19,179.6,721.67,true,false
+4,17,BODY,"#Nomoredata,closeconnection print(f'Closingconnection{fd}') select_fds.remove(conn)",8,28.39,177.53,83,174.22,729.14,351.75,757.54,false,false
+4,18,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,768.15,523.28,772.94,false,false
+4,19,BODY,4,9,5.98,5.54,1,294.87,799.78,300.41,805.76,true,false
+5,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,false,false
+5,1,BODY,conn.close() conn=None,8,16.44,64.56,22,174.22,95.52,238.77,111.96,false,false
+5,2,BODY,eliffdinfds:,8,4.48,80.7,12,131.18,119.43,211.87,123.91,false,false
+5,3,BODY,"print(f'Readingtimer{fd}') count=int.from_bytes(os.read(fd,8),byteorder=sys.byteorder) print(f'Timer{fds.index(fd)+1}expired{count}times')",8,28.39,338.93,138,152.7,131.39,491.62,159.78,false,false
+5,4,BODY,else:,8,4.48,26.9,5,131.18,167.25,158.08,171.73,true,false
+5,5,BODY,print(f'Unknownfiledescriptor{fd}'),8,4.48,204.43,35,152.7,179.21,357.13,183.69,false,false
+5,6,BODY,finally:,8,4.48,43.04,8,72,191.16,115.04,195.64,true,false
+5,7,BODY,forfdinfds: os.close(fd),8,16.44,80.7,24,93.52,203.12,174.22,219.55,false,false
+5,8,BODY,sock.close() sock=None,8,16.44,64.56,22,93.52,227.03,158.08,243.47,false,false
+5,9,BODY,5,9,5.98,5.54,1,294.87,799.78,300.41,805.76,true,false

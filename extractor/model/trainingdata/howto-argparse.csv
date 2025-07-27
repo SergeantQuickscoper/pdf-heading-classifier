@@ -1,0 +1,244 @@
+page,block,heading,content,avgFontSize,height,width,textLength,x0,y0,x1,y1,isBold,isItalic
+1,0,H1,ArgparseTutorial,24,14.87,202.88,16,320.42,118.96,523.3,133.83,TRUE,FALSE
+1,2,H2,GuidovanRossumandthePythondevelopmentteam,14,8.61,364.58,41,158.71,184.76,523.29,193.37,TRUE,FALSE
+1,4,H2,Contents,14,8.61,61.57,8,72,292.8,133.57,301.4,TRUE,FALSE
+2,0,H2,1Concepts,14,8.61,80.27,9,72,84.55,152.27,93.16,TRUE,FALSE
+2,4,H2,2Thebasics,14,8.61,89.05,10,72,534,161.05,542.61,TRUE,FALSE
+3,4,H2,3IntroducingPositionalarguments,14,8.61,240.39,31,72,255.67,312.39,264.28,TRUE,FALSE
+4,13,H2,4IntroducingOptionalarguments,14,8.61,231.07,29,72,688.74,303.07,697.34,TRUE,FALSE
+6,8,H2,5CombiningPositionalandOptionalarguments,14,8.61,327.24,40,72,493.15,399.24,501.75,TRUE,FALSE
+10,12,H2,6Gettingalittlemoreadvanced,14,8.61,218.77,27,72,413.07,290.77,421.68,TRUE,FALSE
+13,9,H2,7Howtotranslatetheargparseoutput,14,8.61,262.81,32,72,384.98,334.81,393.59,TRUE,FALSE
+14,2,H2,8Customtypeconverters,14,8.61,177.68,21,72,188.11,249.68,196.72,TRUE,FALSE
+14,14,H2,9Conclusion,14,8.61,91.57,11,72,641.34,163.57,649.95,TRUE,FALSE
+1,1,H3,Release3.13.3,11,7.17,81.51,13,441.77,140.05,523.28,147.23,TRUE,TRUE
+11,8,H3,6.1Specifyingambiguousarguments,11,7.17,213.03,31,72,485.28,285.03,492.46,TRUE,FALSE
+12,0,H3,6.2Conflictingoptions,11,7.17,129.44,21,72,81.96,201.44,89.14,TRUE,FALSE
+1,3,BODY,"April27,2025 PythonSoftwareFoundation Email:docs@python.org",9,35.86,134.38,59,388.9,229.29,523.28,265.15,TRUE,FALSE
+1,5,BODY,1Concepts 2Thebasics 3IntroducingPositionalarguments 4IntroducingOptionalarguments,9,71.73,157.01,82,72,326.33,229.01,398.06,TRUE,FALSE
+1,6,BODY,2 2 3 4 4.1Shortoptions.............................................6 6 10 6.1Specifyingambiguousarguments...................................11 6.2Conflictingoptions..........................................12 13 14 14,9,217.19,436.33,218,86.94,326.33,523.28,543.52,TRUE,FALSE
+1,7,H3,5CombiningPositionalandOptionalarguments 6Gettingalittlemoreadvanced,9,27.9,212.11,68,72,425.96,284.11,453.85,TRUE,FALSE
+1,8,H3,7Howtotranslatetheargparseoutput 8Customtypeconverters 9Conclusion,9,49.81,170.83,66,72,493.7,242.83,543.52,TRUE,FALSE
+1,9,BODY,author,9,5.98,28.25,6,96.91,585.36,125.16,591.34,TRUE,FALSE
+1,10,BODY,TshepangMbambo,9,5.99,75.67,14,118.82,597.32,194.49,603.3,FALSE,FALSE
+1,12,BODY,Note,9,5.98,19.98,4,94.42,659.17,114.39,665.15,TRUE,FALSE
+1,14,BODY,1,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+2,2,BODY,Afewconceptswecanlearnfromthefourcommands:,9,5.99,213.83,42,72,344.96,285.83,350.94,FALSE,FALSE
+2,9,BODY,2,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+3,2,BODY,Hereiswhatishappening:,9,5.99,103.56,22,72,132.38,175.56,138.37,FALSE,FALSE
+3,9,BODY,Hereiswhat’shappening:,9,5.99,100.17,22,72,561.7,172.17,567.69,FALSE,FALSE
+3,13,BODY,3,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+4,12,BODY,Thatwentwell.Theprogramnowevenhelpfullyquitsonbadillegalinputbeforeproceeding.,9,5.99,365,78,72,655.77,437,661.75,FALSE,FALSE
+4,16,BODY,4,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+5,7,BODY,Hereiswhatishappening:,9,5.99,103.56,22,72,333.43,175.56,339.42,FALSE,FALSE
+5,15,BODY,Hereiswhatishappening:,9,5.99,103.56,22,72,753.45,175.56,759.44,FALSE,FALSE
+5,16,BODY,5,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+6,7,BODY,Notethatthenewabilityisalsoreflectedinthehelptext.,9,5.99,222.71,50,72,459.52,294.71,465.51,FALSE,FALSE
+6,19,BODY,6,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+7,2,BODY,"•We’vebroughtbackapositionalargument,hencethecomplaint. •Notethattheorderdoesnotmatter.",9,23.92,259.69,87,87.94,168.25,347.63,192.17,FALSE,FALSE
+7,23,BODY,7,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+8,20,BODY,8,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+9,16,BODY,"•Firstoutputwentwell,andfixesthebugwehadbefore.Thatis,wewantanyvalue>=2tobeasverboseas possible. •Thirdoutputnotsogood.",9,35.88,435.33,119,87.94,695.87,523.27,731.74,FALSE,FALSE
+9,17,BODY,Let’sfixthatbug:,9,5.99,67.78,16,72,743.69,139.78,749.68,FALSE,FALSE
+9,18,BODY,9,9,5.98,5.54,1,294.87,799.78,300.41,805.76,TRUE,FALSE
+10,22,BODY,10,9,5.98,11.08,2,292.1,799.78,303.18,805.76,TRUE,FALSE
+11,14,BODY,11,9,5.98,11.08,2,292.1,799.78,303.18,805.76,TRUE,FALSE
+12,13,BODY,12,9,5.98,11.08,2,292.1,799.78,303.18,805.76,TRUE,FALSE
+13,16,BODY,13,9,5.98,11.08,2,292.1,799.78,303.18,805.76,TRUE,FALSE
+14,11,BODY,"Inthisexample,we:",9,5.99,78.37,17,72,518.06,150.37,524.04,FALSE,FALSE
+14,16,BODY,14,9,5.98,11.08,2,292.1,799.78,303.18,805.76,TRUE,FALSE
+14,13,BODY,"Withoutthecustomtypeconverters,theargumentswouldhavetreatedthe-aand+aasthesameargument,which wouldhavebeenundesirable.Byusingcustomtypeconverters,wewereabletodifferentiatebetweenthetwoargu- ments.",8.99,29.9,451.28,196,72,583.81,523.28,613.71,FALSE,FALSE
+2,3,BODY,"•Thelscommandisusefulwhenrunwithoutanyoptionsatall.Itdefaultstodisplayingthecontentsofthe currentdirectory. •Ifwewantbeyondwhatitprovidesbydefault,wetellitabitmore.Inthiscase,wewantittodisplayadifferent directory,pypy.Whatwedidisspecifywhatisknownasapositionalargument.It’snamedsobecausethe programshouldknowwhattodowiththevalue,solelybasedonwhereitappearsonthecommandline.This conceptismorerelevanttoacommandlikecp,whosemostbasicusageiscpSRCDEST.Thefirstposition iswhatyouwantcopied,andthesecondpositioniswhereyouwantitcopiedto. •Now,saywewanttochangebehaviouroftheprogram.Inourexample,wedisplaymoreinfoforeachfile insteadofjustshowingthefilenames.The-linthatcaseisknownasanoptionalargument. •That’sasnippetofthehelptext.It’sveryusefulinthatyoucancomeacrossaprogramyouhaveneverused before,andcanfigureouthowitworkssimplybyreadingitshelptext.",8.98,143.47,435.34,842,87.94,362.89,523.28,506.36,FALSE,FALSE
+3,3,BODY,"•Runningthescriptwithoutanyoptionsresultsinnothingdisplayedtostdout.Notsouseful. •Thesecondonestartstodisplaytheusefulnessoftheargparsemodule.Wehavedonealmostnothing,but alreadywegetanicehelpmessage. •The--helpoption,whichcanalsobeshortenedto-h,istheonlyoptionwegetforfree(i.e.noneedto specifyit).Specifyinganythingelseresultsinanerror.Buteventhen,wedogetausefulusagemessage,also forfree.",8.97,77.72,435.34,388,87.94,150.31,523.28,228.03,FALSE,FALSE
+1,11,BODY,"Thistutorialisintendedtobeagentleintroductiontoargparse,therecommendedcommand-lineparsingmodule inthePythonstandardlibrary.",8.96,17.94,451.28,123,72,615.25,523.28,633.19,FALSE,FALSE
+9,2,BODY,"•Yes,it’snowmoreofaflag(similartoaction='store_true')inthepreviousversionofourscript.That shouldexplainthecomplaint. •Italsobehavessimilarto“store_true”action. •Nowhere’sademonstrationofwhatthe“count”actiongives.You’veprobablyseenthissortofusagebefore. •Andifyoudon’tspecifythe-vflag,thatflagisconsideredtohaveNonevalue. •Asshouldbeexpected,specifyingthelongformoftheflag,weshouldgetthesameoutput. •Sadly,ourhelpoutputisn’tveryinformativeonthenewabilityourscripthasacquired,butthatcanalwaysbe fixedbyimprovingthedocumentationforourscript(e.g.viathehelpkeywordargument). •Thatlastoutputexposesabuginourprogram.",8.96,137.49,435.34,609,87.94,180.2,523.28,317.7,FALSE,FALSE
+10,11,BODY,"Youcangoquitefarjustwithwhatwe’velearnedsofar,andwehaveonlyscratchedthesurface.Theargparse moduleisverypowerful,andwe’llexploreabitmoreofitbeforeweendthistutorial.",8.96,17.94,451.28,163,72,367.49,523.28,385.43,FALSE,FALSE
+14,15,BODY,"Theargparsemoduleoffersalotmorethanshownhere.Itsdocsarequitedetailedandthorough,andfullof examples.Havinggonethroughthistutorial,youshouldeasilydigestthemwithoutfeelingoverwhelmed.",8.95,17.94,451.28,180,72,664.84,523.28,682.78,FALSE,FALSE
+5,8,BODY,"•Theprogramiswrittensoastodisplaysomethingwhen--verbosityisspecifiedanddisplaynothingwhen not. •Toshowthattheoptionisactuallyoptional,thereisnoerrorwhenrunningtheprogramwithoutit.Notethat bydefault,ifanoptionalargumentisn’tused,therelevantvariable,inthiscaseargs.verbosity,isgiven Noneasavalue,whichisthereasonitfailsthetruthtestoftheifstatement. •Thehelpmessageisabitdifferent. •Whenusingthe--verbosityoption,onemustalsospecifysomevalue,anyvalue.",8.92,95.65,435.34,447,87.94,351.36,523.28,447.01,FALSE,FALSE
+14,12,BODY,"•Createdaparserwithcustomprefixcharactersusingtheprefix_charsparameter. •Definedtwoarguments,-aand+a,whichusedthetypeparametertocreatecustomtypeconverterstostore thevalueinatuplewiththeprefix.",8.91,35.88,435.34,192,87.94,535.99,523.28,571.87,FALSE,FALSE
+1,13,BODY,"Thestandardlibraryincludestwootherlibrariesdirectlyrelatedtocommand-lineparameterprocessing:the lowerleveloptparsemodule(whichmayrequiremorecodetoconfigureforagivenapplication,butalsoal- lowsanapplicationtorequestbehaviorsthatargparsedoesn’tsupport),andtheverylowlevelgetopt(which specificallyservesasanequivalenttothegetopt()familyoffunctionsavailabletoCprogrammers).While neitherofthosemodulesiscovereddirectlyinthisguide,manyofthecoreconceptsinargparsefirstoriginated inoptparse,sosomeaspectsofthistutorialwillalsoberelevanttooptparseusers.",8.89,65.76,436.34,543,79.47,679.53,515.81,745.29,FALSE,FALSE
+14,1,BODY,"Oncethemessagesinthe.pofilearetranslatedandthetranslationsareinstalledusinggettext,argparsewillbe abletodisplaythetranslatedmessages. Totranslateyourownstringsintheargparseoutput,usegettext.",8.85,35.88,451.27,190,72,124.6,523.27,160.48,FALSE,FALSE
+13,15,BODY,Thiscommandwillextractalltranslatablestringsfromtheargparsemoduleandoutputthemintoafilenamed messages.po.ThiscommandassumesthatyourPythoninstallationisin/usr/lib. Youcanfindoutthelocationoftheargparsemoduleonyoursystemusingthisscript:,8.84,35.88,451.28,234,72,714.93,523.28,750.8,FALSE,FALSE
+14,3,BODY,"Theargparsemoduleallowsyoutospecifycustomtypeconvertersforyourcommand-linearguments.Thisallows youtomodifyuserinputbeforeit’sstoredintheargparse.Namespace.Thiscanbeusefulwhenyouneedto pre-processtheinputbeforeitisusedinyourprogram. Whenusingacustomtypeconverter,youcanuseanycallablethattakesasinglestringargument(theargumentvalue) andreturnstheconvertedvalue.However,ifyouneedtohandlemorecomplexscenarios,youcanuseacustomaction classwiththeactionparameterinstead. Forexample,let’ssayyouwanttohandleargumentswithdifferentprefixesandprocessthemaccordingly: importargparse",8.84,108.89,451.28,569,72,211.61,523.28,320.5,FALSE,FALSE
+6,1,BODY,"4.1Shortoptions Ifyouarefamiliarwithcommandlineusage,youwillnoticethatIhaven’tyettouchedonthetopicofshortversions oftheoptions.It’squitesimple: importargparse parser=argparse.ArgumentParser() parser.add_argument('-v','--verbose',help='increaseoutputverbosity',",8.83,79.75,451.28,260,72,182.21,523.28,261.96,FALSE,FALSE
+3,10,BODY,"•We’veaddedtheadd_argument()method,whichiswhatweusetospecifywhichcommand-lineoptions theprogramiswillingtoaccept.Inthiscase,I’venameditechosothatit’sinlinewithitsfunction. •Callingourprogramnowrequiresustospecifyanoption. •Theparse_args()methodactuallyreturnssomedatafromtheoptionsspecified,inthiscase,echo. •Thevariableissomeformof‘magic’thatargparseperformsforfree(i.e.noneedtospecifywhichvariable thatvalueisstoredin).Youwillalsonoticethatitsnamematchesthestringargumentgiventothemethod, echo.",8.82,95.65,435.34,496,87.94,579.63,523.28,675.29,FALSE,FALSE
+6,0,BODY,"•Theoptionisnowmoreofaflagthansomethingthatrequiresavalue.Weevenchangedthenameoftheoption tomatchthatidea.Notethatwenowspecifyanewkeyword,action,andgiveitthevalue'store_true'. Thismeansthat,iftheoptionisspecified,assignthevalueTruetoargs.verbose.Notspecifyingitimplies False. •Itcomplainswhenyouspecifyavalue,intruespiritofwhatflagsactuallyare. •Noticethedifferenthelptext.",8.8,77.72,435.34,373,87.94,81.96,523.28,159.68,FALSE,FALSE
+12,9,BODY,"Thatshouldbeeasytofollow.I’veaddedthatlastoutputsoyoucanseethesortofflexibilityyouget,i.e.mixing longformoptionswithshortformones. Beforeweconclude,youprobablywanttotellyourusersthemainpurposeofyourprogram,justincasetheydon’t know: importargparse",8.8,66.9,451.28,246,72,562.21,523.28,629.11,FALSE,FALSE
+13,14,BODY,"Thestringsusage:,positionalarguments:,options:andshowthishelpmessageandexitare alltranslatable. Inordertotranslatethesestrings,theymustfirstbeextractedintoa.pofile.Forexample,usingBabel,runthis command: $pybabelextract-omessages.po/usr/lib/python3.12/argparse.py",8.64,67.05,451.29,262,72,627.46,523.29,694.5,FALSE,FALSE
+12,1,BODY,"Sofar,wehavebeenworkingwithtwomethodsofanargparse.ArgumentParserinstance.Let’sintroducea thirdone,add_mutually_exclusive_group().Itallowsforustospecifyoptionsthatconflictwitheachother. Let’salsochangetherestoftheprogramsothatthenewfunctionalitymakesmoresense:we’llintroducethe--quiet option,whichwillbetheoppositeofthe--verboseone: importargparse",8.63,60.92,451.28,346,72,100.64,523.28,161.56,FALSE,FALSE
+10,10,BODY,"We’vejustintroducedyetanotherkeyword,default.We’vesetitto0inordertomakeitcomparabletotheother intvalues.Rememberthatbydefault,ifanoptionalargumentisn’tspecified,itgetstheNonevalue,andthatcannot becomparedtoanintvalue(hencetheTypeErrorexception). And: $pythonprog.py4 16",8.62,79,451.28,269,72,268.07,523.28,347.07,FALSE,FALSE
+13,10,BODY,"Theoutputoftheargparsemodulesuchasitshelptextanderrormessagesareallmadetranslatableusingthe gettextmodule.Thisallowsapplicationstoeasilylocalizemessagesproducedbyargparse.Seealsoi18n-howto. Forinstance,inthisargparseoutput: $pythonprog.py--help usage:prog.py[-h][-v|-q]xy",8.5,67.05,451.28,271,72,408.48,523.28,475.53,FALSE,FALSE
+3,11,BODY,"Notehoweverthat,althoughthehelpdisplaylooksniceandall,itcurrentlyisnotashelpfulasitcanbe.Forexample weseethatwegotechoasapositionalargument,butwedon’tknowwhatitdoes,otherthanbyguessingorby readingthesourcecode.So,let’smakeitabitmoreuseful: importargparse parser=argparse.ArgumentParser() parser.add_argument('echo',help='echothestringyouusehere')",8.49,73.03,451.28,346,72,687.23,523.28,760.26,FALSE,FALSE
+8,7,BODY,"Notethatthechangealsoreflectsbothintheerrormessageaswellasthehelpstring. Now,let’suseadifferentapproachofplayingwithverbosity,whichisprettycommon.Italsomatchesthewaythe CPythonexecutablehandlesitsownverbosityargument(checktheoutputofpython--help): importargparse parser=argparse.ArgumentParser() parser.add_argument('square',type=int,",8.47,79,451.28,334,72,321.47,523.28,400.48,FALSE,FALSE
+13,5,BODY,"Notethatslightdifferenceintheusagetext.Notethe[-v|-q],whichtellsusthatwecaneitheruse-vor-q, butnotbothatthesametime: $pythonprog.py--help usage:prog.py[-h][-v|-q]xy",8.47,49.12,451.28,164,72,168.25,523.28,217.36,FALSE,FALSE
+7,3,BODY,"Howaboutwegivethisprogramofoursbacktheabilitytohavemultipleverbosityvalues,andactuallygettouse them: importargparse parser=argparse.ArgumentParser() parser.add_argument('square',type=int,",8.4,61.07,451.27,187,72,204.11,523.27,265.18,FALSE,FALSE
+4,8,BODY,"Thatdidn’tgosowell.That’sbecauseargparsetreatstheoptionswegiveitasstrings,unlesswetellitotherwise. So,let’stellargparsetotreatthatinputasaninteger: importargparse parser=argparse.ArgumentParser() parser.add_argument('square',help='displayasquareofagivennumber',",8.35,60.34,451.28,261,72,446.41,523.28,506.76,FALSE,FALSE
+5,9,BODY,"Theaboveexampleacceptsarbitraryintegervaluesfor--verbosity,butforoursimpleprogram,onlytwovalues areactuallyuseful,TrueorFalse.Let’smodifythecodeaccordingly: importargparse parser=argparse.ArgumentParser() parser.add_argument('--verbose',help='increaseoutputverbosity',",8.35,61.07,451.28,268,72,458.96,523.28,520.03,FALSE,FALSE
+11,9,BODY,"Whenthereisambiguityindecidingwhetheranargumentispositionalorforanargument,--canbeusedtotell parse_args()thateverythingafterthatisapositionalargument: >>>parser=argparse.ArgumentParser(prog='PROG') >>>parser.add_argument('-n',nargs='+') >>>parser.add_argument('args',nargs='*')",8.35,61.07,451.28,277,72,503.96,523.28,565.03,FALSE,FALSE
+4,2,BODY,Andweget: $pythonprog.py-h usage:prog.py[-h]echo,8.33,36.43,129.11,48,72,132.38,201.11,168.81,FALSE,FALSE
+14,10,BODY,"Output: $pythonprog.py-avalue1+avalue2 Namespace(a=[('-','value1'),('+','value2')])",8.33,37.16,252.85,83,72,460.47,324.85,497.63,FALSE,FALSE
+7,14,BODY,"Thesealllookgoodexceptthelastone,whichexposesabuginourprogram.Let’sfixitbyrestrictingthevaluesthe --verbosityoptioncanaccept: importargparse parser=argparse.ArgumentParser() parser.add_argument('square',type=int,",8.32,61.07,451.28,212,72,582.29,523.28,643.37,FALSE,FALSE
+2,5,BODY,Letusstartwithaverysimpleexamplewhichdoes(almost)nothing: importargparse parser=argparse.ArgumentParser() parser.parse_args(),8.25,49.12,269.25,125,72,557.49,341.25,606.61,FALSE,FALSE
+2,6,BODY,Followingisaresultofrunningthecode: $pythonprog.py $pythonprog.py--help usage:prog.py[-h],8.25,49.12,160.49,89,72,627.03,232.49,676.14,FALSE,FALSE
+4,14,BODY,"Sofarwehavebeenplayingwithpositionalarguments.Letushavealookonhowtoaddoptionalones: importargparse parser=argparse.ArgumentParser() parser.add_argument('--verbosity',help='increaseoutputverbosity')",8.25,48.39,404.52,197,72,712.23,476.52,760.62,FALSE,FALSE
+6,9,BODY,"Ourprogramkeepsgrowingincomplexity: importargparse parser=argparse.ArgumentParser() parser.add_argument('square',type=int,",8.25,49.12,209.81,122,72,516.64,281.81,565.75,FALSE,FALSE
+9,3,BODY,"Let’sfix: importargparse parser=argparse.ArgumentParser() parser.add_argument('square',type=int,",8.25,49.12,209.81,96,72,329.64,281.81,378.76,FALSE,FALSE
+4,6,BODY,"Followingisaresultofrunningthecode: $pythonprog.py4 Traceback(mostrecentcalllast): File'prog.py',line5,in<module> print(args.square**2)",8.2,60.34,199.04,135,72,353.69,271.04,414.03,FALSE,FALSE
+6,5,BODY,Andheregoes: $pythonprog.py-v verbosityturnedon $pythonprog.py--help usage:prog.py[-h][-v],8.2,61.07,129.11,90,72,330.21,201.11,391.28,FALSE,FALSE
+6,17,BODY,Andnowtheoutput: $pythonprog.py usage:prog.py[-h][-v]square prog.py:error:thefollowingargumentsarerequired:square $pythonprog.py4,8.2,61.07,322.79,129,72,693.77,394.79,754.84,FALSE,FALSE
+11,2,BODY,"Noticethatsofarwe’vebeenusingverbosityleveltochangethetextthatgetsdisplayed.Thefollowingexample insteadusesverbosityleveltodisplaymoretextinstead: importargparse parser=argparse.ArgumentParser() parser.add_argument('x',type=int,help='thebase') parser.add_argument('y',type=int,help='theexponent') parser.add_argument('-v','--verbosity',action='count',default=0) args=parser.parse_args() answer=args.x**args.y ifargs.verbosity>=2:",8.2,120.85,451.28,429,72,168.25,523.28,289.09,FALSE,FALSE
+3,5,BODY,Anexample: importargparse parser=argparse.ArgumentParser() parser.add_argument('echo') args=parser.parse_args() print(args.echo),8.17,73.03,182.91,128,72,279.16,254.91,352.19,FALSE,FALSE
+3,6,BODY,Andrunningthecode: $pythonprog.py usage:prog.py[-h]echo prog.py:error:thefollowingargumentsarerequired:echo $pythonprog.py--help usage:prog.py[-h]echo,8.17,73.03,312.03,150,72,372.61,384.03,445.64,FALSE,FALSE
+4,5,BODY,"Now,howaboutdoingsomethingevenmoreuseful: importargparse parser=argparse.ArgumentParser() parser.add_argument('square',help='displayasquareofagivennumber') args=parser.parse_args() print(args.square**2)",8.17,72.3,387.34,202,72,260.97,459.34,333.27,FALSE,FALSE
+4,11,BODY,Followingisaresultofrunningthecode: $pythonprog.py4 16 $pythonprog.pyfour usage:prog.py[-h]square prog.py:error:argumentsquare:invalidintvalue:'four',8.17,72.3,312.03,149,72,563.05,384.03,635.34,FALSE,FALSE
+5,3,BODY,Andtheoutput: $pythonprog.py--verbosity1 verbosityturnedon $pythonprog.py $pythonprog.py--help usage:prog.py[-h][--verbosityVERBOSITY],8.17,73.03,231.33,134,72,144.34,303.33,217.36,FALSE,FALSE
+8,3,BODY,"Andtheoutput: $pythonprog.py4-v3 usage:prog.py[-h][-v{0,1,2}]square prog.py:error:argument-v/--verbosity:invalidchoice:3(choosefrom0,1,2) $pythonprog.py4-h usage:prog.py[-h][-v{0,1,2}]square",8.17,73.03,430.38,190,72,132.38,502.38,205.41,FALSE,FALSE
+10,19,BODY,"Output: $pythonprog.py usage:prog.py[-h][-v]xy prog.py:error:thefollowingargumentsarerequired:x,y $pythonprog.py-h usage:prog.py[-h][-v]xy",8.17,73.03,312.03,138,72,625.65,384.03,698.68,FALSE,FALSE
+12,8,BODY,"Ourprogramisnowsimpler,andwe’velostsomefunctionalityforthesakeofdemonstration.Anyways,here’sthe output: $pythonprog.py42 4^2==16 $pythonprog.py42-q 16 $pythonprog.py42-v 4tothepower2equals16 $pythonprog.py42-vq usage:prog.py[-h][-v|-q]xy prog.py:error:argument-q/--quiet:notallowedwithargument-v/--verbose $pythonprog.py42-v--quiet usage:prog.py[-h][-v|-q]xy prog.py:error:argument-q/--quiet:notallowedwithargument-v/--verbose",8.14,168.52,451.28,426,72,373.27,523.28,541.79,FALSE,FALSE
+5,13,BODY,Andtheoutput: $pythonprog.py--verbose verbosityturnedon $pythonprog.py--verbose1 usage:prog.py[-h][--verbose] prog.py:error:unrecognizedarguments:1 $pythonprog.py--help usage:prog.py[-h][--verbose],8.13,96.94,220.57,197,72,588.27,292.57,685.21,FALSE,FALSE
+11,7,BODY,Output: $pythonprog.py42 16 $pythonprog.py42-v 4^2==16 $pythonprog.py42-vv Running'prog.py' 4^2==16,8.13,96.94,129.12,99,72,357.34,201.12,454.27,FALSE,FALSE
+2,1,BODY,Let’sshowthesortoffunctionalitythatwearegoingtoexploreinthisintroductorytutorialbymakinguseofthels command: $ls cpythondevguideprog.pypypyrm-unused-function.patch $lspypy ctypes_configuredemodotviewerincludelib_pypylib-python... $ls-l total20 drwxr-xr-x19wenawena4096Feb1818:51cpython drwxr-xr-x4wenawena4096Feb812:04devguide -rwxr-xr-x1wenawena535Feb1900:05prog.py drwxr-xr-x14wenawena4096Feb700:59pypy -rw-r--r--1wenawena741Feb1801:01rm-unused-function.patch $ls--help Usage:ls[OPTION]...[FILE]... ListinformationabouttheFILEs(thecurrentdirectorybydefault). Sortentriesalphabeticallyifnoneof-cftuvSUXnor--sortisspecified. ...,8.11,216.49,451.28,627,72,108.04,523.28,324.53,FALSE,FALSE
+9,14,BODY,"Andthisiswhatitgives: $pythonprog.py4-vvv thesquareof4equals16 $pythonprog.py4-vvvv thesquareof4equals16 $pythonprog.py4 Traceback(mostrecentcalllast): File'prog.py',line11,in<module> ifargs.verbosity>=2:",8.11,108.89,204.42,204,72,554.6,276.42,663.49,FALSE,FALSE
+10,13,BODY,"Whatifwewantedtoexpandourtinyprogramtoperformotherpowers,notjustsquares: importargparse parser=argparse.ArgumentParser() parser.add_argument('x',type=int,help='thebase') parser.add_argument('y',type=int,help='theexponent') parser.add_argument('-v','--verbosity',action='count',default=0) args=parser.parse_args() answer=args.x**args.y ifargs.verbosity>=2:",8.11,108.89,360.45,355,72,436.56,432.45,545.45,FALSE,FALSE
+7,13,BODY,Andtheoutput: $pythonprog.py4 16 $pythonprog.py4-v usage:prog.py[-h][-vVERBOSITY]square prog.py:error:argument-v/--verbosity:expectedoneargument $pythonprog.py4-v1 4^2==16 $pythonprog.py4-v2 thesquareof4equals16 $pythonprog.py4-v3 16,8.08,144.76,333.55,233,72,417.11,405.55,561.87,FALSE,FALSE
+8,17,BODY,"Wehaveintroducedanotheraction,“count”,tocountthenumberofoccurrencesofspecificoptions. $pythonprog.py4 16 $pythonprog.py4-v 4^2==16 $pythonprog.py4-vv thesquareof4equals16 $pythonprog.py4--verbosity--verbosity thesquareof4equals16 $pythonprog.py4-v1 usage:prog.py[-h][-v]square prog.py:error:unrecognizedarguments:1 $pythonprog.py4-h usage:prog.py[-h][-v]square",8.07,168.67,391.52,360,72,552.41,463.52,721.07,FALSE,FALSE
+2,7,BODY,"options: -h,--helpshowthishelpmessageandexit $pythonprog.py--verbose usage:prog.py[-h] prog.py:error:unrecognizedarguments:--verbose $pythonprog.pyfoo",8,64.26,263.61,150,72,695.57,335.61,759.83,FALSE,FALSE
+3,1,BODY,usage:prog.py[-h] prog.py:error:unrecognizedarguments:foo,8,16.44,231.33,57,72,95.52,303.33,111.96,FALSE,FALSE
+3,7,BODY,positionalarguments: echo,8,16.44,112.98,25,72,465.06,184.98,481.5,FALSE,FALSE
+3,8,BODY,"options: -h,--helpshowthishelpmessageandexit $pythonprog.pyfoo foo",8,40.35,242.08,66,72,500.93,314.08,541.28,FALSE,FALSE
+4,1,BODY,args=parser.parse_args() print(args.echo),8,16.44,139.87,41,72,95.52,211.87,111.96,FALSE,FALSE
+4,3,BODY,positionalarguments: echoechothestringyouusehere,8,16.44,225.95,48,72,188.24,297.95,204.68,FALSE,FALSE
+4,4,BODY,"options: -h,--helpshowthishelpmessageandexit",8,16.44,242.08,44,72,224.11,314.08,240.55,FALSE,FALSE
+4,7,BODY,TypeError:unsupportedoperandtype(s)for**orpow():'str'and'int',8,4.48,381.96,61,72,421.51,453.96,425.99,FALSE,FALSE
+4,9,BODY,type=int),8,4.48,48.42,9,179.6,514.23,228.01,518.71,FALSE,FALSE
+4,10,BODY,args=parser.parse_args() print(args.square**2),8,16.44,139.87,46,72,526.18,211.87,542.62,FALSE,FALSE
+5,1,BODY,args=parser.parse_args() ifargs.verbosity:,8,16.44,139.87,42,72,95.52,211.87,111.96,FALSE,FALSE
+5,2,BODY,print('verbosityturnedon'),8,4.48,150.63,26,93.52,119.43,244.15,123.91,FALSE,FALSE
+5,4,BODY,"options: -h,--helpshowthishelpmessageandexit --verbosityVERBOSITY",8,28.39,295.88,65,72,236.79,367.88,265.18,FALSE,FALSE
+5,5,BODY,increaseoutputverbosity,8,4.48,134.49,23,201.12,272.66,335.6,277.14,FALSE,FALSE
+5,6,BODY,$pythonprog.py--verbosity usage:prog.py[-h][--verbosityVERBOSITY] prog.py:error:argument--verbosity:expectedoneargument,8,28.39,317.41,119,72,284.61,389.41,313,FALSE,FALSE
+5,10,BODY,action='store_true'),8,4.48,107.6,20,179.6,527.5,287.19,531.98,FALSE,FALSE
+5,11,BODY,args=parser.parse_args() ifargs.verbose:,8,16.44,139.87,40,72,539.45,211.87,555.89,FALSE,FALSE
+5,12,BODY,print('verbosityturnedon'),8,4.48,150.63,26,93.52,563.36,244.15,567.85,FALSE,FALSE
+5,14,BODY,"options: -h,--helpshowthishelpmessageandexit --verboseincreaseoutputverbosity",8,28.39,242.08,77,72,704.64,314.08,733.03,FALSE,FALSE
+6,2,BODY,action='store_true'),8,4.48,107.6,20,179.6,269.43,287.19,273.92,FALSE,FALSE
+6,3,BODY,args=parser.parse_args() ifargs.verbose:,8,16.44,139.87,40,72,281.39,211.87,297.83,FALSE,FALSE
+6,4,BODY,print('verbosityturnedon'),8,4.48,150.63,26,93.52,305.3,244.15,309.78,FALSE,FALSE
+6,6,BODY,"options: -h,--helpshowthishelpmessageandexit -v,--verboseincreaseoutputverbosity",8,28.39,258.23,80,72,410.7,330.23,439.1,FALSE,FALSE
+6,10,BODY,help='displayasquareofagivennumber'),8,4.48,225.95,36,179.6,573.22,405.55,577.71,FALSE,FALSE
+6,11,BODY,"parser.add_argument('-v','--verbose',action='store_true',",8,4.48,317.41,57,72,585.18,389.41,589.66,FALSE,FALSE
+6,12,BODY,help='increaseoutputverbosity'),8,4.48,177.53,31,179.6,597.14,357.13,601.62,FALSE,FALSE
+6,13,BODY,args=parser.parse_args() answer=args.square**2 ifargs.verbose:,8,28.39,139.87,62,72,609.09,211.87,637.48,FALSE,FALSE
+6,14,BODY,print(f'thesquareof{args.square}equals{answer}'),8,4.48,285.13,48,93.52,644.96,378.65,649.44,FALSE,FALSE
+6,15,BODY,else:,8,4.48,26.9,5,72,656.91,98.9,661.4,TRUE,FALSE
+6,16,BODY,print(answer),8,4.48,69.94,13,93.52,668.87,163.46,673.35,FALSE,FALSE
+7,1,BODY,16 $pythonprog.py4--verbose thesquareof4equals16 $pythonprog.py--verbose4 thesquareof4equals16,8,52.3,150.63,94,72,95.52,222.63,147.82,FALSE,FALSE
+7,4,BODY,help='displayasquareofagivennumber'),8,4.48,225.95,36,179.6,272.66,405.55,277.14,FALSE,FALSE
+7,5,BODY,"parser.add_argument('-v','--verbosity',type=int,",8,4.48,268.99,48,72,284.61,340.99,289.09,FALSE,FALSE
+7,6,BODY,help='increaseoutputverbosity'),8,4.48,177.53,31,179.6,296.57,357.13,301.05,FALSE,FALSE
+7,7,BODY,args=parser.parse_args() answer=args.square**2 ifargs.verbosity==2:,8,28.39,139.87,67,72,308.52,211.87,336.91,FALSE,FALSE
+7,8,BODY,print(f'thesquareof{args.square}equals{answer}'),8,4.48,285.13,48,93.52,344.39,378.65,348.87,FALSE,FALSE
+7,9,BODY,elifargs.verbosity==1:,8,4.48,134.49,22,72,356.34,206.49,360.83,FALSE,FALSE
+7,10,BODY,print(f'{args.square}^2=={answer}'),8,4.48,199.05,35,93.52,368.3,292.57,372.78,FALSE,FALSE
+7,11,BODY,else:,8,4.48,26.9,5,72,380.25,98.9,384.74,TRUE,FALSE
+7,12,BODY,print(answer),8,4.48,69.94,13,93.52,392.21,163.46,396.69,FALSE,FALSE
+7,15,BODY,help='displayasquareofagivennumber'),8,4.48,225.95,36,179.6,650.84,405.55,655.32,FALSE,FALSE
+7,16,BODY,"parser.add_argument('-v','--verbosity',type=int,choices=[0,1,2],",8,4.48,371.21,64,72,662.79,443.21,667.28,FALSE,FALSE
+7,17,BODY,help='increaseoutputverbosity'),8,4.48,177.53,31,179.6,674.75,357.13,679.23,FALSE,FALSE
+7,18,BODY,args=parser.parse_args() answer=args.square**2 ifargs.verbosity==2:,8,28.39,139.87,67,72,686.7,211.87,715.1,FALSE,FALSE
+7,19,BODY,print(f'thesquareof{args.square}equals{answer}'),8,4.48,285.13,48,93.52,722.57,378.65,727.05,FALSE,FALSE
+7,20,BODY,elifargs.verbosity==1:,8,4.48,134.49,22,72,734.52,206.49,739.01,FALSE,FALSE
+7,21,BODY,print(f'{args.square}^2=={answer}'),8,4.48,199.05,35,93.52,746.48,292.57,750.96,FALSE,FALSE
+8,1,BODY,else:,8,4.48,26.9,5,72,95.52,98.9,100,TRUE,FALSE
+8,2,BODY,print(answer),8,4.48,69.94,13,93.52,107.47,163.46,111.96,FALSE,FALSE
+8,4,BODY,positionalarguments: squaredisplayasquareofagivennumber,8,16.44,312.02,55,72,224.84,384.02,241.27,FALSE,FALSE
+8,5,BODY,"options: -h,--helpshowthishelpmessageandexit -v,--verbosity{0,1,2}",8,28.39,295.88,66,72,260.7,367.88,289.09,FALSE,FALSE
+8,6,BODY,increaseoutputverbosity,8,4.48,134.49,23,201.12,296.57,335.6,301.05,FALSE,FALSE
+8,8,BODY,help='displaythesquareofagivennumber'),8,4.48,236.71,38,179.6,407.95,416.31,412.43,FALSE,FALSE
+8,9,BODY,"parser.add_argument('-v','--verbosity',action='count',",8,4.48,301.27,54,72,419.9,373.27,424.39,FALSE,FALSE
+8,10,BODY,help='increaseoutputverbosity'),8,4.48,177.53,31,179.6,431.86,357.13,436.34,FALSE,FALSE
+8,11,BODY,args=parser.parse_args() answer=args.square**2 ifargs.verbosity==2:,8,28.39,139.87,67,72,443.81,211.87,472.21,FALSE,FALSE
+8,12,BODY,print(f'thesquareof{args.square}equals{answer}'),8,4.48,285.13,48,93.52,479.68,378.65,484.16,FALSE,FALSE
+8,13,BODY,elifargs.verbosity==1:,8,4.48,134.49,22,72,491.63,206.49,496.12,FALSE,FALSE
+8,14,BODY,print(f'{args.square}^2=={answer}'),8,4.48,199.05,35,93.52,503.59,292.57,508.07,FALSE,FALSE
+8,15,BODY,else:,8,4.48,26.9,5,72,515.55,98.9,520.03,TRUE,FALSE
+8,16,BODY,print(answer),8,4.48,69.94,13,93.52,527.5,163.46,531.98,FALSE,FALSE
+8,18,BODY,positionalarguments: squaredisplayasquareofagivennumber,8,16.44,285.12,55,72,740.5,357.12,756.94,FALSE,FALSE
+9,1,BODY,"options: -h,--helpshowthishelpmessageandexit -v,--verbosityincreaseoutputverbosity $pythonprog.py4-vvv 16",8,52.3,268.98,105,72,107.47,340.98,159.78,FALSE,FALSE
+9,4,BODY,help='displayasquareofagivennumber'),8,4.48,225.95,36,179.6,386.23,405.55,390.71,FALSE,FALSE
+9,5,BODY,"parser.add_argument('-v','--verbosity',action='count',",8,4.48,301.27,54,72,398.18,373.27,402.67,FALSE,FALSE
+9,6,BODY,help='increaseoutputverbosity'),8,4.48,177.53,31,179.6,410.14,357.13,414.62,FALSE,FALSE
+9,7,BODY,args=parser.parse_args() answer=args.square**2,8,16.44,139.87,46,72,422.1,211.87,438.53,FALSE,FALSE
+9,8,BODY,#bugfix:replace==with>= ifargs.verbosity>=2:,8,16.44,150.63,44,72,457.96,222.63,474.4,FALSE,FALSE
+9,9,BODY,print(f'thesquareof{args.square}equals{answer}'),8,4.48,285.13,48,93.52,481.87,378.65,486.35,FALSE,FALSE
+9,10,BODY,elifargs.verbosity>=1:,8,4.48,134.49,22,72,493.83,206.49,498.31,FALSE,FALSE
+9,11,BODY,print(f'{args.square}^2=={answer}'),8,4.48,199.05,35,93.52,505.78,292.57,510.26,FALSE,FALSE
+9,12,BODY,else:,8,4.48,26.9,5,72,517.74,98.9,522.22,TRUE,FALSE
+9,13,BODY,print(answer),8,4.48,69.94,13,93.52,529.69,163.46,534.18,FALSE,FALSE
+9,15,BODY,TypeError:'>='notsupportedbetweeninstancesof'NoneType'and'int',8,4.48,381.96,62,72,670.96,453.96,675.45,FALSE,FALSE
+10,0,BODY,"importargparse parser=argparse.ArgumentParser() parser.add_argument('square',type=int,",8,28.39,209.81,86,72,87.74,281.81,116.13,FALSE,FALSE
+10,1,BODY,help='displayasquareofagivennumber'),8,4.48,225.95,36,179.6,123.61,405.55,128.09,FALSE,FALSE
+10,2,BODY,"parser.add_argument('-v','--verbosity',action='count',default=0,",8,4.48,360.45,64,72,135.56,432.45,140.05,FALSE,FALSE
+10,3,BODY,help='increaseoutputverbosity'),8,4.48,177.53,31,179.6,147.52,357.13,152,FALSE,FALSE
+10,4,BODY,args=parser.parse_args() answer=args.square**2 ifargs.verbosity>=2:,8,28.39,139.87,67,72,159.47,211.87,187.87,FALSE,FALSE
+10,5,BODY,print(f'thesquareof{args.square}equals{answer}'),8,4.48,285.13,48,93.52,195.34,378.65,199.82,FALSE,FALSE
+10,6,BODY,elifargs.verbosity>=1:,8,4.48,134.49,22,72,207.29,206.49,211.78,FALSE,FALSE
+10,7,BODY,print(f'{args.square}^2=={answer}'),8,4.48,199.05,35,93.52,219.25,292.57,223.73,FALSE,FALSE
+10,8,BODY,else:,8,4.48,26.9,5,72,231.2,98.9,235.69,TRUE,FALSE
+10,9,BODY,print(answer),8,4.48,69.94,13,93.52,243.16,163.46,247.64,FALSE,FALSE
+10,14,BODY,print(f'{args.x}tothepower{args.y}equals{answer}'),8,4.48,301.27,50,93.52,552.93,394.79,557.41,FALSE,FALSE
+10,15,BODY,elifargs.verbosity>=1:,8,4.48,134.49,22,72,564.88,206.49,569.37,FALSE,FALSE
+10,16,BODY,print(f'{args.x}^{args.y}=={answer}'),8,4.48,209.81,37,93.52,576.84,303.33,581.32,FALSE,FALSE
+10,17,BODY,else:,8,4.48,26.9,5,72,588.79,98.9,593.28,TRUE,FALSE
+10,18,BODY,print(answer),8,4.48,69.94,13,93.52,600.75,163.46,605.23,FALSE,FALSE
+10,20,BODY,positionalarguments: xthebase ytheexponent,8,28.39,166.76,42,72,718.11,238.76,746.5,FALSE,FALSE
+11,1,BODY,"options: -h,--helpshowthishelpmessageandexit -v,--verbosity $pythonprog.py42-v 4^2==16",8,52.3,268.98,86,72,95.52,340.98,147.82,FALSE,FALSE
+11,3,BODY,print(f'Running'{__file__}''),8,4.48,161.39,29,93.52,296.57,254.91,301.05,FALSE,FALSE
+11,4,BODY,ifargs.verbosity>=1:,8,4.48,123.73,20,72,308.52,195.73,313,FALSE,FALSE
+11,5,BODY,"print(f'{args.x}^{args.y}==',end='')",8,4.48,209.81,36,93.52,320.48,303.33,324.96,FALSE,FALSE
+11,6,BODY,print(answer),8,4.48,69.94,13,72,332.43,141.94,336.91,FALSE,FALSE
+11,10,BODY,">>>#ambiguous,soparse_argsassumesit'sanoption >>>parser.parse_args(['-f']) usage:PROG[-h][-nN[N...]][args...] PROG:error:unrecognizedarguments:-f",8,40.35,285.13,145,72,584.46,357.13,624.81,FALSE,FALSE
+11,11,BODY,">>>parser.parse_args(['--','-f']) Namespace(args=['-f'],n=None)",8,16.44,188.29,63,72,644.24,260.29,660.68,FALSE,FALSE
+11,12,BODY,">>>#ambiguous,sothe-noptiongreedilyacceptsarguments >>>parser.parse_args(['-n','1','2','3']) Namespace(args=[],n=['1','2','3'])",8,28.39,322.79,127,72,680.1,394.79,708.5,FALSE,FALSE
+11,13,BODY,">>>parser.parse_args(['-n','1','--','2','3']) Namespace(args=['2','3'],n=['1'])",8,16.44,268.99,79,72,727.92,340.99,744.36,FALSE,FALSE
+12,2,BODY,"parser=argparse.ArgumentParser() group=parser.add_mutually_exclusive_group() group.add_argument('-v','--verbose',action='store_true') group.add_argument('-q','--quiet',action='store_true') parser.add_argument('x',type=int,help='thebase') parser.add_argument('y',type=int,help='theexponent') args=parser.parse_args() answer=args.x**args.y",8,88.17,312.03,337,72,180.99,384.03,269.16,FALSE,FALSE
+12,3,BODY,ifargs.quiet:,8,4.48,75.32,13,72,288.59,147.32,293.07,FALSE,FALSE
+12,4,BODY,print(answer) elifargs.verbose:,8,16.44,96.84,31,72,300.54,168.84,316.98,FALSE,FALSE
+12,5,BODY,print(f'{args.x}tothepower{args.y}equals{answer}'),8,4.48,301.27,50,93.52,324.45,394.79,328.94,FALSE,FALSE
+12,6,BODY,else:,8,4.48,26.9,5,72,336.41,98.9,340.89,TRUE,FALSE
+12,7,BODY,print(f'{args.x}^{args.y}=={answer}'),8,4.48,209.81,37,93.52,348.36,303.33,352.85,FALSE,FALSE
+12,10,BODY,"parser=argparse.ArgumentParser(description='calculateXtothepowerofY') group=parser.add_mutually_exclusive_group() group.add_argument('-v','--verbose',action='store_true') group.add_argument('-q','--quiet',action='store_true') parser.add_argument('x',type=int,help='thebase') parser.add_argument('y',type=int,help='theexponent') args=parser.parse_args() answer=args.x**args.y",8,88.17,414.24,374,72,648.54,486.24,736.71,FALSE,FALSE
+12,11,BODY,ifargs.quiet:,8,4.48,75.32,13,72,756.13,147.32,760.62,FALSE,FALSE
+13,1,BODY,print(answer) elifargs.verbose:,8,16.44,96.84,31,72,95.52,168.84,111.96,FALSE,FALSE
+13,2,BODY,print(f'{args.x}tothepower{args.y}equals{answer}'),8,4.48,301.27,50,93.52,119.43,394.79,123.91,FALSE,FALSE
+13,3,BODY,else:,8,4.48,26.9,5,72,131.39,98.9,135.87,TRUE,FALSE
+13,4,BODY,print(f'{args.x}^{args.y}=={answer}'),8,4.48,209.81,37,93.52,143.34,303.33,147.82,FALSE,FALSE
+13,6,BODY,calculateXtothepowerofY,8,4.48,156.01,23,72,236.79,228.01,241.27,FALSE,FALSE
+13,7,BODY,positionalarguments: xthebase ytheexponent,8,28.39,156.01,42,72,260.7,228.01,289.09,FALSE,FALSE
+13,8,BODY,"options: -h,--helpshowthishelpmessageandexit -v,--verbose -q,--quiet",8,40.35,258.23,68,72,308.52,330.23,348.87,FALSE,FALSE
+13,11,BODY,calculateXtothepowerofY,8,4.48,156.01,23,72,494.95,228.01,499.44,FALSE,FALSE
+13,12,BODY,positionalarguments: xthebase ytheexponent,8,28.39,156.01,42,72,518.86,228.01,547.26,FALSE,FALSE
+13,13,BODY,"options: -h,--helpshowthishelpmessageandexit -v,--verbose -q,--quiet",8,40.35,258.23,68,72,566.68,330.23,607.03,FALSE,FALSE
+14,0,BODY,importargparse print(argparse.__file__),8,16.44,129.11,39,72,87.74,201.11,104.18,FALSE,FALSE
+14,4,BODY,parser=argparse.ArgumentParser(prefix_chars='-+'),8,4.48,274.37,49,72,339.92,346.37,344.41,FALSE,FALSE
+14,5,BODY,"parser.add_argument('-a',metavar='<value>',action='append',",8,4.48,328.17,59,72,363.84,400.17,368.32,FALSE,FALSE
+14,6,BODY,"type=lambdax:('-',x))",8,4.48,129.11,21,179.6,375.79,308.7,380.27,FALSE,FALSE
+14,7,BODY,"parser.add_argument('+a',metavar='<value>',action='append',",8,4.48,328.17,59,72,387.75,400.17,392.23,FALSE,FALSE
+14,8,BODY,"type=lambdax:('+',x))",8,4.48,129.11,21,179.6,399.7,308.7,404.18,FALSE,FALSE
+14,9,BODY,args=parser.parse_args() print(args),8,16.44,139.87,36,72,423.61,211.87,440.05,FALSE,FALSE
+2,8,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,767.37,523.28,772.16,FALSE,FALSE
+3,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+3,12,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,767.79,523.28,772.58,FALSE,FALSE
+4,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+4,15,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,768.15,523.28,772.94,FALSE,FALSE
+5,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+6,18,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,762.38,523.28,767.17,FALSE,FALSE
+7,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+7,22,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,758.5,523.28,763.29,FALSE,FALSE
+8,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+8,19,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,764.47,523.28,769.27,FALSE,FALSE
+9,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+10,21,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,765.99,523.28,770.78,FALSE,FALSE
+11,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
+12,12,BODY,(continuesonnextpage),7,4.79,76.61,21,446.67,768.15,523.28,772.94,FALSE,FALSE
+13,0,BODY,(continuedfrompreviouspage),7,4.79,98.53,27,424.75,81.43,523.28,86.22,FALSE,FALSE
