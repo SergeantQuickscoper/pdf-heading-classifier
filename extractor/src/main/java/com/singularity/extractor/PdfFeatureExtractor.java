@@ -123,7 +123,7 @@ public class PdfFeatureExtractor extends PDFTextStripper {
             int pageNum = getCurrentPageNo();
             int blockNum = 0;
             for (TextBlock block : blocks) {
-                String content = block.chunks.stream().map(c -> c.text.replace("\"", "'")).reduce((a, b) -> a + " " + b).orElse("").replaceAll("\n", " ").trim();
+                String content = block.chunks.stream().map(c -> c.text.replace("\"", "'").replace(",", "")).reduce((a, b) -> a + " " + b).orElse("").replaceAll("\n", " ").trim();
                 int textLength = content.length();
                 String csvContent = String.format("%d,%d,\"%s\",%.2f,%.2f,%.2f,%d,%.2f,%.2f,%.2f,%.2f,%b,%b\n",
                     pageNum, blockNum++,
