@@ -78,23 +78,20 @@ def build_outline(df):
 def main():
     parser = argparse.ArgumentParser(description="Run heading classifier")
     parser.add_argument("--model", default="heading_rf.joblib", help="Trained model path")
-    args = parser.parse_args()
+    parser.add_argument(
+        "--input",
+        required=True,
+        help="Path to input PDF or folder containing CSV files"
+    )
 
+    args = parser.parse_args()
     bundle = joblib.load(args.model)
     clf = bundle['model']
     le = bundle['label_encoder']
     imp = bundle['imputer']
     features = bundle['features']
 
-    input_folder = "./testinputs"
-    if not os.path.isdir(input_folder):
-        raise FileNotFoundError("Expected folder ./testinputs")
-
-    files = glob.glob(os.path.join(input_folder, "*.csv"))
-    if not files:
-        raise FileNotFoundError("No CSVs found in ./testinputs")
-
-    df_list = [pd.read_csv(f) for f in files]
+    df_list = [pd.read_csv(args.input)]
     df = pd.concat(df_list, ignore_index=True)
 
     df = clean_and_engineer(df)
