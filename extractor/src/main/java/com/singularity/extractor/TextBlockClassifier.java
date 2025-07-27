@@ -1,6 +1,9 @@
 package com.singularity.extractor;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 public class TextBlockClassifier {
 
@@ -48,12 +51,18 @@ public class TextBlockClassifier {
     // Definately should be a function of font size
     private boolean areSimilar(TextChunk a, TextChunk b) {
         float avgFont = (a.avgFontSize + b.avgFontSize) / 2.0f;
-        float dy = Math.abs(a.y0 - b.y0);
+        float dy = Math.abs(a.y1 - b.y0);
+        float dy1 = Math.abs(a.y0 - b.y1);
+        if(dy>dy1)dy=dy1;
         float dx = Math.abs(a.x0 - b.x0);
+        float dx1 = Math.abs(a.x1 - b.x1);
+        if(dx>dx1)dx=dx1;
+
         float df = Math.abs(a.avgFontSize - b.avgFontSize);
 
         return dy <= verticalTolerance * avgFont &&
                dx <= horizontalTolerance * avgFont &&
                df <= fontSizeTolerance;
     }
+
 }

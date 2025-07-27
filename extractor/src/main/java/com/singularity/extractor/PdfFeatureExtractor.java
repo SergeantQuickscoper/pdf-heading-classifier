@@ -1,24 +1,30 @@
 package com.singularity.extractor;
 
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.TextPosition;
-import org.apache.pdfbox.text.PDFTextStripper;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
-import org.apache.pdfbox.pdmodel.PDPage;
-import java.io.FileWriter;
-import java.io.BufferedWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.text.TextPosition;
 
 public class PdfFeatureExtractor extends PDFTextStripper {
 
     // BLOCK CLASSIFICATION TOLERANCES (pixel count as a percentage of fontsize)
-    private final float verticalTolerance = 1.5f;
+    private final float verticalTolerance = 2.0f;
     private final float horizontalTolerance = 1.5f;
-    private final float fontSizeTolerance = 1.0f;
+    private final float fontSizeTolerance = 2.0f;
+
 
     // CHUNK CLASSFICIATION TOLERENCES
     private final float lineThreshold = 2.0f; // y distance to group into same line
