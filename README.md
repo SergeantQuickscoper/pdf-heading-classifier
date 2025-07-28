@@ -13,8 +13,10 @@ This repo has two main folders:
 ## Running each deliverable and expected execution
 The project follows the recommended execution format in the brief:
 Change into the folder you want to work with before running Docker build or run commands.
-In a nutshell -> build and run docker from `cd extractor` for deliverable A
-build and run docker from `the root dir` for deliverable B
+In a nutshell:
+
+- for deliverable A: build and run docker from `cd extractor` 
+- for deliverable B: build and run docker from `the root dir`
 
 Please use mounted input and output folders similar to below (for powershell)
 docker run --rm -v "${PWD}//input:/app/input:ro" -v "${PWD}/output:/app/output" --network none mysolutionname:somerandomidentifier
