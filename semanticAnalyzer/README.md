@@ -1,6 +1,6 @@
 # Program flow
 
-This section does semantic analysis on your PDFs. It finds the most important sections and groups similar blocks, so you get the summary of your documents.
+This section does semantic analysis on your PDFs. It finds the most important sections and groups similar blocks, so you get the summary of your documents, by first extracting sections and identifying paragraphs using the extractor in deliverable a.
 
 ## Giving Input (ENSURE INPUT.JSON AND THE PDFS ARE IN THE SAME INPUT FOLDER)
 

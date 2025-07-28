@@ -7,7 +7,7 @@ from datetime import datetime
 import subprocess
 import shutil
 import re
-
+from collections import defaultdict
 # MODIFYING THESE FOR DOCKER
 # if running locally modify these (ill make an env later dw)
 csv_dir = "/app/semanticAnalyzer/csvs"
@@ -133,7 +133,38 @@ if not titles:
     raise ValueError("No headings extracted. Check font/bold threshold or data quality.")
 title_embeddings = model.encode(titles, convert_to_tensor=True)
 cos_scores = util.cos_sim(query_emb, title_embeddings)[0]
-scored_sections = sorted(zip(doc_sections, cos_scores.tolist()), key=lambda x: x[1], reverse=True)
+
+scored_sections = list(zip(doc_sections, cos_scores.tolist()))
+
+MIN_SCORE_THRESHOLD = 0.25 
+scored_sections = [(sec, score) for sec, score in scored_sections if score >= MIN_SCORE_THRESHOLD]
+
+scored_sections = sorted(scored_sections, key=lambda x: x[1], reverse=True)
+
+sections_by_doc = defaultdict(list)
+for sec, score in scored_sections:
+    sections_by_doc[sec["document"]].append((sec, score))
+
+seen_titles = set()
+final_sections = []
+section_limit = 8
+
+while len(final_sections) < section_limit:
+    added = False
+    for doc, section_list in sections_by_doc.items():
+        if len(final_sections) >= section_limit:
+            break
+        while section_list:
+            sec, score = section_list.pop(0)
+            key = (sec["document"], sec["title"])
+            if key in seen_titles:
+                continue
+            seen_titles.add(key)
+            final_sections.append(sec)
+            added = True
+            break
+    if not added:
+        break
 
 output = {
     "metadata": {
@@ -146,7 +177,8 @@ output = {
     "subsection_analysis": []
 }
 
-for rank, (sec, _) in enumerate(scored_sections[:5], 1):
+# Step 5: Assign ranked output
+for rank, sec in enumerate(final_sections, 1):
     output["extracted_sections"].append({
         "document": sec["document"],
         "section_title": sec["title"],
@@ -160,15 +192,39 @@ block_embeddings = model.encode(block_texts, convert_to_tensor=True)
 block_scores = util.cos_sim(query_emb, block_embeddings)[0]
 ranked_blocks = sorted(zip(grouped_blocks, block_scores.tolist()), key=lambda x: x[1], reverse=True)
 
+
+doc_weights = defaultdict(lambda: 1) 
+for i, section in enumerate(output["extracted_sections"]):
+    doc = section["document"]
+    doc_weights[doc] = max(6 - i, 1)
+
+
+grouped_by_doc = defaultdict(list)
+for blk, score in ranked_blocks:
+    grouped_by_doc[blk["document"]].append((blk, score))
+
+# Step 3: Select top 5 blocks using weighted round-robin
 seen_blocks = set()
-for blk, _ in ranked_blocks:
-    key = (blk["document"], blk["refined_text"])
-    if key in seen_blocks:
-        continue
-    seen_blocks.add(key)
-    output["subsection_analysis"].append(blk)
-    if len(output["subsection_analysis"]) >= 5:
+final_blocks = []
+
+while len(final_blocks) < 8:
+    added = False
+    for doc, weight in sorted(doc_weights.items(), key=lambda x: -x[1]):
+        if len(final_blocks) >= 8:
+            break
+        if not grouped_by_doc[doc]:
+            continue
+        blk, _ = grouped_by_doc[doc].pop(0)
+        key = (blk["document"], blk["refined_text"])
+        if key in seen_blocks:
+            continue
+        seen_blocks.add(key)
+        final_blocks.append(blk)
+        added = True
+    if not added:
         break
+
+output["subsection_analysis"] = final_blocks
 
 with open(output_json_path, "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
