@@ -2,7 +2,7 @@
 
 This section does semantic analysis on your PDFs. It finds the most important sections and groups similar blocks, so you get the summary of your documents, by first extracting sections and identifying paragraphs using the extractor in deliverable a.
 
-## Giving Input (ENSURE INPUT.JSON AND THE PDFS ARE IN THE SAME INPUT FOLDER)
+## Giving Input (ENSURE INPUT.JSON AND THE PDFS ARE IN THE SAME INPUT FOLDER) (not the input folder within the semantic analyzer, your own input folder mounted on the container)
 
 - Put your PDF files in the `./input` folder (make sure the names match what you put in the input JSON)
 - Make an `input.json` in the `./input` folder
