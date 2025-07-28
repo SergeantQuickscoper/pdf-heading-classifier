@@ -13,9 +13,9 @@ input_json_path = "./input/input.json"
 output_json_path = "./output/output.json"
 font_size_thresh = 8  # tune this
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("./model/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/")
 
-def sanitize_pdf_filenames(pdf_dir="./pdfs"):
+def sanitize_pdf_filenames(pdf_dir="./input"):
     renamed_files = {}
     for filename in os.listdir(pdf_dir):
         if filename.lower().endswith(".pdf") and " " in filename:
