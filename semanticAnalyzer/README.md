@@ -38,13 +38,12 @@ This section does semantic analysis on your PDFs. It finds the most important se
 
 ## What Happens When You Run It
 
-- It checks your PDF filenames and renames them if they have spaces (so everything works)
 - It runs the Java extractor on every PDF in the input folder (makes a CSV for each one in ./csvs)
 - It reads those CSVs and pulls out the big text blocks (like headings and sections)
 - It uses the transformer model to get embeddings and does some semantic ranking (finds important sections, groups similar stuff, etc)
 - It writes the results to `output/output.json` (you get a list of extracted sections, some analysis, and metadata about your input)
 
-## What You Get Out
+## Output
 
 - A `output.json` file in the output folder with stuff like:
   - Which PDFs you gave it
