@@ -8,14 +8,18 @@ import subprocess
 import shutil
 import re
 
-csv_dir = "./csvs"
-input_json_path = "./input/input.json"
-output_json_path = "./output/output.json"
+# MODIFYING THESE FOR DOCKER
+# if running locally modify these (ill make an env later dw)
+csv_dir = "/app/semanticAnalyzer/csvs"
+input_json_path = "/app/semanticAnalyzer/input/input.json"
+output_json_path = "/app/semanticAnalyzer/output/output.json"
 font_size_thresh = 8  # tune this
 
 model = SentenceTransformer("./model/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/")
 
-def sanitize_pdf_filenames(pdf_dir="./input"):
+# MODIFYING THESE FOR DOCKER
+# if running locally modify these
+def sanitize_pdf_filenames(pdf_dir="/app/semanticAnalyzer/input/"):
     renamed_files = {}
     for filename in os.listdir(pdf_dir):
         if filename.lower().endswith(".pdf") and " " in filename:
@@ -26,7 +30,10 @@ def sanitize_pdf_filenames(pdf_dir="./input"):
             renamed_files[filename] = sanitized_name
             print(f"Renamed: {filename} → {sanitized_name}")
     return renamed_files
-def run_java_extractor(pdf_dir="./input", extractor_dir="../extractor", output_csv_dir="./csvs"):
+
+# MODIFYING THESE FOR DOCKER
+# if running locally modify these
+def run_java_extractor(pdf_dir="/app/semanticAnalyzer/input/", extractor_dir="/app/extractor", output_csv_dir="./csvs"):
     os.makedirs(output_csv_dir, exist_ok=True)
     pdf_paths = glob.glob(os.path.join(pdf_dir, "*.pdf"))
     if not pdf_paths:
@@ -35,10 +42,11 @@ def run_java_extractor(pdf_dir="./input", extractor_dir="../extractor", output_c
     for pdf_path in pdf_paths:
         abs_pdf_path = os.path.abspath(pdf_path)
         print(f"\n🔧 Extracting: {abs_pdf_path}")
+        arg_str = f'"{abs_pdf_path} 1.25 1.25 1.25"'  # quotes around PDF path
+        
+        cmd = f'mvn exec:java -Dexec.args={arg_str}'
         try:
-            subprocess.run([
-                "mvn", "exec:java", f"-Dexec.args={abs_pdf_path} 1.25 1.25 1.25"
-            ], cwd=os.path.abspath(extractor_dir), check=True, shell=True)
+            subprocess.run(cmd, cwd=os.path.abspath(extractor_dir), check=True, shell=True)
             print("Extraction complete.")
         except subprocess.CalledProcessError:
             print(f"Failed to extract {pdf_path}")

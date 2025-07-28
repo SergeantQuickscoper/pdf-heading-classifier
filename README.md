@@ -8,7 +8,7 @@ This repo has two main folders:
 
 - **extractor**: This is where the PDF text extraction and heading classifier pipeline lives. It uses Java (for the extractor) and Python (for the heading classifier). There's a Dockerfile in this folder for running the whole pipeline in a container. Make sure to `cd extractor` before building or running Docker commands for this part.
 
-- **semanticAnalyzer**: This is the semantic analysis and smart section ranking part. It's all in Python and uses Sentence Transformers. There's a separate Dockerfile here for running the semantic analyzer in a container. Make sure to `cd semanticAnalyzer` before building or running Docker for this part. It does however rely on the Java extractor module from the other folder, but don't worry this is handled in code and the docker container.
+- **semanticAnalyzer**: This is the semantic analysis and smart section ranking part. It's all in Python and uses Sentence Transformers. There's a separate Dockerfile in the root directory for running the semantic analyzer in a container. *As the semanticAnalyzer depends on the extractor engine, please run this dockerfile from the root directory ONLY.* Ignore any warnings that my pop up during the docker run, as they are mostly related to my installing of cpu only libraries of pytorch. 
 
 Each folder is self contained, so always change into the folder you want to work with before running Docker build or run commands.
 
