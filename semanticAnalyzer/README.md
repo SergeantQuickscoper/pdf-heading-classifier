@@ -1,10 +1,12 @@
-# How To Use main.py
+# Program flow
 
-## Giving Input
+This section does semantic analysis on your PDFs. It finds the most important sections and groups similar blocks, so you get the summary of your documents.
 
-- Put your PDF files in the `./pdfs` folder (make sure the names match what you put in the input JSON)
-- Make an `input.json` in the same folder as main.py
-- The input JSON should look like this (just copy and change the filenames and titles if you want):
+## Giving Input (ENSURE INPUT.JSON AND THE PDFS ARE IN THE SAME INPUT FOLDER)
+
+- Put your PDF files in the `./input` folder (make sure the names match what you put in the input JSON)
+- Make an `input.json` in the `./input` folder
+- The input JSON should be the one in the Adobe case briefing (like below):
 
 ```
 {
@@ -29,28 +31,33 @@
 }
 ```
 
+## Model Used
+
+- This uses the `all-MiniLM-L6-v2` model from Sentence Transformers
+- You need to download this model offline before running (the script expects it to be available locally, so make sure you have it cached or downloaded if you have no internet), if youre using outside the document container, SentenceTransformers should download automatically if you just mention the model
+
 ## What Happens When You Run It
 
 - It checks your PDF filenames and renames them if they have spaces (so everything works)
-- It runs the Java extractor on every PDF in the pdfs folder (makes a CSV for each one in ./csvs)
+- It runs the Java extractor on every PDF in the input folder (makes a CSV for each one in ./csvs)
 - It reads those CSVs and pulls out the big text blocks (like headings and sections)
-- It uses a transformer model to get embeddings and does some semantic stuff (finds important sections, groups similar stuff, etc)
-- It writes the results to `semantic_output.json` (you get a list of extracted sections, some analysis, and metadata about your input)
+- It uses the transformer model to get embeddings and does some semantic ranking (finds important sections, groups similar stuff, etc)
+- It writes the results to `output/output.json` (you get a list of extracted sections, some analysis, and metadata about your input)
 
 ## What You Get Out
 
-- A `semantic_output.json` file with stuff like:
+- A `output.json` file in the output folder with stuff like:
   - Which PDFs you gave it
   - The persona and job you set
   - A list of extracted sections (with document name, section title, importance rank, page number)
   - Some grouped or refined text blocks for each doc
 
-## How To Run
+## How To Run (outside container)
 
-Just do
+Simply run:
 
 ```
 python main.py
 ```
 
-(Make sure you have the requirements installed, and your PDFs and input.json are in the right place)
+Authored by: Don Roy Chacko <donisepic30@gmail.com>
