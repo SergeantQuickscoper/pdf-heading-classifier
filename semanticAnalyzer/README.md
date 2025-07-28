@@ -53,6 +53,8 @@ This section does semantic analysis on your PDFs. It finds the most important se
 
 ## How To Run (outside container)
 
+First change the paths commented in main.py (i dont have env variable support yet)
+
 Simply run:
 
 ```
