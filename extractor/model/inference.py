@@ -77,7 +77,8 @@ def build_outline(df):
 
 def main():
     parser = argparse.ArgumentParser(description="Run heading classifier")
-    parser.add_argument("--model", default="heading_rf.joblib", help="Trained model path")
+    # CHANGE this as im assuming youre executing from the extractor dir
+    parser.add_argument("--model", default="./model/heading_rf.joblib", help="Trained model path")
     parser.add_argument(
         "--input",
         required=True,

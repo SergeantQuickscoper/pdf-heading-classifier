@@ -9,7 +9,11 @@ WORKDIR /app
 COPY . /app
 
 RUN pip3 install --no-cache-dir -r model/requirements.txt
-RUN mvn clean package -DskipTests
+
+RUN mvn dependency:go-offline
+RUN mvn dependency:resolve-plugins
+RUN mvn package -DskipTests
+RUN mvn exec:java
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
